@@ -118,13 +118,32 @@ def extract_retail_price(text: str) -> int:
 
 def clean_title(text: str) -> str:
     """
-    Removes countdowns, 'COMING SOON', and inline prices from titles.
+    Removes common garbage that sources prepend/append:
+    - "Mar 07 ..." / "March 7 ..." leading date
+    - countdowns like "01D:06H:12M:03S"
+    - "COMING SOON"
+    - inline prices like "$130.00"
     """
     t = normalize_text(text)
     if not t:
         return t
+
+    # Remove countdown + price + coming soon
     t = _COUNTDOWN_RE.sub("", t)
     t = re.sub(r"\bCOMING\s+SOON\b", "", t, flags=re.I)
     t = _PRICE_RE.sub("", t)
-    t = normalize_text(t)
+
+    # Remove leading date like "Mar 07" / "March 7, 2026" / "Mar 7"
+    t = re.sub(
+        r"^\s*(?:"
+        r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)"
+        r"|January|February|March|April|May|June|July|August|September|October|November|December"
+        r")\.?\s+\d{1,2}(?:,\s*\d{4})?\s+",
+        "",
+        t,
+        flags=re.I,
+    )
+
+    # Clean up extra punctuation/spacing
+    t = normalize_text(t.strip(" -|:•"))
     return t

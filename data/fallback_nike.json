@@ -119,5 +119,27 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
+  },
+  {
+    "releaseDate": "2026-03-27",
+    "shoeName": "Mar 27 Baby/Toddler Shoes Nike Little Posite Pro",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "/launch/t/air-foamposite-pro-university-blue-and-white"
+  },
+  {
+    "releaseDate": "2026-04-03",
+    "shoeName": "Apr 3 Basketball Shoes LeBron XXIII Elite \"Good Intentions\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "/launch/t/lebron-xxiii-elite-good-intentions-hyper-pink-and-black"
   }
 ]

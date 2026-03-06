@@ -15,6 +15,7 @@
       a.btn:hover { filter: brightness(1.08); }
       .secondary { background: rgba(255,255,255,0.12); }
       .small { margin-top: 18px; font-size: 14px; color: rgba(255,255,255,0.7); }
+      .stamp { margin-top: 10px; font-size: 14px; color: rgba(255,255,255,0.75); }
       code { background: rgba(255,255,255,0.12); padding: 2px 6px; border-radius: 6px; }
     </style>
   </head>
@@ -32,11 +33,26 @@
           <a class="btn secondary" href="./output/monthly_tracker.xlsx">Download Monthly Tracker (Excel)</a>
         </div>
 
+        <div class="stamp" id="last-updated">Last updated: loading…</div>
+
         <p class="small">
           If a link ever 404s, it just means the workflow hasn’t generated today’s files yet. Try again in a few minutes.
           Advanced users can also download from the GitHub <code>Actions</code> artifacts.
         </p>
       </div>
     </div>
+
+    <script>
+      (async () => {
+        try {
+          const res = await fetch("./public/last_updated.txt", { cache: "no-store" });
+          if (!res.ok) throw new Error("not found");
+          const txt = (await res.text()).trim();
+          document.getElementById("last-updated").textContent = txt || "Last updated: unknown";
+        } catch {
+          document.getElementById("last-updated").textContent = "Last updated: unavailable";
+        }
+      })();
+    </script>
   </body>
 </html>

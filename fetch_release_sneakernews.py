@@ -27,7 +27,7 @@ UA = (
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Fetch release calendar from SneakerNews (requests).")
+    p = argparse.ArgumentParser(description="Fetch release calendar from SneakerNews (requests, WAF-tolerant).")
     p.add_argument("--days", type=int, default=35)
     p.add_argument("--timeout", type=int, default=30)
     p.add_argument("-o", "--output", type=Path, default=Path("data/fallback_sneakernews.json"))
@@ -35,25 +35,48 @@ def parse_args() -> argparse.Namespace:
 
 
 def fetch_html(url: str, timeout: int) -> str:
-    r = requests.get(
-        url,
-        timeout=timeout,
-        headers={
+    """
+    Best-effort fetch:
+    - Session + browser-like headers
+    - Retries to allow cookie challenges to settle
+    - Raises only after retries
+    """
+    session = requests.Session()
+    session.headers.update(
+        {
             "User-Agent": UA,
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
+            "Referer": "https://www.google.com/",
             "Cache-Control": "no-cache",
             "Pragma": "no-cache",
-        },
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+        }
     )
-    r.raise_for_status()
-    return r.text
+
+    last_exc: Exception | None = None
+    for _ in range(3):
+        try:
+            r = session.get(url, timeout=timeout, allow_redirects=True)
+            # Some WAFs respond 403 before cookies are set; retry once cookies exist.
+            if r.status_code == 403:
+                last_exc = requests.HTTPError(f"403 Forbidden for {url}")
+                continue
+            r.raise_for_status()
+            return r.text
+        except Exception as e:
+            last_exc = e
+
+    raise last_exc if last_exc else RuntimeError("Failed to fetch SneakerNews")
 
 
-def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
+def extract_rows(html: str) -> list[dict[str, Any]]:
+    soup = BeautifulSoup(html, "html.parser")
     rows: list[dict[str, Any]] = []
 
-    # Find date blocks and then the next H2 with the sneaker title link
+    # Strategy:
+    # Find any element containing a full date "Month DD, YYYY", then take the next H2->A as title.
     for tag in soup.find_all(True):
         text = normalize_text(tag.get_text(" ", strip=True))
         if not text:
@@ -120,9 +143,7 @@ def main() -> None:
     args = parse_args()
 
     html = fetch_html(SOURCE_URL, timeout=args.timeout)
-    soup = BeautifulSoup(html, "html.parser")
-
-    rows = dedupe(extract_rows(soup))
+    rows = dedupe(extract_rows(html))
     rows = window_filter(rows, days=args.days)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)

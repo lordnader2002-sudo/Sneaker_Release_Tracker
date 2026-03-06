@@ -123,15 +123,16 @@ def clean_title(text: str) -> str:
     - countdowns like "01D:06H:12M:03S"
     - "COMING SOON"
     - inline prices like "$130.00"
+    - trailing size/gender markers like "(GS)", "GS", "(PS)", "(TD)", "(WMNS)"
     """
     t = normalize_text(text)
     if not t:
         return t
 
-    # Remove countdown + price + coming soon
-    t = _COUNTDOWN_RE.sub("", t)
-    t = re.sub(r"\bCOMING\s+SOON\b", "", t, flags=re.I)
-    t = _PRICE_RE.sub("", t)
+    # Remove countdown + "COMING SOON" + prices anywhere
+    t = _COUNTDOWN_RE.sub(" ", t)
+    t = re.sub(r"\bCOMING\s+SOON\b", " ", t, flags=re.I)
+    t = _PRICE_RE.sub(" ", t)
 
     # Remove leading date like "Mar 07" / "March 7, 2026" / "Mar 7"
     t = re.sub(
@@ -144,6 +145,10 @@ def clean_title(text: str) -> str:
         flags=re.I,
     )
 
-    # Clean up extra punctuation/spacing
+    # Remove trailing size/gender markers like "(GS)" "GS" "(PS)" "(TD)" "WMNS" etc.
+    t = re.sub(r"\(\s*(gs|ps|td|w|wmns|mens|youth|kids)\s*\)\s*$", "", t, flags=re.I)
+    t = re.sub(r"\b(gs|ps|td|wmns|womens|mens|youth|kids)\b\s*$", "", t, flags=re.I)
+
+    # Final cleanup
     t = normalize_text(t.strip(" -|:•"))
     return t

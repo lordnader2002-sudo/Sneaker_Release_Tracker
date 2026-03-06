@@ -27,20 +27,16 @@ UA = (
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Fetch release calendar from SneakerNews (requests, WAF-tolerant).")
+    p = argparse.ArgumentParser(description="Fetch SneakerNews release dates (debug).")
     p.add_argument("--days", type=int, default=35)
     p.add_argument("--timeout", type=int, default=30)
     p.add_argument("-o", "--output", type=Path, default=Path("data/fallback_sneakernews.json"))
+    p.add_argument("--debug-html", type=Path, default=Path("data/sneakernews_debug.html"))
+    p.add_argument("--debug-txt", type=Path, default=Path("data/sneakernews_debug.txt"))
     return p.parse_args()
 
 
-def fetch_html(url: str, timeout: int) -> str:
-    """
-    Best-effort fetch:
-    - Session + browser-like headers
-    - Retries to allow cookie challenges to settle
-    - Raises only after retries
-    """
+def fetch_html(url: str, timeout: int) -> tuple[int, str, dict[str, str]]:
     session = requests.Session()
     session.headers.update(
         {
@@ -55,28 +51,14 @@ def fetch_html(url: str, timeout: int) -> str:
         }
     )
 
-    last_exc: Exception | None = None
-    for _ in range(3):
-        try:
-            r = session.get(url, timeout=timeout, allow_redirects=True)
-            # Some WAFs respond 403 before cookies are set; retry once cookies exist.
-            if r.status_code == 403:
-                last_exc = requests.HTTPError(f"403 Forbidden for {url}")
-                continue
-            r.raise_for_status()
-            return r.text
-        except Exception as e:
-            last_exc = e
-
-    raise last_exc if last_exc else RuntimeError("Failed to fetch SneakerNews")
+    r = session.get(url, timeout=timeout, allow_redirects=True)
+    return r.status_code, r.text, dict(r.headers)
 
 
 def extract_rows(html: str) -> list[dict[str, Any]]:
     soup = BeautifulSoup(html, "html.parser")
     rows: list[dict[str, Any]] = []
 
-    # Strategy:
-    # Find any element containing a full date "Month DD, YYYY", then take the next H2->A as title.
     for tag in soup.find_all(True):
         text = normalize_text(tag.get_text(" ", strip=True))
         if not text:
@@ -142,14 +124,42 @@ def dedupe(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
 def main() -> None:
     args = parse_args()
 
-    html = fetch_html(SOURCE_URL, timeout=args.timeout)
+    status, html, headers = fetch_html(SOURCE_URL, timeout=args.timeout)
+
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.debug_html.parent.mkdir(parents=True, exist_ok=True)
+    args.debug_txt.parent.mkdir(parents=True, exist_ok=True)
+
+    args.debug_html.write_text(html or "", encoding="utf-8", errors="ignore")
+
+    # quick indicators in the debug txt
+    date_hits = len(DATE_RE.findall(html or ""))
+    has_cloudflare = "cloudflare" in (headers.get("server", "").lower())
+    title = ""
+    try:
+        soup = BeautifulSoup(html or "", "html.parser")
+        title = normalize_text(soup.title.get_text(" ", strip=True) if soup.title else "")
+    except Exception:
+        title = ""
+
+    debug_lines = [
+        f"url={SOURCE_URL}",
+        f"status={status}",
+        f"title={title}",
+        f"content_length={len(html or '')}",
+        f"date_pattern_hits={date_hits}",
+        f"server={headers.get('server','')}",
+        f"cf_ray={headers.get('cf-ray','')}",
+        f"blocked_hint_cloudflare={has_cloudflare}",
+    ]
+    args.debug_txt.write_text("\n".join(debug_lines) + "\n", encoding="utf-8")
+
     rows = dedupe(extract_rows(html))
     rows = window_filter(rows, days=args.days)
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(rows, indent=2), encoding="utf-8")
 
-    print(f"{SOURCE_NAME} saved: {len(rows)} -> {args.output}")
+    print(f"{SOURCE_NAME} status={status} date_hits={date_hits} rows={len(rows)} output={args.output}")
 
 
 if __name__ == "__main__":

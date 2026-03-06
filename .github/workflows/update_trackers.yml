@@ -3,7 +3,11 @@ name: Update Sneaker Trackers
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 11 * * *"
+    # Noon + midnight Eastern:
+    # - EDT: 12:00 = 16:00 UTC, 00:00 = 04:00 UTC
+    # - EST: 12:00 = 17:00 UTC, 00:00 = 05:00 UTC
+    - cron: "0 16,17 * * *"
+    - cron: "0 4,5 * * *"
 
 permissions:
   contents: write

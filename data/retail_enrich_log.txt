@@ -1,0 +1,4 @@
+      - name: Enrich retail prices (best effort)
+        shell: bash
+        run: |
+          python enrich_retail_prices.py data/final_releases.json --max 120 --timeout 25 --sleep 0.2 | tee data/retail_enrich_log.txt || true

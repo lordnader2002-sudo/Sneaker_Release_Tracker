@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-03-07",
+    "brand": "Adidas",
+    "style": "Adidas Anthony Edwards 2 Georgia Bulldogs",
+    "fieldChanged": "retailPrice",
+    "oldValue": 219,
+    "newValue": 0,
+    "detectedAt": "2026-03-06T09:39:05Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-03-07",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 1 High OG Pale Ivory / Psychic Blue",
+    "fieldChanged": "retailPrice",
+    "oldValue": 299,
+    "newValue": 0,
+    "detectedAt": "2026-03-06T09:39:05Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-03-07",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 4 OG Lakers",
+    "fieldChanged": "retailPrice",
+    "oldValue": 400,
+    "newValue": 0,
+    "detectedAt": "2026-03-06T09:39:05Z"
+  }
+]

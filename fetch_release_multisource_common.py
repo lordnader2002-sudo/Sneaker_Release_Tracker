@@ -1,3 +1,5 @@
+# file: fetch_release_multisource_common.py
+
 from __future__ import annotations
 
 import re
@@ -15,13 +17,6 @@ def normalize_text(value: Any) -> str:
 
 
 def parse_date_flexible(text: str, default_year: int | None = None) -> date | None:
-    """
-    Supports:
-      - March 05, 2026
-      - March 5 2026
-      - Mar 7 (uses default_year)
-      - 2026-03-07
-    """
     if not text:
         return None
 
@@ -29,20 +24,17 @@ def parse_date_flexible(text: str, default_year: int | None = None) -> date | No
     if not s:
         return None
 
-    # ISO
     try:
         return datetime.fromisoformat(s.replace("Z", "+00:00")).date()
     except ValueError:
         pass
 
-    # Month DD YYYY
-    for fmt in ("%B %d %Y", "%b %d %Y", "%B %d %y", "%b %d %y"):
+    for fmt in ("%B %d %Y", "%b %d %Y", "%B %d %y", "%b %d %y", "%Y-%m-%d"):
         try:
             return datetime.strptime(s, fmt).date()
         except ValueError:
             continue
 
-    # Month DD (no year)
     if default_year:
         for fmt in ("%B %d", "%b %d"):
             try:
@@ -106,3 +98,33 @@ def infer_brand(name: str) -> str:
     if "crocs" in n:
         return "Crocs"
     return "Unknown"
+
+
+_PRICE_RE = re.compile(r"(?:USD\s*)?\$\s*([0-9]{2,4})(?:\.[0-9]{2})?", re.I)
+_COUNTDOWN_RE = re.compile(r"\b\d{1,3}D:\d{1,2}H:\d{1,2}M:\d{1,2}S\b", re.I)
+
+
+def extract_retail_price(text: str) -> int:
+    if not text:
+        return 0
+    m = _PRICE_RE.search(text.replace(",", ""))
+    if not m:
+        return 0
+    try:
+        return int(m.group(1))
+    except ValueError:
+        return 0
+
+
+def clean_title(text: str) -> str:
+    """
+    Removes countdowns, 'COMING SOON', and inline prices from titles.
+    """
+    t = normalize_text(text)
+    if not t:
+        return t
+    t = _COUNTDOWN_RE.sub("", t)
+    t = re.sub(r"\bCOMING\s+SOON\b", "", t, flags=re.I)
+    t = _PRICE_RE.sub("", t)
+    t = normalize_text(t)
+    return t

@@ -102,7 +102,13 @@ jobs:
             --changes data/changes.json \
             --weekly-output output/weekly_tracker.xlsx \
             --monthly-output output/monthly_tracker.xlsx
-
+            
+      - name: Write last-updated timestamp (GitHub Pages)
+        shell: bash
+        run: |
+          mkdir -p public
+          echo "Last updated: $(date -u '+%Y-%m-%d %H:%M UTC')" > public/last_updated.txt
+          
       - name: Upload generated files
         uses: actions/upload-artifact@v4
         with:

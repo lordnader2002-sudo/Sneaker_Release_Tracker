@@ -45,23 +45,39 @@ jobs:
           mkdir -p data
           node fetch_releases_primary.js --days 35 --output data/primary_releases.json || echo "[]" > data/primary_releases.json
 
-      - name: Run fallback fetcher
+      - name: Run fallback fetcher (Nike)
         run: |
-          python fetch_release_fallback.py --days 35 --output data/fallback_releases.json
+          python fetch_release_fallback.py --days 35 --output data/fallback_nike.json
+
+      - name: Run fallback fetcher (SneakerNews)
+        run: |
+          python fetch_release_sneakernews.py --days 35 --output data/fallback_sneakernews.json
+
+      - name: Run fallback fetcher (KicksOnFire)
+        run: |
+          python fetch_release_kicksonfire.py --days 35 --output data/fallback_kicksonfire.json
+
+      - name: Run fallback fetcher (The Drop Date)
+        run: |
+          python fetch_release_thedropdate.py --days 35 --output data/fallback_thedropdate.json
 
       - name: Merge, score, and compare
         run: |
           python merge_and_compare.py \
             --primary data/primary_releases.json \
-            --fallback data/fallback_releases.json \
+            --fallback data/fallback_nike.json \
+            --fallback data/fallback_sneakernews.json \
+            --fallback data/fallback_kicksonfire.json \
+            --fallback data/fallback_thedropdate.json \
             --previous data/final_releases.json \
             --output data/final_releases.json \
             --changes data/changes.json \
-            --archive-dir archive
+            --archive-dir archive \
+            --min-records 1
 
       - name: Validate final output
         run: |
-          python merge_and_compare.py --validate-only --primary data/final_releases.json
+          python merge_and_compare.py --validate-only --primary data/final_releases.json --min-records 1
 
       - name: Build workbooks
         run: |
@@ -76,6 +92,11 @@ jobs:
         with:
           name: sneaker-trackers
           path: |
+            data/primary_releases.json
+            data/fallback_nike.json
+            data/fallback_sneakernews.json
+            data/fallback_kicksonfire.json
+            data/fallback_thedropdate.json
             data/final_releases.json
             data/changes.json
             output/weekly_tracker.xlsx
@@ -87,7 +108,17 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/final_releases.json data/changes.json output/weekly_tracker.xlsx output/monthly_tracker.xlsx archive
+          git add \
+            data/primary_releases.json \
+            data/fallback_nike.json \
+            data/fallback_sneakernews.json \
+            data/fallback_kicksonfire.json \
+            data/fallback_thedropdate.json \
+            data/final_releases.json \
+            data/changes.json \
+            output/weekly_tracker.xlsx \
+            output/monthly_tracker.xlsx \
+            archive
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

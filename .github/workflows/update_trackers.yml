@@ -102,6 +102,8 @@ jobs:
             data/changes.json
             output/weekly_tracker.xlsx
             output/monthly_tracker.xlsx
+            data/sneakernews_debug.txt
+            data/sneakernews_debug.html
           if-no-files-found: error
           retention-days: 14
 

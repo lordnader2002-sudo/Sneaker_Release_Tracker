@@ -118,9 +118,10 @@ jobs:
           git add \
             data/primary_releases.json \
             data/fallback_nike.json \
-            data/fallback_sneakernews.json \
+            data/fallback_footlocker.json \
             data/fallback_kicksonfire.json \
             data/fallback_thedropdate.json \
+            data/fallback_hibbett.json \
             data/final_releases.json \
             data/changes.json \
             output/weekly_tracker.xlsx \

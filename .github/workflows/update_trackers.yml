@@ -50,8 +50,9 @@ jobs:
           python fetch_release_fallback.py --days 35 --output data/fallback_nike.json
 
       - name: Run fallback fetcher (SneakerNews)
+        shell: bash
         run: |
-          python fetch_release_sneakernews.py --days 35 --output data/fallback_sneakernews.json
+          python fetch_release_sneakernews.py --days 35 --output data/fallback_sneakernews.json || echo "[]" > data/fallback_sneakernews.json
 
       - name: Run fallback fetcher (KicksOnFire)
         run: |

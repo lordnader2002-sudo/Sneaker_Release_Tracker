@@ -1,3 +1,5 @@
+# file: fetch_release_kicksonfire.py
+
 from __future__ import annotations
 
 import argparse
@@ -10,6 +12,8 @@ from typing import Any
 from bs4 import BeautifulSoup
 
 from fetch_release_multisource_common import (
+    clean_title,
+    extract_retail_price,
     infer_brand,
     normalize_text,
     parse_date_flexible,
@@ -42,26 +46,37 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
             continue
 
         month_day = f"{m.group(1)} {m.group(2)}"
-        title = normalize_text(m.group(3))
-        if not title:
+        raw_title = normalize_text(m.group(3))
+        if not raw_title:
             continue
 
         d = parse_date_flexible(month_day, default_year=default_year)
         if not d:
             continue
 
+        # Try to capture price from nearby container text
+        container = a.parent
+        blob = normalize_text(container.get_text(" ", strip=True)) if container else text
+        retail = extract_retail_price(blob)
+
+        title = clean_title(raw_title)
+
+        href = a["href"]
+        if href.startswith("/"):
+            href = "https://www.kicksonfire.com" + href
+
         rows.append(
             {
                 "releaseDate": d.isoformat(),
                 "shoeName": title,
                 "brand": infer_brand(title),
-                "retailPrice": 0,
+                "retailPrice": retail,
                 "estimatedMarketValue": None,
                 "imageUrl": None,
                 "sourcePrimary": SOURCE_NAME,
                 "sourceSecondary": SOURCE_URL,
                 "sourceUrl": SOURCE_URL,
-                "releaseUrl": a["href"],
+                "releaseUrl": href,
             }
         )
 
@@ -74,7 +89,7 @@ def dedupe(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         key = (r.get("releaseDate", ""), str(r.get("shoeName", "")).lower())
         if not key[0] or not key[1]:
             continue
-        if key not in best:
+        if key not in best or (r.get("retailPrice") or 0) > (best[key].get("retailPrice") or 0):
             best[key] = r
     return sorted(best.values(), key=lambda x: (x["releaseDate"], x.get("brand", ""), x["shoeName"].lower()))
 
@@ -84,8 +99,7 @@ def main() -> None:
     html = render_html(SOURCE_URL, timeout_ms=args.timeout_ms)
     soup = BeautifulSoup(html, "html.parser")
 
-    rows = dedupe(extract_rows(soup))
-    rows = window_filter(rows, days=args.days)
+    rows = window_filter(dedupe(extract_rows(soup)), days=args.days)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(rows, indent=2), encoding="utf-8")

@@ -1,77 +1,5 @@
 [
   {
-    "releaseDate": "2026-03-07",
-    "shoeName": "Adidas Anthony Edwards 2 Georgia Bulldogs",
-    "brand": "Adidas",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "kicksonfire",
-    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
-    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
-    "releaseUrl": "https://www.kicksonfire.com/adidas-anthony-edwards-2-georgia-bulldogs"
-  },
-  {
-    "releaseDate": "2026-03-07",
-    "shoeName": "Clot x Adidas Superstar Footwear White / Coffee",
-    "brand": "Adidas",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "kicksonfire",
-    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
-    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
-    "releaseUrl": "https://www.kicksonfire.com/clot-x-adidas-superstar-footwear-white-coffee"
-  },
-  {
-    "releaseDate": "2026-03-07",
-    "shoeName": "Air Jordan 1 High OG Pale Ivory / Psychic Blue",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "kicksonfire",
-    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
-    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
-    "releaseUrl": "https://www.kicksonfire.com/air-jordan-1-high-og-pale-ivory-psychic-blue"
-  },
-  {
-    "releaseDate": "2026-03-07",
-    "shoeName": "Air Jordan 1 Low OG Sail / Off White",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "kicksonfire",
-    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
-    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
-    "releaseUrl": "https://www.kicksonfire.com/air-jordan-1-low-og-sail-off-white"
-  },
-  {
-    "releaseDate": "2026-03-07",
-    "shoeName": "Air Jordan 4 GS Imperial Purple / Multi",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "kicksonfire",
-    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
-    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
-    "releaseUrl": "https://www.kicksonfire.com/air-jordan-4-gs-imperial-purple-multi"
-  },
-  {
-    "releaseDate": "2026-03-07",
-    "shoeName": "Air Jordan 4 OG Lakers",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "kicksonfire",
-    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
-    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
-    "releaseUrl": "https://www.kicksonfire.com/air-jordan-4-og-lakers"
-  },
-  {
     "releaseDate": "2026-03-08",
     "shoeName": "Nike Shox Ride 2 Black / Metallic Dark Grey",
     "brand": "Nike",
@@ -145,6 +73,30 @@
   },
   {
     "releaseDate": "2026-03-10",
+    "shoeName": "Balenciaga City Granny Green",
+    "brand": "Unknown",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "kicksonfire",
+    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
+    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
+    "releaseUrl": "https://www.kicksonfire.com/balenciaga-city-granny-green"
+  },
+  {
+    "releaseDate": "2026-03-10",
+    "shoeName": "Balenciaga City WMNS Black",
+    "brand": "Unknown",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "kicksonfire",
+    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
+    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
+    "releaseUrl": "https://www.kicksonfire.com/balenciaga-city-wmns-black"
+  },
+  {
+    "releaseDate": "2026-03-10",
     "shoeName": "Balenciaga City WMNS Petal Pink",
     "brand": "Unknown",
     "retailPrice": 0,
@@ -166,6 +118,18 @@
     "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
     "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
     "releaseUrl": "https://www.kicksonfire.com/balenciaga-city-wmns-silver"
+  },
+  {
+    "releaseDate": "2026-03-10",
+    "shoeName": "Balenciaga Hamptons Medium Worn-Out Navy / Taupe",
+    "brand": "Unknown",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "kicksonfire",
+    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
+    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
+    "releaseUrl": "https://www.kicksonfire.com/balenciaga-hamptons-medium-worn-out-navy-taupe"
   },
   {
     "releaseDate": "2026-03-10",
@@ -241,6 +205,18 @@
   },
   {
     "releaseDate": "2026-03-10",
+    "shoeName": "Balenciaga Speed Recycled Knit With Rhinestones WMNS Black",
+    "brand": "Unknown",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "kicksonfire",
+    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
+    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
+    "releaseUrl": "https://www.kicksonfire.com/balenciaga-speed-recycled-knit-with-rhinestones-wmns-black"
+  },
+  {
+    "releaseDate": "2026-03-10",
     "shoeName": "Balenciaga Track Piercing Black",
     "brand": "Unknown",
     "retailPrice": 0,
@@ -277,6 +253,18 @@
   },
   {
     "releaseDate": "2026-03-10",
+    "shoeName": "Balenciaga Track Trail Laces WMNS Taupe / Yellow",
+    "brand": "Unknown",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "kicksonfire",
+    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
+    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
+    "releaseUrl": "https://www.kicksonfire.com/balenciaga-track-trail-laces-wmns-taupe-yellow"
+  },
+  {
+    "releaseDate": "2026-03-10",
     "shoeName": "Balenciaga Triple S Canvas Blue",
     "brand": "Unknown",
     "retailPrice": 0,
@@ -286,5 +274,17 @@
     "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
     "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
     "releaseUrl": "https://www.kicksonfire.com/balenciaga-triple-s-canvas-blue"
+  },
+  {
+    "releaseDate": "2026-03-10",
+    "shoeName": "Balenciaga Triple S Sporty Suede WMNS Brown",
+    "brand": "Unknown",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "kicksonfire",
+    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
+    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
+    "releaseUrl": "https://www.kicksonfire.com/balenciaga-triple-s-sporty-suede-wmns-brown"
   }
 ]

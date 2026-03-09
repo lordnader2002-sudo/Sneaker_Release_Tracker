@@ -1,6 +1,6 @@
 [
   {
-    "releaseDate": "2026-03-09",
+    "releaseDate": "2026-03-10",
     "shoeName": "Air Jordan 1 Low OG Sail and Coconut Milk",
     "brand": "Air Jordan",
     "retailPrice": 0,
@@ -11,7 +11,7 @@
     "sourceUrl": "/launch/t/air-jordan-1-low-og-sail-and-coconut-milk"
   },
   {
-    "releaseDate": "2026-03-09",
+    "releaseDate": "2026-03-10",
     "shoeName": "Air Jordan 13 Retro White and University Red",
     "brand": "Air Jordan",
     "retailPrice": 0,
@@ -22,7 +22,7 @@
     "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
   },
   {
-    "releaseDate": "2026-03-09",
+    "releaseDate": "2026-03-10",
     "shoeName": "Air Jordan 4 Imperial Purple",
     "brand": "Air Jordan",
     "retailPrice": 0,
@@ -33,7 +33,7 @@
     "sourceUrl": "/launch/t/air-jordan-4-imperial-purple"
   },
   {
-    "releaseDate": "2026-03-09",
+    "releaseDate": "2026-03-10",
     "shoeName": "Air Max Ishod Iron Grey and Photon Dust",
     "brand": "Nike",
     "retailPrice": 0,
@@ -44,26 +44,15 @@
     "sourceUrl": "/launch/t/air-max-ishod-iron-grey-and-photon-dust-1"
   },
   {
-    "releaseDate": "2026-03-09",
-    "shoeName": "Nike SB Ishod Apparel Collection",
+    "releaseDate": "2026-03-10",
+    "shoeName": "Kobe 3 Low Protro Pink Quartz",
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/nike-sb-ishod-apparel-collection-static"
-  },
-  {
-    "releaseDate": "2026-03-09",
-    "shoeName": "Zoom Vomero 5 Hyper Royal",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/zoom-vomero-5-hyper-royal"
+    "sourceUrl": "/launch/t/kobe-3-low-protro-pink-quartz"
   },
   {
     "releaseDate": "2026-03-10",
@@ -75,6 +64,39 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "/launch/t/zoom-vomero-5-hyper-royal"
+  },
+  {
+    "releaseDate": "2026-03-10",
+    "shoeName": "Nike SB Ishod Apparel Collection",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/nike-sb-ishod-apparel-collection-static"
+  },
+  {
+    "releaseDate": "2026-03-10",
+    "shoeName": "Zoom Vomero 5 Hyper Royal",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/zoom-vomero-5-hyper-royal"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "Mar 13 Kobe 3 Low Protro Pink Quartz",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "/launch/t/kobe-3-low-protro-pink-quartz"
   },
   {
     "releaseDate": "2026-03-14",

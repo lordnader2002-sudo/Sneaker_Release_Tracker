@@ -1,17 +1,5 @@
 [
   {
-    "releaseDate": "2026-03-10",
-    "shoeName": "Nike LeBron 23 'LeBronto'",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "thedropdate",
-    "sourceSecondary": "https://thedropdate.com/releases",
-    "sourceUrl": "https://thedropdate.com/releases",
-    "releaseUrl": "https://thedropdate.com/sneakers/nike-lebron-23-lebronto-ih1513-602/706595"
-  },
-  {
     "releaseDate": "2026-03-11",
     "shoeName": "New Balance 1890 'Faded Black & Utility Green' From \u00a3 160",
     "brand": "New Balance",
@@ -192,6 +180,18 @@
     "releaseUrl": "https://thedropdate.com/sneakers/skims-x-nike-air-rift-velvet-brown-io7694-200/700297"
   },
   {
+    "releaseDate": "2026-03-12",
+    "shoeName": "LaFranc\u00e9 x PUMA Hoops 'Red Iridescent' From \u00a3 90",
+    "brand": "Puma",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/lafrance-x-puma-hoops-red-iridescent-314027-01/706620"
+  },
+  {
     "releaseDate": "2026-03-13",
     "shoeName": "adidas Anthony Edwards 2 'Georgia Bulldogs' From \u00a3 120",
     "brand": "Adidas",
@@ -202,6 +202,54 @@
     "sourceSecondary": "https://thedropdate.com/releases",
     "sourceUrl": "https://thedropdate.com/releases",
     "releaseUrl": "https://thedropdate.com/sneakers/adidas-anthony-edwards-2-georgia-bulldogs-jq9497/706523"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "adidas Liverpool FC '95 Jersey 'Away' From \u00a3 100",
+    "brand": "Adidas",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/adidas-liverpool-fc-95-jersey-away-ka8093/706639"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "adidas Liverpool FC '95 Sweatshirt 'Away' From \u00a3 90",
+    "brand": "Adidas",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/adidas-liverpool-fc-95-sweatshirt-away-ka8098/706640"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "adidas Liverpool FC '95 Tee 'Away' From \u00a3 50",
+    "brand": "Adidas",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/adidas-liverpool-fc-95-tee-away-ka8097/706642"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "adidas Liverpool FC '95 Track Top 'Away' From \u00a3 100",
+    "brand": "Adidas",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/adidas-liverpool-fc-95-track-top-away-ka8094/706641"
   },
   {
     "releaseDate": "2026-03-13",
@@ -337,7 +385,7 @@
   },
   {
     "releaseDate": "2026-03-18",
-    "shoeName": "One Piece x Crocs Classic Clog 'Zoro'",
+    "shoeName": "One Piece x Crocs Classic Clog 'Zoro' From \u00a3 80",
     "brand": "Crocs",
     "retailPrice": 0,
     "estimatedMarketValue": null,
@@ -396,8 +444,8 @@
     "releaseUrl": "https://thedropdate.com/sneakers/new-balance-1890-black-yellow-u18903rb/705946"
   },
   {
-    "releaseDate": "2026-04-01",
-    "shoeName": "Nike Mind 001 Pregame Mule 'Light Smoke Grey' From \u00a3 80",
+    "releaseDate": "2026-03-26",
+    "shoeName": "Fragment Design x Nike Air Liquid Max 'Black' From \u00a3 210",
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
@@ -405,7 +453,31 @@
     "sourcePrimary": "thedropdate",
     "sourceSecondary": "https://thedropdate.com/releases",
     "sourceUrl": "https://thedropdate.com/releases",
-    "releaseUrl": "https://thedropdate.com/sneakers/nike-mind-001-pregame-mule-light-smoke-grey-hq4307-003/647220"
+    "releaseUrl": "https://thedropdate.com/sneakers/fragment-design-x-nike-air-max-liquid-black-iq8601-001/706643"
+  },
+  {
+    "releaseDate": "2026-03-26",
+    "shoeName": "Nike Air Liquid Max 'Green Apple' From \u00a3 210",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/nike-air-liquid-max-green-apple-iq7634-001/706644"
+  },
+  {
+    "releaseDate": "2026-03-26",
+    "shoeName": "Patta x Nike Air Max 1 \u201987 'White & Hyper Crimson' From \u00a3 150",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/patta-x-nike-air-max-1-87-ii7055-100/635499"
   },
   {
     "releaseDate": "2026-04-01",
@@ -418,29 +490,5 @@
     "sourceSecondary": "https://thedropdate.com/releases",
     "sourceUrl": "https://thedropdate.com/releases",
     "releaseUrl": "https://thedropdate.com/sneakers/nike-mind-001-slide-black-hq4307-001/672235"
-  },
-  {
-    "releaseDate": "2026-04-01",
-    "shoeName": "Nike Mind 001 WMNS Pregame Mules 'Black' From \u00a3 80",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "thedropdate",
-    "sourceSecondary": "https://thedropdate.com/releases",
-    "sourceUrl": "https://thedropdate.com/releases",
-    "releaseUrl": "https://thedropdate.com/sneakers/nike-mind-001-pregame-mules-hq4309-001/678052"
-  },
-  {
-    "releaseDate": "2026-04-01",
-    "shoeName": "Nike Mind 001 WMNS Pregame Mules 'Light Smoke Grey' From \u00a3 80",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "thedropdate",
-    "sourceSecondary": "https://thedropdate.com/releases",
-    "sourceUrl": "https://thedropdate.com/releases",
-    "releaseUrl": "https://thedropdate.com/sneakers/nike-mind-001-pregame-mules-hq4309-003/678053"
   }
 ]

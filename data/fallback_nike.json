@@ -45,6 +45,28 @@
   },
   {
     "releaseDate": "2026-03-11",
+    "shoeName": "Air Jordan 3 x Teyana Taylor Concrete Rose",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/air-jordan-3-teyana-taylor-concrete-rose"
+  },
+  {
+    "releaseDate": "2026-03-11",
+    "shoeName": "Jordan x Teyana Taylor Apparel Collection",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
+  },
+  {
+    "releaseDate": "2026-03-11",
     "shoeName": "Kobe 3 Low Protro Pink Quartz",
     "brand": "Nike",
     "retailPrice": 0,
@@ -78,6 +100,28 @@
   },
   {
     "releaseDate": "2026-03-14",
+    "shoeName": "Mar 14 Air Jordan 3 x Teyana Taylor Concrete Rose",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "/launch/t/air-jordan-3-teyana-taylor-concrete-rose"
+  },
+  {
+    "releaseDate": "2026-03-14",
+    "shoeName": "Mar 14 Crew Socks (4 Pairs) Jordan x Teyana Taylor Everyday Plus Cushioned",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
+  },
+  {
+    "releaseDate": "2026-03-14",
     "shoeName": "Mar 14 Infant/Toddler Shoes Jordan 13 Retro",
     "brand": "Air Jordan",
     "retailPrice": 0,
@@ -89,6 +133,17 @@
   },
   {
     "releaseDate": "2026-03-14",
+    "shoeName": "Mar 14 Jumpsuit Jordan x Teyana Taylor",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
+  },
+  {
+    "releaseDate": "2026-03-14",
     "shoeName": "Mar 14 Shoes Air Jordan 13 Retro",
     "brand": "Air Jordan",
     "retailPrice": 0,
@@ -97,6 +152,17 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
+  },
+  {
+    "releaseDate": "2026-03-14",
+    "shoeName": "Mar 14 Short-Sleeve Tee Jordan x Teyana Taylor",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
   },
   {
     "releaseDate": "2026-03-18",

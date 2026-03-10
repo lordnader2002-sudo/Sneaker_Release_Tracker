@@ -1,50 +1,6 @@
 [
   {
     "releaseDate": "2026-03-10",
-    "shoeName": "Air Jordan 1 Low OG Sail and Coconut Milk",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-1-low-og-sail-and-coconut-milk"
-  },
-  {
-    "releaseDate": "2026-03-10",
-    "shoeName": "Air Jordan 13 Retro White and University Red",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
-  },
-  {
-    "releaseDate": "2026-03-10",
-    "shoeName": "Air Jordan 4 Imperial Purple",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-4-imperial-purple"
-  },
-  {
-    "releaseDate": "2026-03-10",
-    "shoeName": "Kobe 3 Low Protro Pink Quartz",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/kobe-3-low-protro-pink-quartz"
-  },
-  {
-    "releaseDate": "2026-03-10",
     "shoeName": "Mar 10 Zoom Vomero 5 Hyper Royal",
     "brand": "Nike",
     "retailPrice": 0,
@@ -55,7 +11,51 @@
     "sourceUrl": "/launch/t/zoom-vomero-5-hyper-royal"
   },
   {
-    "releaseDate": "2026-03-10",
+    "releaseDate": "2026-03-11",
+    "shoeName": "Air Jordan 1 Low OG Sail and Coconut Milk",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/air-jordan-1-low-og-sail-and-coconut-milk"
+  },
+  {
+    "releaseDate": "2026-03-11",
+    "shoeName": "Air Jordan 13 Retro White and University Red",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
+  },
+  {
+    "releaseDate": "2026-03-11",
+    "shoeName": "Air Jordan 14 Retro Black and University Blue",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/air-jordan-14-retro-black-and-university-blue"
+  },
+  {
+    "releaseDate": "2026-03-11",
+    "shoeName": "Kobe 3 Low Protro Pink Quartz",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/kobe-3-low-protro-pink-quartz"
+  },
+  {
+    "releaseDate": "2026-03-11",
     "shoeName": "Zoom Vomero 5 Hyper Royal",
     "brand": "Nike",
     "retailPrice": 0,

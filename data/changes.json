@@ -3,200 +3,580 @@
     "changeType": "NEW",
     "date": "2026-03-10",
     "brand": "Air Jordan",
-    "style": "Jordan Retro 13 BOYS TODDLER \u2022 WHITE/BLACK/TRUE RED",
+    "style": "Jordan Retro 14 BOYS PRE-SCHOOL \u2022 BLACK/WHITE/UNIVERSITY BLUE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
-    "changeType": "NEW",
+    "changeType": "REMOVED",
     "date": "2026-03-10",
-    "brand": "Nike",
-    "style": "Nike LeBron 23 'LeBronto'",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 1 Low OG Sail and Coconut Milk",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 13 Retro White and University Red",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 4 Imperial Purple",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga 3xl Extreme Lace Eggshell / Multicolor",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga 3xl Split Logo Eggshell / Red",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga 3xl Split Logo White / Navy",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Basketball Mule Silver / Black",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga City Balenciaga Grey",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga City Granny Green",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga City WMNS Black",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga City WMNS Petal Pink",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga City WMNS Silver",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Hamptons Medium Worn-Out Navy / Taupe",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Hamptons Medium Worn-Out WMNS Pink / White",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Hamptons Platform WMNS Black",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Hamptons Platform WMNS White",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Monday Ultra Black",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Monday Ultra WMNS Brown / White",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Runner WMNS Blue / Yellow",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Speed 2.0 Full Clear Sole Recycled Knit WMNS Black / Beige",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Speed Recycled Knit With Rhinestones WMNS Black",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Track Piercing Black",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Track Signature WMNS Beige / Pink",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Track Trail Laces White / Red",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Track Trail Laces WMNS Taupe / Yellow",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Triple S Canvas Blue",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Unknown",
+    "style": "Balenciaga Triple S Sporty Suede WMNS Brown",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-10",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 14 BOYS GRADE SCHOOL \u2022 BLACK/WHITE/UNIVERSITY BLUE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
     "changeType": "REMOVED",
     "date": "2026-03-10",
     "brand": "Nike",
-    "style": "Air Max Ishod Iron Grey and Photon Dust",
+    "style": "Kobe 3 Low Protro Pink Quartz",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-11",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 1 Low OG Sail and Coconut Milk",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-11",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 13 Retro White and University Red",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-11",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 14 Retro Black and University Blue",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-11",
+    "brand": "Nike",
+    "style": "Kobe 3 Low Protro Pink Quartz",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
     "changeType": "REMOVED",
-    "date": "2026-03-10",
-    "brand": "Nike",
-    "style": "Nike SB Ishod Apparel Collection",
+    "date": "2026-03-11",
+    "brand": "New Balance",
+    "style": "New Balance 1890 'Faded Black & Utility Green' From \u00a3 160",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
     "changeType": "NEW",
     "date": "2026-03-12",
-    "brand": "ASICS",
-    "style": "ASICS Gel-kayano 14 'Olive' From \u00a3 165",
+    "brand": "Converse",
+    "style": "Converse Shai 001 Pink",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
     "changeType": "NEW",
     "date": "2026-03-12",
     "brand": "New Balance",
-    "style": "CAYL x New Balance M10L 'Black Ink' From \u00a3 140",
+    "style": "New Balance 1890 Faded Black / Utility Green",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-12",
-    "brand": "New Balance",
-    "style": "CAYL x New Balance UTRNCA 'Slate Grey' From \u00a3 155",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
     "changeType": "NEW",
     "date": "2026-03-12",
     "brand": "Nike",
-    "style": "NikeSKIMS Rift Mesh 'Black' From \u00a3 145",
+    "style": "Nike Sabrina 3 Oregon Ducks",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
     "changeType": "NEW",
     "date": "2026-03-12",
     "brand": "Nike",
-    "style": "NikeSKIMS Rift Mesh 'Light Bone' From \u00a3 145",
+    "style": "Nikeskims Rift Mesh Light Bone / Light Orewood Brown",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-12",
-    "brand": "Nike",
-    "style": "NikeSKIMS Rift Mesh 'Velvet Brown' From \u00a3 145",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
     "changeType": "NEW",
     "date": "2026-03-13",
+    "brand": "Nike",
+    "style": "Chet Holmgren x Nike KD 18 hunder And Reign",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-13",
+    "brand": "Nike",
+    "style": "Chet Holmgren x Nike KD 18 Thunder & Reign",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-13",
+    "brand": "Nike",
+    "style": "Nike Kobe 3 Low Protro Mamba Magic",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-13",
+    "brand": "Reebok",
+    "style": "Reebok Angel Reese 1 Navy Halo",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-14",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 13 Chicago",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-17",
     "brand": "Adidas",
-    "style": "adidas Anthony Edwards 2 'Georgia Bulldogs' From \u00a3 120",
+    "style": "Adidas Hyperboost Edge Cloud White / Pure Ruby",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
-    "changeType": "NEW",
-    "date": "2026-03-16",
-    "brand": "Nike",
-    "style": "Jacquemus x Nike Moon Shoe SP 'Fauna Brown' From \u00a3 163",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-16",
-    "brand": "Nike",
-    "style": "Jacquemus x Nike Moon Shoe SP 'Soft Pearl' From \u00a3 163",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
-  },
-  {
-    "changeType": "NEW",
+    "changeType": "REMOVED",
     "date": "2026-03-17",
     "brand": "Adidas",
     "style": "adidas Hyperboost Edge 'White & Pure Ruby' From \u00a3 170",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-17",
-    "brand": "Air Jordan",
-    "style": "Dashawn Jordan x Nike SB Dunk Low 'Bright Spruce' From \u00a3 120",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-18",
-    "brand": "Adidas",
-    "style": "adidas Adizero Dropset Elite 'Solar Red' From \u00a3 230",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
     "changeType": "NEW",
     "date": "2026-03-18",
     "brand": "Air Jordan",
-    "style": "Air Jordan 3 'Spring Is In The Air' From \u00a3 189",
+    "style": "Air Jordan 1 Low OG Sail / Off White",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-03-27",
+    "changeType": "NEW",
+    "date": "2026-03-18",
+    "brand": "Unknown",
+    "style": "Balenciaga 3xl Lace WMNS White / Light Pink",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-18",
+    "brand": "Unknown",
+    "style": "Balenciaga Monday Ultra Brown / White",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-18",
+    "brand": "Unknown",
+    "style": "Balenciaga Monday Ultra Khaki / White",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-18",
+    "brand": "Unknown",
+    "style": "Balenciaga Monday Ultra WMNS Lilac / White",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-18",
+    "brand": "Unknown",
+    "style": "Balenciaga Runner Led Black",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-18",
+    "brand": "Unknown",
+    "style": "Balenciaga Soleless Black / White",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-18",
+    "brand": "Unknown",
+    "style": "Balenciaga Triple S Canvas Black",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-18",
     "brand": "Nike",
-    "style": "Mar 27 Baby/Toddler Shoes Nike Little Posite Pro",
+    "style": "Nikes G.t. Cut 4 Pinksicle / Vivid Pink",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-03-28",
-    "brand": "Air Jordan",
-    "style": "Air Jordan 3 'Spring Is In The Air' From \u00a3 190",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-03",
+    "changeType": "NEW",
+    "date": "2026-03-19",
     "brand": "Nike",
-    "style": "Apr 3 Basketball Shoes LeBron XXIII Elite \"Good Intentions\"",
+    "style": "Fragment x Nike Book 2",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-09T18:07:00Z"
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-19",
+    "brand": "Nike",
+    "style": "Nike G.t. Cut 1 Orange Pulse / Persian Violet",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-19",
+    "brand": "Nike",
+    "style": "Nike G.t. Future Unseen Hours",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-10T06:05:51Z"
   }
 ]

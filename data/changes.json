@@ -1,143 +1,83 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-03-10",
+    "changeType": "NEW",
+    "date": "2026-03-11",
     "brand": "Nike",
-    "style": "Mar 10 Zoom Vomero 5 Hyper Royal",
+    "style": "Nike Air Force 1 Low 'Dark Team Red' - Patent Leather Pack From \u00a3 110",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-11",
+    "brand": "Nike",
+    "style": "Nike Air Force 1 Low 'Mystic Navy' - Patent Leather Pack From \u00a3 110",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-11T18:12:15Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-11",
+    "brand": "Nike",
+    "style": "Nike Air Force 1 Low 'Topaz Gold' - Patent Leather Pack From \u00a3 110",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "REMOVED",
     "date": "2026-03-11",
-    "brand": "Air Jordan",
-    "style": "Air Jordan 1 Low OG Sail and Coconut Milk",
+    "brand": "New Balance",
+    "style": "New Balance ABZORB 2000 'Grey Matter' From \u00a3 170",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "REMOVED",
     "date": "2026-03-11",
-    "brand": "Air Jordan",
-    "style": "Air Jordan 13 Retro White and University Red",
+    "brand": "New Balance",
+    "style": "New Balance ABZORB 2000 'Ice Wine' From \u00a3 170",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-03-11",
-    "brand": "Air Jordan",
-    "style": "Air Jordan 14 Retro Black and University Blue",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-03-11",
-    "brand": "Air Jordan",
-    "style": "Air Jordan 3 x Teyana Taylor Concrete Rose",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-03-11",
-    "brand": "Air Jordan",
-    "style": "Jordan x Teyana Taylor Apparel Collection",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "REMOVED",
     "date": "2026-03-11",
     "brand": "Nike",
-    "style": "Kobe 3 Low Protro Pink Quartz",
+    "style": "Nike Vomero Premium 'Black' From \u00a3 200",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "NEW",
     "date": "2026-03-12",
     "brand": "Air Jordan",
-    "style": "Air Jordan 1 Low OG Sail and Coconut Milk",
+    "style": "Jordan Air Jordan 1 Retro Low OG MENS \u2022 SAIL/OFF WHITE/COCONUT MILK",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
-    "changeType": "NEW",
-    "date": "2026-03-12",
-    "brand": "Air Jordan",
-    "style": "Air Jordan 13 Retro White and University Red",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-12",
-    "brand": "Air Jordan",
-    "style": "Air Jordan 14 Retro Black and University Blue",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-12",
-    "brand": "Air Jordan",
-    "style": "Air Jordan 3 x Teyana Taylor Concrete Rose",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-12",
-    "brand": "Converse",
-    "style": "Converse x Anonymous Club Chuck 70",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-12",
-    "brand": "Air Jordan",
-    "style": "Jordan x Teyana Taylor Apparel Collection",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "NEW",
+    "changeType": "REMOVED",
     "date": "2026-03-12",
     "brand": "Nike",
-    "style": "Kobe 3 Low Protro Pink Quartz",
+    "style": "Nike Air Force 1 \u201907 'Cherry Blossom' From \u00a3 120",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -147,37 +87,7 @@
     "fieldChanged": "retailPrice",
     "oldValue": 399,
     "newValue": 0,
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-13",
-    "brand": "Converse",
-    "style": "Converse Kentucky Wildcats 30th Anniversary",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-13",
-    "brand": "Reebok",
-    "style": "Reebok Angel Navy Halo",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-03-13",
-    "brand": "Nike",
-    "style": "Mar 13 Kobe 3 Low Protro Pink Quartz",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -187,27 +97,7 @@
     "fieldChanged": "retailPrice",
     "oldValue": 375,
     "newValue": 0,
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-17",
-    "brand": "Converse",
-    "style": "Mar 17 Converse x Anonymous Club Chuck 70",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-03-18",
-    "brand": "Air Jordan",
-    "style": "Mar 18 Air Jordan 1 Low OG Sail and Coconut Milk",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -217,36 +107,46 @@
     "fieldChanged": "retailPrice",
     "oldValue": 329,
     "newValue": 0,
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "NEW",
-    "date": "2026-03-19",
+    "date": "2026-03-23",
     "brand": "Nike",
-    "style": "Nike GT Future Unseen Hours",
+    "style": "Nike Air Force 1 Low 'Team USA' From \u00a3 110",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-23",
+    "brand": "Nike",
+    "style": "Nike Air Max 95 SE 'England'",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-11T18:12:15Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-23",
+    "brand": "Nike",
+    "style": "Nike Air Max Plus 'French Football Federation' From \u00a3 185",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-11T18:12:15Z"
   },
   {
     "changeType": "REMOVED",
-    "date": "2026-03-19",
+    "date": "2026-04-01",
     "brand": "Nike",
-    "style": "Nike G.t. Cut 1 Orange Pulse / Persian Violet",
+    "style": "Nike Mind 001 Slide 'Black' From \u00a3 80",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-03-19",
-    "brand": "Nike",
-    "style": "Nike G.t. Future Unseen Hours",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-11T06:09:39Z"
+    "detectedAt": "2026-03-11T18:12:15Z"
   }
 ]

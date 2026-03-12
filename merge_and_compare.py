@@ -12,8 +12,9 @@ from pathlib import Path
 from typing import Any
 
 
-HIGH_BRANDS = {"air jordan", "nike", "yeezy"}
+HIGH_BRANDS = {"air jordan", "nike", "yeezy", "new balance", "adidas"}
 COLLAB_KEYWORDS = {
+    # Celebrity / Artist collabs
     "travis scott",
     "off-white",
     "j balvin",
@@ -36,9 +37,90 @@ COLLAB_KEYWORDS = {
     "stussy",
     "patta",
     "futura",
+    # Additional high-profile collabs
+    "virgil abloh",
+    "drake",
+    "nocta",
+    "kendrick lamar",
+    "kanye",
+    "pharrell",
+    "pigalle",
+    "pigalle",
+    "joe freshgoods",
+    "new jop",
+    "social status",
+    "mache",
+    "atmos",
+    "cactus plant flea market",
+    "cpfm",
+    "sean wotherspoon",
+    "ben and jerry",
+    "ben & jerry",
+    "grateful dead",
+    "wu-tang",
+    "wu tang",
+    "slam jam",
+    "end clothing",
+    "size?",
+    "offspring",
+    "sneakersnstuff",
+    "kicks lab",
+    "mita",
+    "whiz limited",
+    "nonnative",
+    "mastermind",
+    "number nine",
+    "undercover",
+    "comme des garcons",
+    "comme des garçons",
+    "cdg",
+    "bape",
+    "neighborhood",
+    "medicom toy",
+    "beams",
+    "palace",
+    "the north face",
+    "tnf",
+    "cactus jack",
+    "dj khaled",
+    "michael b jordan",
+    "serena williams",
+    "naomi osaka",
+    "billie eilish",
+    "aleali may",
+    "ambush",
+    "feng chen wang",
+    "matthew m williams",
+    "mmw",
+    "kim jones",
+    "heron preston",
+    "samuel ross",
+    "a-cold-wall",
+    "acw",
+    "pigalle",
+    "nigo",
+    "human made",
+    "brain dead",
+    "awake ny",
+    "aime leon dore",
+    "ald",
+    "new balance x",
 }
-LIMITED_KEYWORDS = {"limited", "exclusive", "special box", "qs", "pe", "promo"}
-HOT_MODELS = {"jordan 1", "jordan 3", "jordan 4", "jordan 11", "dunk", "sb dunk", "air max 95", "kobe"}
+LIMITED_KEYWORDS = {"limited", "exclusive", "special box", "qs", "pe", "promo", "friends and family", "sample", "lottery", "raffle", "invitation only"}
+HOT_MODELS = {
+    "jordan 1", "jordan 3", "jordan 4", "jordan 5", "jordan 6", "jordan 11", "jordan 12",
+    "dunk", "sb dunk",
+    "air max 95", "air max 97", "air max 1", "air max 90",
+    "kobe", "kobe 6", "kobe 8",
+    "lebron", "lebron 21",
+    "air force 1",
+    "yeezy boost", "yeezy slide", "yeezy foam",
+    "new balance 550", "new balance 990", "new balance 2002",
+    "samba", "gazelle", "campus",
+    "onitsuka tiger",
+    "gel-lyte", "gel-kayano",
+    "chuck taylor", "one star",
+}
 
 MONTH_WORDS = (
     "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec",
@@ -46,13 +128,14 @@ MONTH_WORDS = (
 )
 
 STOPWORDS = {
-    "the", "and", "with", "of", "for", "to", "in", "on",
-    "mens", "men", "women", "woman", "wmns",
-    "gs", "ps", "td", "infant", "toddler", "kids", "youth",
+    "the", "and", "with", "of", "for", "to", "in", "on", "a", "an",
+    "mens", "men", "women", "woman", "wmns", "unisex",
+    "gs", "ps", "td", "infant", "toddler", "kids", "youth", "baby",
     "grade", "school", "boys", "girls",
-    "shoe", "shoes", "sneaker", "sneakers",
-    "coming", "soon", "release", "calendar", "launch",
-    "from",
+    "shoe", "shoes", "sneaker", "sneakers", "boot", "boots",
+    "coming", "soon", "release", "calendar", "launch", "drop",
+    "from", "by", "via", "at",
+    "2025", "2026", "2027",
 }
 
 ROMAN_MAP = {
@@ -121,43 +204,94 @@ def normalize_text(value: Any) -> str:
     return " ".join(value.split()).strip()
 
 
+_BRAND_MAPPING: dict[str, str] = {
+    "jordan": "Air Jordan",
+    "air jordan": "Air Jordan",
+    "nike": "Nike",
+    "adidas": "Adidas",
+    "new balance": "New Balance",
+    "nb": "New Balance",
+    "asics": "ASICS",
+    "crocs": "Crocs",
+    "converse": "Converse",
+    "puma": "Puma",
+    "reebok": "Reebok",
+    "vans": "Vans",
+    "saucony": "Saucony",
+    "hoka": "Hoka",
+    "on": "On Running",
+    "on running": "On Running",
+    "brooks": "Brooks",
+    "mizuno": "Mizuno",
+    "salomon": "Salomon",
+    "new era": "New Era",
+    "timberland": "Timberland",
+    "ugg": "UGG",
+    "under armour": "Under Armour",
+    "ua": "Under Armour",
+    "skechers": "Skechers",
+    "fila": "Fila",
+    "merrell": "Merrell",
+    "keen": "Keen",
+    "dc shoes": "DC Shoes",
+    "dc": "DC Shoes",
+    "etnies": "Etnies",
+    "lacoste": "Lacoste",
+    "diadora": "Diadora",
+    "le coq sportif": "Le Coq Sportif",
+    "karhu": "Karhu",
+    "onitsuka tiger": "Onitsuka Tiger",
+}
+
+
 def normalize_brand(value: Any, shoe_name: str) -> str:
     brand = normalize_text(value)
     if brand:
         lowered = brand.lower()
-        mapping = {
-            "jordan": "Air Jordan",
-            "air jordan": "Air Jordan",
-            "nike": "Nike",
-            "adidas": "Adidas",
-            "new balance": "New Balance",
-            "asics": "ASICS",
-            "crocs": "Crocs",
-            "converse": "Converse",
-            "puma": "Puma",
-            "reebok": "Reebok",
-        }
-        return mapping.get(lowered, brand.title())
+        mapped = _BRAND_MAPPING.get(lowered)
+        if mapped:
+            return mapped
+        # Partial match for compound entries
+        for key, canonical in _BRAND_MAPPING.items():
+            if key in lowered:
+                return canonical
+        return brand.title()
 
     lowered = shoe_name.lower()
     if "jordan" in lowered:
         return "Air Jordan"
-    if "nike" in lowered or "dunk" in lowered or "air max" in lowered or "air force" in lowered:
+    if "nike" in lowered or "dunk" in lowered or "air max" in lowered or "air force" in lowered or "pegasus" in lowered or "vomero" in lowered or "shox" in lowered:
         return "Nike"
-    if "adidas" in lowered or "samba" in lowered or "gazelle" in lowered or "yeezy" in lowered:
+    if "adidas" in lowered or "samba" in lowered or "gazelle" in lowered or "yeezy" in lowered or "superstar" in lowered or "campus" in lowered:
         return "Adidas"
-    if "new balance" in lowered:
+    if "new balance" in lowered or re.search(r"\bnb\s*\d{3,4}\b", lowered):
         return "New Balance"
-    if "asics" in lowered:
+    if "asics" in lowered or "gel-" in lowered:
         return "ASICS"
+    if "onitsuka" in lowered:
+        return "Onitsuka Tiger"
     if "puma" in lowered:
         return "Puma"
     if "reebok" in lowered:
         return "Reebok"
     if "crocs" in lowered:
         return "Crocs"
-    if "converse" in lowered:
+    if "converse" in lowered or "chuck taylor" in lowered or "one star" in lowered:
         return "Converse"
+    if "vans" in lowered or "old skool" in lowered or "sk8-hi" in lowered:
+        return "Vans"
+    if "saucony" in lowered:
+        return "Saucony"
+    if "hoka" in lowered or "clifton" in lowered or "bondi" in lowered:
+        return "Hoka"
+    if "salomon" in lowered or "xt-6" in lowered or "speedcross" in lowered:
+        return "Salomon"
+    if "timberland" in lowered:
+        return "Timberland"
+    if "under armour" in lowered or "curry" in lowered:
+        return "Under Armour"
+    if "lacoste" in lowered:
+        return "Lacoste"
     return "Unknown"
 
 
@@ -242,22 +376,33 @@ def similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
 
+MID_BRANDS = {"vans", "converse", "puma", "reebok", "saucony", "new balance", "hoka", "salomon", "onitsuka tiger", "asics"}
+
 def score_hype(brand: str, style: str, retail: int, resale: int | None) -> tuple[int, str]:
     score = 0
-    lowered_style = style.lower()
+    lowered_style = (style + " " + brand).lower()
     lowered_brand = brand.lower()
 
-    score += 12 if lowered_brand in HIGH_BRANDS else 4
+    if lowered_brand in HIGH_BRANDS:
+        score += 12
+    elif lowered_brand in MID_BRANDS:
+        score += 7
+    else:
+        score += 3
 
     if any(token in lowered_style for token in COLLAB_KEYWORDS):
-        score += 18
+        score += 20
     if any(token in lowered_style for token in LIMITED_KEYWORDS):
         score += 10
     if any(token in lowered_style for token in HOT_MODELS):
-        score += 10
+        score += 12
+
+    # Lifestyle/heritage bonus
+    if any(x in lowered_style for x in ("retro", "og", "original", "vintage", "heritage")):
+        score += 4
 
     if retail >= 250:
-        score += 2
+        score += 3
     elif 0 < retail <= 110:
         score += 3
 
@@ -265,23 +410,27 @@ def score_hype(brand: str, style: str, retail: int, resale: int | None) -> tuple
         ratio = resale / retail
         spread = resale - retail
 
-        if ratio >= 2.0:
-            score += 30
+        if ratio >= 2.5:
+            score += 35
+        elif ratio >= 2.0:
+            score += 28
         elif ratio >= 1.5:
-            score += 20
+            score += 18
         elif ratio >= 1.2:
-            score += 10
+            score += 8
 
-        if spread >= 150:
-            score += 12
+        if spread >= 200:
+            score += 15
+        elif spread >= 150:
+            score += 10
         elif spread >= 75:
-            score += 7
+            score += 6
         elif spread >= 30:
-            score += 3
+            score += 2
 
     if score >= 42:
         return score, "HIGH"
-    if score >= 22:
+    if score >= 20:
         return score, "MED"
     return score, "LOW"
 
@@ -298,12 +447,15 @@ def score_confidence(record: dict[str, Any]) -> tuple[int, str]:
         score += 10
     if record.get("releaseUrl"):
         score += 10
-    if record.get("matchedSources", 0) >= 2:
-        score += 20
+    matched = record.get("matchedSources", 0)
+    if matched >= 3:
+        score += 28
+    elif matched >= 2:
+        score += 18
 
     if score >= 60:
         return score, "HIGH"
-    if score >= 35:
+    if score >= 32:
         return score, "MED"
     return score, "LOW"
 
@@ -316,24 +468,32 @@ def derive_priority(hype: str, confidence: str) -> str:
     return "Low Priority"
 
 
-def derive_tags(style: str) -> list[str]:
-    lowered = style.lower()
+def derive_tags(style: str, brand: str = "") -> list[str]:
+    lowered = (style + " " + brand).lower()
     tags: list[str] = []
 
     if any(token in lowered for token in COLLAB_KEYWORDS):
         tags.append("collab")
     if any(token in lowered for token in HOT_MODELS):
         tags.append("hot-model")
-    if "retro" in lowered:
+    if any(x in lowered for x in ("retro", "og", "original")):
         tags.append("retro")
-    if any(token in lowered for token in ("running", "pegasus", "vomero", "air max")):
+    if any(token in lowered for token in ("running", "pegasus", "vomero", "air max", "zoom", "react", "infinity run", "clifton", "bondi", "speedcross")):
         tags.append("running")
-    if any(token in lowered for token in ("lebron", "kobe", "kd ", "sabrina", "basketball")):
+    if any(token in lowered for token in ("lebron", "kobe", "kd ", "sabrina", "basketball", "kyrie", "curry", "boozer")):
         tags.append("basketball")
-    if any(token in lowered for token in ("women", "wmns")):
+    if any(token in lowered for token in ("sb dunk", "skate", "pro sb", "etnies", "dc shoe", "janoski")):
+        tags.append("skateboarding")
+    if any(token in lowered for token in ("trail", "speedcross", "xt-6", "xt6", "wildcat", "speedgoat", "terrex", "salomon")):
+        tags.append("trail")
+    if any(token in lowered for token in ("samba", "gazelle", "campus", "superstar", "stan smith", "chuck", "one star", "old skool", "sk8")):
+        tags.append("lifestyle")
+    if any(token in lowered for token in ("women", "wmns", "woman")):
         tags.append("women")
     if any(token in lowered for token in LIMITED_KEYWORDS):
         tags.append("exclusive")
+    if any(token in lowered for token in ("kids", "gs", "grade school", "infant", "toddler", "youth", "junior", "boys", "girls")):
+        tags.append("kids")
 
     return tags
 
@@ -461,7 +621,7 @@ def merge_records(
         row["confidenceScore"] = confidence_score
         row["confidence"] = confidence
         row["priority"] = derive_priority(hype, confidence)
-        row["tags"] = derive_tags(row["shoeName"])
+        row["tags"] = derive_tags(row["shoeName"], row.get("brand", ""))
 
         row["recordHash"] = hashlib.sha256(
             json.dumps(

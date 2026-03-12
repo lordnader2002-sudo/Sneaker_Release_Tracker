@@ -152,7 +152,7 @@ def autosize(ws: Any) -> None:
             widths[cell.column] = max(widths.get(cell.column, 0), size)
 
     for col_idx, width in widths.items():
-        bonus = 6 if col_idx in (7, 8, 12, 13, 14, 15) else 2
+        bonus = 6 if col_idx in (10, 11, 14, 15) else 2
         ws.column_dimensions[get_column_letter(col_idx)].width = min(width + bonus, 70)
 
 
@@ -192,26 +192,28 @@ def apply_theme(ws: Any, title: str, end_col: int) -> None:
             cell.border = border
             cell.alignment = Alignment(horizontal="center", vertical="center")
 
-        # Left-align long-text columns: Style, Tags, Release URL, Image URL, Notes
-        for col in (7, 8, 12, 13, 14):
+        # Left-align long-text columns: Style (col 10), Tags (col 11), Release URL (col 14), Notes (col 15)
+        for col in (10, 11, 14, 15):
             ws.cell(row=row, column=col).alignment = Alignment(horizontal="left", vertical="center")
 
-        hype_cell = ws.cell(row=row, column=3)
-        confidence_cell = ws.cell(row=row, column=4)
-        priority_cell = ws.cell(row=row, column=5)
+        # Col 4 = Hype label, Col 5 = Hype Score, Col 6 = Confidence label, Col 7 = Conf Score, Col 8 = Priority
+        hype_cell = ws.cell(row=row, column=4)
+        hype_score_cell = ws.cell(row=row, column=5)
+        confidence_cell = ws.cell(row=row, column=6)
+        conf_score_cell = ws.cell(row=row, column=7)
+        priority_cell = ws.cell(row=row, column=8)
 
         hype_value = str(hype_cell.value or "").upper()
         confidence_value = str(confidence_cell.value or "").upper()
         priority_value = str(priority_cell.value or "").upper()
 
-        hype_cell.font = Font(
-            color="FF4D4D" if hype_value == "HIGH" else ("FFC000" if hype_value == "MED" else "00E676"),
-            bold=True,
-        )
-        confidence_cell.font = Font(
-            color="7CFCFF" if confidence_value == "HIGH" else ("FFD966" if confidence_value == "MED" else "FFFFFF"),
-            bold=True,
-        )
+        hype_color = "FF4D4D" if hype_value == "HIGH" else ("FFC000" if hype_value == "MED" else "00E676")
+        conf_color = "7CFCFF" if confidence_value == "HIGH" else ("FFD966" if confidence_value == "MED" else "FFFFFF")
+
+        hype_cell.font = Font(color=hype_color, bold=True)
+        hype_score_cell.font = Font(color=hype_color)
+        confidence_cell.font = Font(color=conf_color, bold=True)
+        conf_score_cell.font = Font(color=conf_color)
         priority_cell.font = Font(
             color="FF8080" if priority_value == "MUST WATCH" else ("FFE699" if priority_value == "WATCH" else "FFFFFF"),
             bold=True,
@@ -227,19 +229,19 @@ def write_tracker_sheet(ws: Any, title: str, rows: list[ReleaseRow]) -> None:
     headers = [
         "Date",
         "Retail",
+        "Market Value",
         "Hype",
+        "Hype Score",
         "Confidence",
+        "Conf. Score",
         "Priority",
         "Brand",
         "Style",
         "Tags",
         "Source Primary",
-        "Source Secondary",
         "Source Count",
         "Release URL",
-        "Image URL",
         "Notes",
-        "Market Value",
     ]
     for idx, header in enumerate(headers, start=1):
         ws.cell(row=3, column=idx, value=header)
@@ -248,26 +250,26 @@ def write_tracker_sheet(ws: Any, title: str, rows: list[ReleaseRow]) -> None:
         values = [
             row.release_date,
             row.retail if row.retail else "",
+            row.estimated_market_value if row.estimated_market_value is not None else "",
             row.hype,
+            row.hype_score,
             row.confidence,
+            row.confidence_score,
             row.priority,
             row.brand,
             row.style,
             row.tags,
             row.source_primary,
-            row.source_secondary,
             row.source_count,
             row.release_url,
-            row.image_url,
             row.notes,
-            row.estimated_market_value if row.estimated_market_value is not None else "",
         ]
         for col_idx, value in enumerate(values, start=1):
             ws.cell(row=row_idx, column=col_idx, value=value)
 
         ws.cell(row=row_idx, column=1).number_format = "m/d/yyyy"
         ws.cell(row=row_idx, column=2).number_format = '"$"#,##0'
-        ws.cell(row=row_idx, column=15).number_format = '"$"#,##0'
+        ws.cell(row=row_idx, column=3).number_format = '"$"#,##0'
 
     if not rows:
         ws.cell(row=4, column=1, value="No releases found for this window.")

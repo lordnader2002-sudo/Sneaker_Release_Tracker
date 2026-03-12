@@ -3,56 +3,928 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sneaker Release Trackers</title>
+    <title>Sneaker Release Tracker</title>
     <style>
-      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #0b1c3a; color: #fff; }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 48px 20px; }
-      .card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
-      h1 { margin: 0 0 8px; font-size: 32px; }
-      p { margin: 0 0 16px; line-height: 1.5; color: rgba(255,255,255,0.85); }
-      .buttons { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 18px; }
-      a.btn { display: block; text-decoration: none; text-align: center; padding: 14px 16px; border-radius: 12px; font-weight: 700; background: #1f5bd6; color: #fff; }
-      a.btn:hover { filter: brightness(1.08); }
-      .secondary { background: rgba(255,255,255,0.12); }
-      .small { margin-top: 18px; font-size: 14px; color: rgba(255,255,255,0.7); }
-      .stamp { margin-top: 10px; font-size: 14px; color: rgba(255,255,255,0.75); }
-      code { background: rgba(255,255,255,0.12); padding: 2px 6px; border-radius: 6px; }
+      /* ── Reset & Base ── */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --bg:        #060f1e;
+        --surface:   #0b1c3a;
+        --surface2:  #102248;
+        --surface3:  #162d5e;
+        --accent:    #1f5bd6;
+        --accent2:   #3b82f6;
+        --border:    rgba(255,255,255,0.10);
+        --border2:   rgba(255,255,255,0.18);
+        --text:      #e8edf8;
+        --text-dim:  rgba(232,237,248,0.60);
+        --text-mute: rgba(232,237,248,0.38);
+        --red:       #ff4d4d;
+        --amber:     #ffc107;
+        --green:     #00e676;
+        --cyan:      #00d8ff;
+        --purple:    #b96cff;
+        --radius:    12px;
+        --radius-sm: 7px;
+        --shadow:    0 4px 24px rgba(0,0,0,0.5);
+      }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* ── Layout ── */
+      .page { max-width: 1420px; margin: 0 auto; padding: 0 16px 48px; }
+
+      /* ── Header ── */
+      .header {
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        position: sticky; top: 0; z-index: 100;
+        backdrop-filter: blur(10px);
+      }
+      .header-inner {
+        max-width: 1420px; margin: 0 auto;
+        padding: 14px 16px;
+        display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+      }
+      .logo {
+        display: flex; align-items: center; gap: 10px;
+        text-decoration: none; color: var(--text);
+      }
+      .logo-icon {
+        width: 36px; height: 36px;
+        background: var(--accent);
+        border-radius: 9px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 20px; font-weight: 900; color: #fff;
+        flex-shrink: 0;
+      }
+      .logo-text { font-size: 18px; font-weight: 700; }
+      .logo-sub { font-size: 12px; color: var(--text-dim); }
+      .header-spacer { flex: 1; }
+      .header-meta {
+        font-size: 12px; color: var(--text-dim);
+        display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+      }
+      .header-badge {
+        padding: 3px 10px; border-radius: 99px; font-size: 11px; font-weight: 700;
+        background: var(--surface3); color: var(--text);
+      }
+      .dl-links { display: flex; gap: 8px; }
+      .dl-btn {
+        padding: 7px 14px; border-radius: var(--radius-sm);
+        font-size: 12px; font-weight: 600;
+        text-decoration: none; color: #fff;
+        background: var(--accent); border: none; cursor: pointer;
+        transition: filter .15s;
+        white-space: nowrap;
+      }
+      .dl-btn:hover { filter: brightness(1.15); }
+      .dl-btn.ghost {
+        background: transparent; border: 1px solid var(--border2);
+        color: var(--text-dim);
+      }
+      .dl-btn.ghost:hover { color: var(--text); border-color: var(--accent2); }
+
+      /* ── Stats Bar ── */
+      .stats-bar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px; padding: 16px 0 8px;
+      }
+      .stat-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px 16px;
+        text-align: center;
+        transition: border-color .2s;
+      }
+      .stat-card:hover { border-color: var(--border2); }
+      .stat-num {
+        font-size: 26px; font-weight: 800;
+        letter-spacing: -1px; line-height: 1;
+        color: var(--text);
+      }
+      .stat-label { font-size: 11px; color: var(--text-dim); margin-top: 4px; text-transform: uppercase; letter-spacing: .5px; }
+      .stat-card.s-red   .stat-num { color: var(--red); }
+      .stat-card.s-amber .stat-num { color: var(--amber); }
+      .stat-card.s-green .stat-num { color: var(--green); }
+      .stat-card.s-cyan  .stat-num { color: var(--cyan); }
+      .stat-card.s-purple .stat-num { color: var(--purple); }
+
+      /* ── Filter Panel ── */
+      .filter-panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px; margin-bottom: 14px;
+      }
+      .filter-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+      .filter-row + .filter-row { margin-top: 10px; }
+      .filter-group { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 140px; }
+      .filter-group.grow { flex: 2; min-width: 220px; }
+      .filter-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .5px; }
+      .filter-input {
+        background: var(--surface2); border: 1px solid var(--border);
+        border-radius: var(--radius-sm); color: var(--text);
+        padding: 7px 10px; font-size: 13px; width: 100%;
+        outline: none; transition: border-color .15s;
+      }
+      .filter-input:focus { border-color: var(--accent2); }
+      .filter-input::placeholder { color: var(--text-mute); }
+      select.filter-input { cursor: pointer; }
+      option { background: var(--surface2); }
+      .pill-group { display: flex; gap: 5px; flex-wrap: wrap; }
+      .pill {
+        padding: 5px 12px; border-radius: 99px; font-size: 12px; font-weight: 600;
+        border: 1px solid var(--border); background: transparent; color: var(--text-dim);
+        cursor: pointer; transition: all .15s; white-space: nowrap;
+      }
+      .pill:hover { color: var(--text); border-color: var(--border2); }
+      .pill.active { border-color: var(--accent); background: var(--accent); color: #fff; }
+      .pill.p-red.active    { background: var(--red);    border-color: var(--red);    color: #000; }
+      .pill.p-amber.active  { background: var(--amber);  border-color: var(--amber);  color: #000; }
+      .pill.p-green.active  { background: var(--green);  border-color: var(--green);  color: #000; }
+      .pill.p-cyan.active   { background: var(--cyan);   border-color: var(--cyan);   color: #000; }
+
+      .view-toggle { display: flex; gap: 5px; }
+      .view-btn {
+        padding: 6px 13px; border-radius: var(--radius-sm); font-size: 12px; font-weight: 600;
+        border: 1px solid var(--border); background: transparent; color: var(--text-dim);
+        cursor: pointer; transition: all .15s;
+      }
+      .view-btn:hover { color: var(--text); }
+      .view-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+      .sort-btn {
+        padding: 5px 11px; border-radius: var(--radius-sm); font-size: 12px; font-weight: 600;
+        border: 1px solid var(--border); background: transparent; color: var(--text-dim);
+        cursor: pointer; transition: all .15s; white-space: nowrap;
+      }
+      .sort-btn:hover { color: var(--text); }
+      .sort-btn.active { border-color: var(--accent2); color: var(--accent2); }
+
+      .filter-reset {
+        padding: 7px 14px; border-radius: var(--radius-sm);
+        font-size: 12px; font-weight: 600;
+        border: 1px solid var(--border); background: transparent;
+        color: var(--text-dim); cursor: pointer;
+        transition: all .15s;
+      }
+      .filter-reset:hover { color: var(--red); border-color: var(--red); }
+
+      /* ── Results Header ── */
+      .results-header {
+        display: flex; align-items: center; gap: 12px;
+        padding: 8px 0 12px; flex-wrap: wrap;
+      }
+      .results-count { font-size: 13px; color: var(--text-dim); }
+      .results-count strong { color: var(--text); }
+
+      /* ── Cards Grid ── */
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        gap: 12px;
+      }
+      .release-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        transition: border-color .2s, transform .15s, box-shadow .15s;
+        display: flex; flex-direction: column;
+        position: relative;
+      }
+      .release-card:hover {
+        border-color: var(--border2);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+      }
+
+      /* Priority accent line */
+      .release-card::before {
+        content: '';
+        position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      }
+      .release-card.pri-mustwatch::before { background: linear-gradient(90deg, var(--red), #ff8a00); }
+      .release-card.pri-watch::before { background: linear-gradient(90deg, var(--amber), #ff6d00); }
+      .release-card.pri-low::before { background: var(--surface3); }
+
+      .card-img {
+        width: 100%; aspect-ratio: 16/9; object-fit: cover;
+        background: var(--surface2);
+        display: flex; align-items: center; justify-content: center;
+        color: var(--text-mute); font-size: 36px;
+        border-bottom: 1px solid var(--border);
+      }
+      .card-img img { width: 100%; height: 100%; object-fit: cover; }
+      .card-img.no-img { padding: 24px; }
+
+      .card-body { padding: 14px 14px 10px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+      .card-brand { font-size: 11px; font-weight: 700; color: var(--text-dim); text-transform: uppercase; letter-spacing: .6px; }
+      .card-name { font-size: 14px; font-weight: 600; line-height: 1.35; color: var(--text); }
+      .card-date { font-size: 12px; color: var(--cyan); font-weight: 600; }
+      .card-price { font-size: 13px; font-weight: 700; color: var(--text); }
+      .card-price .resale { font-size: 11px; color: var(--text-dim); font-weight: 400; }
+
+      .card-badges { display: flex; gap: 5px; flex-wrap: wrap; }
+      .badge {
+        padding: 2px 8px; border-radius: 99px; font-size: 10px; font-weight: 700;
+        text-transform: uppercase; letter-spacing: .5px;
+      }
+      .badge-hype-HIGH    { background: rgba(255,77,77,.18);   color: var(--red);    border: 1px solid rgba(255,77,77,.35); }
+      .badge-hype-MED     { background: rgba(255,193,7,.15);   color: var(--amber);  border: 1px solid rgba(255,193,7,.35); }
+      .badge-hype-LOW     { background: rgba(0,230,118,.10);   color: var(--green);  border: 1px solid rgba(0,230,118,.25); }
+      .badge-conf-HIGH    { background: rgba(0,216,255,.12);   color: var(--cyan);   border: 1px solid rgba(0,216,255,.30); }
+      .badge-conf-MED     { background: rgba(255,193,7,.12);   color: #ffd966;       border: 1px solid rgba(255,193,7,.25); }
+      .badge-conf-LOW     { background: rgba(255,255,255,.06); color: var(--text-dim); border: 1px solid var(--border); }
+      .badge-pri-must     { background: rgba(255,77,77,.18);   color: var(--red);    border: 1px solid rgba(255,77,77,.35); }
+      .badge-pri-watch    { background: rgba(255,193,7,.15);   color: var(--amber);  border: 1px solid rgba(255,193,7,.35); }
+      .badge-pri-low      { background: rgba(255,255,255,.06); color: var(--text-mute); border: 1px solid var(--border); }
+
+      .card-tags { display: flex; gap: 4px; flex-wrap: wrap; }
+      .tag {
+        padding: 1px 7px; border-radius: 99px; font-size: 10px; font-weight: 600;
+        background: var(--surface3); color: var(--text-dim);
+      }
+      .tag.t-collab    { background: rgba(185,108,255,.18); color: var(--purple); }
+      .tag.t-hot-model { background: rgba(255,77,77,.12);   color: #ff7b7b; }
+      .tag.t-retro     { background: rgba(0,216,255,.10);   color: var(--cyan); }
+
+      .card-footer {
+        padding: 8px 14px 12px;
+        display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+        border-top: 1px solid var(--border);
+        margin-top: auto;
+      }
+      .card-link {
+        padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;
+        text-decoration: none; color: var(--accent2);
+        border: 1px solid rgba(59,130,246,.35);
+        background: rgba(59,130,246,.08);
+        transition: all .15s;
+      }
+      .card-link:hover { background: rgba(59,130,246,.2); }
+      .card-meta { font-size: 10px; color: var(--text-mute); flex: 1; text-align: right; }
+
+      /* ── Table View ── */
+      .table-wrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--border); }
+      table {
+        width: 100%; border-collapse: collapse;
+        font-size: 13px;
+        min-width: 860px;
+      }
+      thead th {
+        background: var(--surface2);
+        padding: 10px 12px; text-align: left;
+        font-size: 11px; font-weight: 700;
+        text-transform: uppercase; letter-spacing: .5px;
+        color: var(--text-dim); white-space: nowrap;
+        cursor: pointer; user-select: none;
+        border-bottom: 1px solid var(--border);
+        position: sticky; top: 0;
+        transition: color .15s;
+      }
+      thead th:hover { color: var(--text); }
+      thead th.sort-asc::after  { content: " ▲"; font-size: 9px; color: var(--accent2); }
+      thead th.sort-desc::after { content: " ▼"; font-size: 9px; color: var(--accent2); }
+      tbody tr {
+        border-bottom: 1px solid var(--border);
+        transition: background .1s;
+      }
+      tbody tr:hover { background: var(--surface2); }
+      tbody tr:last-child { border-bottom: none; }
+      tbody td { padding: 9px 12px; vertical-align: middle; }
+      td.td-style { max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      td.td-date  { white-space: nowrap; color: var(--cyan); font-weight: 600; font-size: 12px; }
+      td.td-brand { white-space: nowrap; font-weight: 600; font-size: 12px; }
+      td.td-price { white-space: nowrap; font-weight: 700; text-align: right; }
+      td.td-num   { text-align: right; color: var(--text-dim); }
+      td.td-link a { color: var(--accent2); text-decoration: none; font-size: 11px; }
+      td.td-link a:hover { text-decoration: underline; }
+
+      /* ── Changes Panel ── */
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-top: 16px;
+        overflow: hidden;
+      }
+      .panel-header {
+        padding: 12px 16px;
+        display: flex; align-items: center; gap: 10px;
+        cursor: pointer; user-select: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color .2s;
+      }
+      .panel-header:hover { border-bottom-color: var(--border); }
+      .panel-title { font-size: 14px; font-weight: 700; }
+      .panel-badge {
+        padding: 1px 8px; border-radius: 99px; font-size: 11px; font-weight: 700;
+        background: var(--surface3); color: var(--text-dim);
+      }
+      .panel-chevron { margin-left: auto; color: var(--text-dim); transition: transform .2s; }
+      .panel.open .panel-chevron { transform: rotate(180deg); }
+      .panel.open .panel-header { border-bottom-color: var(--border); }
+      .panel-body { display: none; max-height: 380px; overflow-y: auto; }
+      .panel.open .panel-body { display: block; }
+
+      .change-item {
+        display: flex; align-items: flex-start; gap: 10px;
+        padding: 10px 16px; border-bottom: 1px solid var(--border);
+        font-size: 12px;
+      }
+      .change-item:last-child { border-bottom: none; }
+      .change-type {
+        padding: 2px 8px; border-radius: 99px; font-size: 10px; font-weight: 700;
+        white-space: nowrap; flex-shrink: 0;
+      }
+      .ct-NEW     { background: rgba(0,230,118,.15); color: var(--green); border: 1px solid rgba(0,230,118,.3); }
+      .ct-REMOVED { background: rgba(255,77,77,.13);  color: var(--red);   border: 1px solid rgba(255,77,77,.3); }
+      .ct-change  { background: rgba(255,193,7,.13);  color: var(--amber); border: 1px solid rgba(255,193,7,.3); }
+      .change-name { flex: 1; color: var(--text); }
+      .change-name span { color: var(--text-dim); }
+      .change-date { color: var(--text-mute); white-space: nowrap; }
+
+      /* ── Loading / Empty ── */
+      .loading, .empty-state {
+        text-align: center; padding: 64px 24px; color: var(--text-dim);
+      }
+      .loading-spinner {
+        width: 40px; height: 40px; border-radius: 50%;
+        border: 3px solid var(--border2);
+        border-top-color: var(--accent2);
+        animation: spin .8s linear infinite;
+        margin: 0 auto 16px;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+
+      /* ── Pagination ── */
+      .pagination {
+        display: flex; justify-content: center; align-items: center;
+        gap: 8px; padding: 16px 0;
+      }
+      .page-btn {
+        padding: 6px 12px; border-radius: var(--radius-sm);
+        border: 1px solid var(--border); background: transparent;
+        color: var(--text-dim); cursor: pointer; font-size: 12px;
+        font-weight: 600; transition: all .15s;
+      }
+      .page-btn:hover { color: var(--text); }
+      .page-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+      .page-btn:disabled { opacity: 0.3; cursor: default; }
+      .page-info { font-size: 12px; color: var(--text-dim); }
+
+      /* ── Responsive ── */
+      @media (max-width: 640px) {
+        .header-inner { padding: 10px 12px; }
+        .logo-sub { display: none; }
+        .dl-links { display: none; }
+        .cards-grid { grid-template-columns: 1fr; }
+        .stats-bar { grid-template-columns: repeat(3, 1fr); }
+        .stat-num { font-size: 20px; }
+      }
     </style>
   </head>
   <body>
-    <div class="wrap">
-      <div class="card">
-        <h1>Latest Sneaker Release Trackers</h1>
-        <p>
-          Download the most up-to-date Excel trackers. These files are updated automatically every day at
-          <strong>12:00 PM</strong> and <strong>12:00 AM</strong> Eastern.
-        </p>
 
-        <div class="buttons">
-          <a class="btn" href="./output/weekly_tracker.xlsx">Download Weekly Tracker (Excel)</a>
-          <a class="btn secondary" href="./output/monthly_tracker.xlsx">Download Monthly Tracker (Excel)</a>
+    <!-- ── HEADER ── -->
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="#">
+          <div class="logo-icon">👟</div>
+          <div>
+            <div class="logo-text">Sneaker Release Tracker</div>
+            <div class="logo-sub">Auto-updated every 12 hours</div>
+          </div>
+        </a>
+        <div class="header-spacer"></div>
+        <div class="header-meta">
+          <span id="last-updated-header">Loading…</span>
+        </div>
+        <div class="dl-links">
+          <a class="dl-btn ghost" href="./output/weekly_tracker.xlsx">⬇ Weekly</a>
+          <a class="dl-btn" href="./output/monthly_tracker.xlsx">⬇ Monthly</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="page">
+
+      <!-- ── STATS BAR ── -->
+      <div class="stats-bar" id="stats-bar">
+        <div class="stat-card"><div class="stat-num" id="s-total">–</div><div class="stat-label">Total Releases</div></div>
+        <div class="stat-card s-red"><div class="stat-num" id="s-high">–</div><div class="stat-label">HIGH Hype</div></div>
+        <div class="stat-card s-amber"><div class="stat-num" id="s-mustwatch">–</div><div class="stat-label">Must Watch</div></div>
+        <div class="stat-card s-cyan"><div class="stat-num" id="s-week">–</div><div class="stat-label">This Week</div></div>
+        <div class="stat-card s-green"><div class="stat-num" id="s-new">–</div><div class="stat-label">New Today</div></div>
+        <div class="stat-card s-purple"><div class="stat-num" id="s-brands">–</div><div class="stat-label">Brands</div></div>
+      </div>
+
+      <!-- ── FILTER PANEL ── -->
+      <div class="filter-panel">
+        <div class="filter-row">
+          <div class="filter-group grow">
+            <div class="filter-label">Search</div>
+            <input class="filter-input" type="text" id="search-input" placeholder="Search shoe name, brand, tags…" />
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Brand</div>
+            <select class="filter-input" id="brand-filter">
+              <option value="">All Brands</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Date From</div>
+            <input class="filter-input" type="date" id="date-from" />
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Date To</div>
+            <input class="filter-input" type="date" id="date-to" />
+          </div>
+          <div>
+            <div class="filter-label">&nbsp;</div>
+            <button class="filter-reset" id="reset-btn">Reset</button>
+          </div>
         </div>
 
-        <div class="stamp" id="last-updated">Last updated: loading…</div>
-
-        <p class="small">
-          If a link ever 404s, it just means the workflow hasn’t generated today’s files yet. Try again in a few minutes.
-          Advanced users can also download from the GitHub <code>Actions</code> artifacts.
-        </p>
+        <div class="filter-row">
+          <div class="filter-group">
+            <div class="filter-label">Hype Level</div>
+            <div class="pill-group" id="hype-pills">
+              <button class="pill active" data-v="">All</button>
+              <button class="pill p-red" data-v="HIGH">HIGH</button>
+              <button class="pill p-amber" data-v="MED">MED</button>
+              <button class="pill p-green" data-v="LOW">LOW</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Confidence</div>
+            <div class="pill-group" id="conf-pills">
+              <button class="pill active" data-v="">All</button>
+              <button class="pill p-cyan" data-v="HIGH">HIGH</button>
+              <button class="pill p-amber" data-v="MED">MED</button>
+              <button class="pill" data-v="LOW">LOW</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Priority</div>
+            <div class="pill-group" id="pri-pills">
+              <button class="pill active" data-v="">All</button>
+              <button class="pill p-red" data-v="Must Watch">🔥 Must Watch</button>
+              <button class="pill p-amber" data-v="Watch">Watch</button>
+              <button class="pill" data-v="Low Priority">Low</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Tags</div>
+            <select class="filter-input" id="tag-filter">
+              <option value="">All Tags</option>
+              <option value="collab">Collab</option>
+              <option value="hot-model">Hot Model</option>
+              <option value="retro">Retro</option>
+              <option value="exclusive">Exclusive</option>
+              <option value="running">Running</option>
+              <option value="basketball">Basketball</option>
+              <option value="women">Women</option>
+              <option value="lifestyle">Lifestyle</option>
+              <option value="skateboarding">Skateboarding</option>
+              <option value="trail">Trail</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Sort By</div>
+            <div class="pill-group" id="sort-pills">
+              <button class="pill active" data-s="date" data-d="asc">Date ▲</button>
+              <button class="pill" data-s="hypeScore" data-d="desc">Hype</button>
+              <button class="pill" data-s="retail" data-d="desc">Price</button>
+              <button class="pill" data-s="confidence" data-d="desc">Conf.</button>
+            </div>
+          </div>
+          <div class="filter-group" style="flex:0">
+            <div class="filter-label">View</div>
+            <div class="view-toggle">
+              <button class="view-btn active" data-view="cards">⊞</button>
+              <button class="view-btn" data-view="table">☰</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <!-- ── RESULTS ── -->
+      <div class="results-header">
+        <div class="results-count" id="results-count">Loading…</div>
+      </div>
+
+      <div id="main-content">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          <div>Loading release data…</div>
+        </div>
+      </div>
+
+      <div class="pagination" id="pagination" style="display:none"></div>
+
+      <!-- ── CHANGES PANEL ── -->
+      <div class="panel" id="changes-panel" style="display:none">
+        <div class="panel-header" onclick="togglePanel(this.closest('.panel'))">
+          <div class="panel-title">Recent Changes</div>
+          <div class="panel-badge" id="changes-count">0</div>
+          <div class="panel-chevron">▼</div>
+        </div>
+        <div class="panel-body" id="changes-body"></div>
+      </div>
+
+    </div><!-- /page -->
 
     <script>
-      (async () => {
+    (() => {
+      // ── State ──
+      let allReleases = [];
+      let filteredReleases = [];
+      let allChanges = [];
+      let currentPage = 1;
+      const PAGE_SIZE = 48;
+      let currentView = 'cards';
+      let sortKey = 'date';
+      let sortDir = 'asc';
+      let filters = { search: '', hype: '', conf: '', priority: '', brand: '', tagFilter: '', dateFrom: '', dateTo: '' };
+
+      // ── Helpers ──
+      const $ = id => document.getElementById(id);
+      const fmt = n => n == null || n === '' ? '' : '$' + Number(n).toLocaleString();
+      const fmtDate = s => {
+        if (!s) return '';
+        const d = new Date(s + 'T00:00:00');
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      };
+      const isToday = s => {
+        const today = new Date(); today.setHours(0,0,0,0);
+        const d = new Date(s + 'T00:00:00');
+        return d.getTime() === today.getTime();
+      };
+      const isThisWeek = s => {
+        const today = new Date(); today.setHours(0,0,0,0);
+        const d = new Date(s + 'T00:00:00');
+        return d >= today && (d - today) / 86400000 <= 7;
+      };
+      const esc = s => String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+      // ── Fetch Data ──
+      async function loadData() {
         try {
-          const res = await fetch("./public/last_updated.txt", { cache: "no-store" });
-          if (!res.ok) throw new Error("not found");
-          const txt = (await res.text()).trim();
-          document.getElementById("last-updated").textContent = txt || "Last updated: unknown";
-        } catch {
-          document.getElementById("last-updated").textContent = "Last updated: unavailable";
+          const [relRes, chgRes, stampRes] = await Promise.allSettled([
+            fetch('./data/final_releases.json', { cache: 'no-store' }),
+            fetch('./data/changes.json',        { cache: 'no-store' }),
+            fetch('./public/last_updated.txt',  { cache: 'no-store' }),
+          ]);
+
+          if (relRes.status === 'fulfilled' && relRes.value.ok) {
+            allReleases = await relRes.value.json();
+          }
+          if (chgRes.status === 'fulfilled' && chgRes.value.ok) {
+            allChanges = await chgRes.value.json();
+          }
+          if (stampRes.status === 'fulfilled' && stampRes.value.ok) {
+            const txt = (await stampRes.value.text()).trim();
+            $('last-updated-header').textContent = txt || 'Unknown';
+          }
+
+          if (!allReleases.length) throw new Error('No data');
+        } catch (e) {
+          $('main-content').innerHTML = `<div class="empty-state"><div style="font-size:48px">🚫</div><div style="margin-top:12px">Could not load release data.<br><span style="font-size:12px;color:var(--text-mute)">Try refreshing or check the data files.</span></div></div>`;
+          return;
         }
-      })();
+
+        populateBrandFilter();
+        updateStats();
+        renderChanges();
+        applyFilters();
+      }
+
+      // ── Stats ──
+      function updateStats() {
+        const today = new Date(); today.setHours(0,0,0,0);
+        const brands = new Set(allReleases.map(r => r.brand));
+        $('s-total').textContent     = allReleases.length.toLocaleString();
+        $('s-high').textContent      = allReleases.filter(r => r.hype === 'HIGH').length;
+        $('s-mustwatch').textContent = allReleases.filter(r => r.priority === 'Must Watch').length;
+        $('s-week').textContent      = allReleases.filter(r => isThisWeek(r.releaseDate)).length;
+        $('s-new').textContent       = allChanges.filter(c => c.changeType === 'NEW' && isToday(c.detectedAt?.split('T')[0])).length;
+        $('s-brands').textContent    = brands.size;
+      }
+
+      // ── Brand Filter ──
+      function populateBrandFilter() {
+        const brands = [...new Set(allReleases.map(r => r.brand).filter(Boolean))].sort();
+        const sel = $('brand-filter');
+        brands.forEach(b => {
+          const o = document.createElement('option');
+          o.value = b; o.textContent = b; sel.appendChild(o);
+        });
+      }
+
+      // ── Filtering & Sorting ──
+      function applyFilters() {
+        const { search, hype, conf, priority, brand, tagFilter, dateFrom, dateTo } = filters;
+        const q = search.toLowerCase().trim();
+
+        filteredReleases = allReleases.filter(r => {
+          if (hype     && r.hype     !== hype)     return false;
+          if (conf     && r.confidence !== conf)    return false;
+          if (priority && r.priority  !== priority) return false;
+          if (brand    && r.brand     !== brand)    return false;
+          if (tagFilter && !(r.tags || []).includes(tagFilter)) return false;
+          if (dateFrom  && r.releaseDate < dateFrom) return false;
+          if (dateTo    && r.releaseDate > dateTo)   return false;
+          if (q) {
+            const haystack = ((r.shoeName || '') + ' ' + (r.brand || '') + ' ' + (r.tags || []).join(' ')).toLowerCase();
+            if (!haystack.includes(q)) return false;
+          }
+          return true;
+        });
+
+        // Sort
+        const confOrder = { HIGH: 2, MED: 1, LOW: 0 };
+        filteredReleases.sort((a, b) => {
+          let va, vb;
+          switch (sortKey) {
+            case 'date':         va = a.releaseDate || ''; vb = b.releaseDate || ''; break;
+            case 'hypeScore':    va = a.hypeScore || 0;    vb = b.hypeScore || 0;    break;
+            case 'retail':       va = a.retailPrice || 0;  vb = b.retailPrice || 0;  break;
+            case 'confidence':   va = confOrder[a.confidence] ?? 0; vb = confOrder[b.confidence] ?? 0; break;
+            default:             va = ''; vb = '';
+          }
+          if (va < vb) return sortDir === 'asc' ? -1 :  1;
+          if (va > vb) return sortDir === 'asc' ?  1 : -1;
+          return 0;
+        });
+
+        currentPage = 1;
+        renderResults();
+      }
+
+      // ── Render ──
+      function renderResults() {
+        const total = filteredReleases.length;
+        $('results-count').innerHTML = `<strong>${total.toLocaleString()}</strong> releases found`;
+
+        if (!total) {
+          $('main-content').innerHTML = `<div class="empty-state"><div style="font-size:48px">🔍</div><div style="margin-top:12px">No releases match your filters.</div></div>`;
+          $('pagination').style.display = 'none';
+          return;
+        }
+
+        const totalPages = Math.ceil(total / PAGE_SIZE);
+        const start = (currentPage - 1) * PAGE_SIZE;
+        const pageData = filteredReleases.slice(start, start + PAGE_SIZE);
+
+        if (currentView === 'cards') renderCards(pageData);
+        else renderTable(pageData);
+
+        renderPagination(totalPages);
+      }
+
+      function renderCards(rows) {
+        const html = rows.map(r => {
+          const prioClass = r.priority === 'Must Watch' ? 'pri-mustwatch' : r.priority === 'Watch' ? 'pri-watch' : 'pri-low';
+          const tagBadges = (r.tags || []).map(t => `<span class="tag t-${esc(t)}">${esc(t)}</span>`).join('');
+          const hypeConf = `<span class="badge badge-hype-${esc(r.hype)}">${esc(r.hype)}</span>` +
+                           `<span class="badge badge-conf-${esc(r.confidence)}">CONF: ${esc(r.confidence)}</span>`;
+          const priBadge = r.priority === 'Must Watch'   ? `<span class="badge badge-pri-must">🔥 Must Watch</span>` :
+                           r.priority === 'Watch'        ? `<span class="badge badge-pri-watch">Watch</span>` : '';
+          const imgHtml = r.imageUrl
+            ? `<div class="card-img"><img src="${esc(r.imageUrl)}" alt="${esc(r.shoeName)}" loading="lazy" onerror="this.parentElement.innerHTML='👟'" /></div>`
+            : `<div class="card-img no-img">👟</div>`;
+          const prices = r.retailPrice > 0
+            ? `${fmt(r.retailPrice)}${r.estimatedMarketValue > 0 ? ` <span class="resale">(Resale ~${fmt(r.estimatedMarketValue)})</span>` : ''}`
+            : `<span style="color:var(--text-mute)">TBD</span>`;
+          const links = [
+            r.releaseUrl ? `<a class="card-link" href="${esc(r.releaseUrl)}" target="_blank" rel="noopener">Buy →</a>` : '',
+            r.imageUrl   ? `<a class="card-link" href="${esc(r.imageUrl)}"   target="_blank" rel="noopener">Image</a>` : '',
+          ].filter(Boolean).join('');
+          return `
+          <div class="release-card ${prioClass}">
+            ${imgHtml}
+            <div class="card-body">
+              <div class="card-brand">${esc(r.brand)}</div>
+              <div class="card-name">${esc(r.shoeName)}</div>
+              <div class="card-date">${fmtDate(r.releaseDate)}</div>
+              <div class="card-price">${prices}</div>
+              <div class="card-badges">${hypeConf}${priBadge}</div>
+              ${tagBadges ? `<div class="card-tags">${tagBadges}</div>` : ''}
+            </div>
+            ${links || r.sourcePrimary ? `
+            <div class="card-footer">
+              ${links}
+              <div class="card-meta">${esc(r.sourcePrimary || '')}${r.matchedSources > 1 ? ` · ${r.matchedSources} sources` : ''}</div>
+            </div>` : ''}
+          </div>`;
+        }).join('');
+        $('main-content').innerHTML = `<div class="cards-grid">${html}</div>`;
+      }
+
+      function renderTable(rows) {
+        const confOrder = { HIGH: 2, MED: 1, LOW: 0 };
+        const sortCols = [
+          { key: 'date', label: 'Date' },
+          { key: 'brand', label: 'Brand' },
+          null,
+          { key: 'hypeScore', label: 'Hype' },
+          { key: 'confidence', label: 'Conf.' },
+          null,
+          { key: 'retail', label: 'Retail' },
+          null, null,
+        ];
+        const headerCells = [
+          { k: 'date', l: 'Date' }, { k: 'brand', l: 'Brand' }, { k: null, l: 'Style' },
+          { k: 'hypeScore', l: 'Hype' }, { k: 'confidence', l: 'Conf.' }, { k: null, l: 'Priority' },
+          { k: 'retail', l: 'Retail' }, { k: null, l: 'Tags' }, { k: null, l: 'Links' },
+        ];
+        const thead = headerCells.map(h => {
+          let cls = '';
+          if (h.k && h.k === sortKey) cls = ` class="sort-${sortDir}"`;
+          const onclick = h.k ? `onclick="handleSort('${h.k}')"` : '';
+          return `<th${cls} ${onclick}>${h.l}</th>`;
+        }).join('');
+
+        const tbody = rows.map(r => {
+          const priceStr = r.retailPrice > 0 ? fmt(r.retailPrice) : '–';
+          const tagStr = (r.tags || []).join(', ');
+          const hypeColor = r.hype === 'HIGH' ? 'var(--red)' : r.hype === 'MED' ? 'var(--amber)' : 'var(--green)';
+          const confColor = r.confidence === 'HIGH' ? 'var(--cyan)' : r.confidence === 'MED' ? '#ffd966' : 'var(--text-dim)';
+          const link = r.releaseUrl ? `<a href="${esc(r.releaseUrl)}" target="_blank" rel="noopener">Buy →</a>` : '–';
+          return `<tr>
+            <td class="td-date">${fmtDate(r.releaseDate)}</td>
+            <td class="td-brand">${esc(r.brand)}</td>
+            <td class="td-style" title="${esc(r.shoeName)}">${esc(r.shoeName)}</td>
+            <td style="color:${hypeColor};font-weight:700;white-space:nowrap">${esc(r.hype)} <span style="color:var(--text-mute);font-weight:400;font-size:11px">(${r.hypeScore ?? 0})</span></td>
+            <td style="color:${confColor};font-weight:700">${esc(r.confidence)}</td>
+            <td style="white-space:nowrap">${esc(r.priority)}</td>
+            <td class="td-price">${priceStr}</td>
+            <td style="font-size:11px;color:var(--text-dim)">${esc(tagStr)}</td>
+            <td class="td-link">${link}</td>
+          </tr>`;
+        }).join('');
+
+        $('main-content').innerHTML = `<div class="table-wrap"><table><thead><tr>${thead}</tr></thead><tbody>${tbody}</tbody></table></div>`;
+      }
+
+      function renderPagination(totalPages) {
+        const pg = $('pagination');
+        if (totalPages <= 1) { pg.style.display = 'none'; return; }
+        pg.style.display = 'flex';
+        let html = `<button class="page-btn" onclick="goPage(${currentPage-1})" ${currentPage===1?'disabled':''}>‹ Prev</button>`;
+        html += `<span class="page-info">Page ${currentPage} of ${totalPages}</span>`;
+        // Page number buttons (show up to 7 around current)
+        const start = Math.max(1, currentPage - 3);
+        const end   = Math.min(totalPages, currentPage + 3);
+        if (start > 1) html += `<button class="page-btn" onclick="goPage(1)">1</button>${start > 2 ? '<span style="color:var(--text-mute)">…</span>' : ''}`;
+        for (let i = start; i <= end; i++) {
+          html += `<button class="page-btn${i===currentPage?' active':''}" onclick="goPage(${i})">${i}</button>`;
+        }
+        if (end < totalPages) html += `${end < totalPages-1 ? '<span style="color:var(--text-mute)">…</span>' : ''}<button class="page-btn" onclick="goPage(${totalPages})">${totalPages}</button>`;
+        html += `<button class="page-btn" onclick="goPage(${currentPage+1})" ${currentPage===totalPages?'disabled':''}>Next ›</button>`;
+        pg.innerHTML = html;
+      }
+
+      // ── Changes Panel ──
+      function renderChanges() {
+        if (!allChanges.length) return;
+        const panel = $('changes-panel');
+        panel.style.display = 'block';
+        $('changes-count').textContent = allChanges.length;
+
+        const sorted = [...allChanges].sort((a, b) => (b.detectedAt || '') < (a.detectedAt || '') ? -1 : 1);
+        const items = sorted.slice(0, 100).map(c => {
+          const typeClass = c.changeType === 'NEW' ? 'ct-NEW' : c.changeType === 'REMOVED' ? 'ct-REMOVED' : 'ct-change';
+          const label = c.changeType.replace('_CHANGED', ' ↔').replace('_', ' ');
+          const detail = c.fieldChanged ? ` <span>${esc(c.oldValue)} → ${esc(c.newValue)}</span>` : '';
+          return `<div class="change-item">
+            <span class="change-type ${typeClass}">${esc(label)}</span>
+            <div class="change-name">${esc(c.brand)} – ${esc(c.style)}${detail}</div>
+            <div class="change-date">${fmtDate(c.date)}</div>
+          </div>`;
+        }).join('');
+        $('changes-body').innerHTML = items;
+      }
+
+      // ── Event Handlers (exposed globally) ──
+      window.goPage = function(n) {
+        currentPage = n;
+        renderResults();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
+      window.handleSort = function(key) {
+        if (sortKey === key) {
+          sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+        } else {
+          sortKey = key;
+          sortDir = key === 'date' ? 'asc' : 'desc';
+        }
+        // Update sort pills
+        document.querySelectorAll('#sort-pills .pill').forEach(p => {
+          p.classList.toggle('active', p.dataset.s === key);
+          if (p.dataset.s === key) p.dataset.d = sortDir;
+        });
+        applyFilters();
+      };
+
+      window.togglePanel = function(el) {
+        el.classList.toggle('open');
+      };
+
+      // ── Wire Up Filters ──
+      function setupFilters() {
+        // Search
+        let searchTimer;
+        $('search-input').addEventListener('input', e => {
+          clearTimeout(searchTimer);
+          searchTimer = setTimeout(() => { filters.search = e.target.value; applyFilters(); }, 250);
+        });
+
+        // Brand select
+        $('brand-filter').addEventListener('change', e => { filters.brand = e.target.value; applyFilters(); });
+
+        // Dates
+        $('date-from').addEventListener('change', e => { filters.dateFrom = e.target.value; applyFilters(); });
+        $('date-to').addEventListener('change',   e => { filters.dateTo   = e.target.value; applyFilters(); });
+
+        // Tag filter
+        $('tag-filter').addEventListener('change', e => { filters.tagFilter = e.target.value; applyFilters(); });
+
+        // Pill groups
+        function setupPills(groupId, filterKey) {
+          const group = $(groupId);
+          group.querySelectorAll('.pill').forEach(btn => {
+            btn.addEventListener('click', () => {
+              group.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+              btn.classList.add('active');
+              filters[filterKey] = btn.dataset.v;
+              applyFilters();
+            });
+          });
+        }
+        setupPills('hype-pills', 'hype');
+        setupPills('conf-pills', 'conf');
+        setupPills('pri-pills',  'priority');
+
+        // Sort pills
+        $('sort-pills').querySelectorAll('.pill').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const key = btn.dataset.s;
+            if (sortKey === key) {
+              sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+            } else {
+              sortKey = key;
+              sortDir = btn.dataset.d || 'asc';
+            }
+            $('sort-pills').querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            applyFilters();
+          });
+        });
+
+        // View toggle
+        document.querySelectorAll('.view-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentView = btn.dataset.view;
+            renderResults();
+          });
+        });
+
+        // Reset
+        $('reset-btn').addEventListener('click', () => {
+          filters = { search: '', hype: '', conf: '', priority: '', brand: '', tagFilter: '', dateFrom: '', dateTo: '' };
+          $('search-input').value = '';
+          $('brand-filter').value = '';
+          $('date-from').value = '';
+          $('date-to').value = '';
+          $('tag-filter').value = '';
+          document.querySelectorAll('#hype-pills .pill, #conf-pills .pill, #pri-pills .pill').forEach((p, i) => {
+            p.classList.toggle('active', i % 4 === 0);
+          });
+          applyFilters();
+        });
+      }
+
+      // ── Init ──
+      setupFilters();
+      loadData();
+
+    })();
     </script>
+
   </body>
 </html>

@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "releaseDate": "2026-03-12",
+    "shoeName": "Converse SHAI 001",
+    "brand": "Converse",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/9e255aa01bb950776f836c367cbf1566_1772034751.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/25/converse-shai-001-pink-a19838c"
+  },
+  {
+    "releaseDate": "2026-03-12",
+    "shoeName": "New Balance 1890",
+    "brand": "New Balance",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://sneakernews.com/wp-content/uploads/2024/03/sneaker_default.jpg",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/17/new-balance-1890-faded-black-utility-green-u189071h/"
+  },
+  {
+    "releaseDate": "2026-03-12",
+    "shoeName": "New Balance 993 Made In USA",
+    "brand": "New Balance",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://sneakernews.com/wp-content/uploads/2024/03/sneaker_default.jpg",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/24/new-balance-993-made-in-usa-passion-fruit-u9934ja"
+  },
+  {
+    "releaseDate": "2026-03-12",
+    "shoeName": "Nike LeBron NXXT Gen by JuJu",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://sneakernews.com/wp-content/uploads/2024/03/sneaker_default.jpg",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/28/nike-lebron-nxxt-gen-by-juju-light-crimson-laser-orange-bright-crimson-iq8495-600"
+  },
+  {
+    "releaseDate": "2026-03-12",
+    "shoeName": "Nike Sabrina 3 \"Oregon Ducks\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://sneakernews.com/wp-content/uploads/2024/03/sneaker_default.jpg",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/24/nike-sabrina-3-oregon-ducks-ir2478-700"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "Chet Holmgren x Nike KD 18 \"Camo\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/ec1510829e72a70ef20a6708ac31b309_1772291652.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/28/nike-kd-18-chet-holmgreen-tree-camo-io7519-900"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "Chet Holmgren x Nike KD 18 \"Thunder & Reign\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/cd2c1fdb30e611a6b6b8187efff413b8_1772727236.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/06/nike-kd-18-thunder-and-reign-chet-holmgren-io7519-500"
+  }
+]

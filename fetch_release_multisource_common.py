@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import time
 from datetime import date, datetime, timedelta
 from typing import Any
 
@@ -62,41 +63,89 @@ def window_filter(records: list[dict[str, Any]], days: int) -> list[dict[str, An
     return out
 
 
-def render_html(url: str, timeout_ms: int) -> str:
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context()
-        page = context.new_page()
-        page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+_STEALTH_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/124.0.0.0 Safari/537.36"
+)
+
+
+def render_html(url: str, timeout_ms: int, retries: int = 2) -> str:
+    """Render a page with Playwright, retrying on timeout."""
+    last_err: Exception | None = None
+    for attempt in range(retries + 1):
         try:
-            page.wait_for_load_state("networkidle", timeout=min(timeout_ms, 15000))
-        except PlaywrightTimeoutError:
-            pass
-        html = page.content()
-        browser.close()
-        return html
+            with sync_playwright() as p:
+                browser = p.chromium.launch(
+                    headless=True,
+                    args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
+                )
+                context = browser.new_context(
+                    user_agent=_STEALTH_UA,
+                    viewport={"width": 1280, "height": 800},
+                    locale="en-US",
+                )
+                page = context.new_page()
+                # Block heavy assets that don't affect content
+                page.route(
+                    "**/*.{png,jpg,jpeg,gif,webp,svg,mp4,woff,woff2,ttf,eot}",
+                    lambda route: route.abort(),
+                )
+                page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+                try:
+                    page.wait_for_load_state("networkidle", timeout=min(timeout_ms, 12000))
+                except PlaywrightTimeoutError:
+                    pass
+                html = page.content()
+                browser.close()
+                return html
+        except PlaywrightTimeoutError as e:
+            last_err = e
+            if attempt < retries:
+                time.sleep(2 ** attempt)  # exponential backoff
+            continue
+        except Exception as e:
+            raise
+
+    raise last_err or RuntimeError(f"render_html failed for {url}")
 
 
 def infer_brand(name: str) -> str:
     n = name.lower()
     if "jordan" in n:
         return "Air Jordan"
-    if any(x in n for x in ("nike", "dunk", "air max", "air force", "shox", "pegasus", "vomero")):
+    if any(x in n for x in ("nike", "dunk", "air max", "air force", "shox", "pegasus", "vomero", "zoom", "react")):
         return "Nike"
-    if any(x in n for x in ("adidas", "yeezy", "samba", "gazelle", "superstar")):
+    if any(x in n for x in ("adidas", "yeezy", "samba", "gazelle", "superstar", "campus", "stan smith", "ultraboost")):
         return "Adidas"
-    if "new balance" in n or n.startswith("nb "):
+    if "new balance" in n or re.search(r"\bnb\s*\d{3,4}\b", n) or re.search(r"\b(990|550|2002|1906|860|327|574|998|1300)\b", n):
         return "New Balance"
-    if "asics" in n:
+    if "asics" in n or "gel-" in n or "gel " in n:
         return "ASICS"
+    if "onitsuka" in n:
+        return "Onitsuka Tiger"
     if "puma" in n:
         return "Puma"
-    if "reebok" in n:
+    if "reebok" in n or "classic leather" in n:
         return "Reebok"
-    if "converse" in n:
+    if "converse" in n or "chuck taylor" in n or "one star" in n:
         return "Converse"
     if "crocs" in n:
         return "Crocs"
+    if "vans" in n or "old skool" in n or "sk8-hi" in n or "era " in n:
+        return "Vans"
+    if "saucony" in n or "jazz" in n or "shadow" in n:
+        return "Saucony"
+    if "hoka" in n or "clifton" in n or "bondi" in n or "mafate" in n:
+        return "Hoka"
+    if "salomon" in n or "xt-6" in n or "speedcross" in n:
+        return "Salomon"
+    if "timberland" in n:
+        return "Timberland"
+    if "under armour" in n or "curry" in n:
+        return "Under Armour"
+    if "lacoste" in n:
+        return "Lacoste"
     return "Unknown"
 
 

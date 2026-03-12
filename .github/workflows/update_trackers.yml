@@ -94,7 +94,12 @@ jobs:
         shell: bash
         run: |
           python enrich_retail_prices.py data/final_releases.json --max 120 --timeout 25 --sleep 0.2 | tee data/retail_enrich_log.txt || true
-          
+
+      - name: Enrich market values from eBay sold listings (best effort)
+        shell: bash
+        run: |
+          python enrich_market_value_ebay.py data/final_releases.json --max 100 --timeout 15 --sleep 0.6 | tee data/ebay_enrich_log.txt || true
+
       - name: Build workbooks
         run: |
           python build_tracker_workbook.py \
@@ -115,6 +120,7 @@ jobs:
           name: sneaker-trackers
           path: |
             data/retail_enrich_log.txt
+            data/ebay_enrich_log.txt
             data/primary_releases.json
             data/fallback_nike.json
             data/fallback_sneakernews.json

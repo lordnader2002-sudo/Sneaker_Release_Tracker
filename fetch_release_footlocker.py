@@ -14,10 +14,11 @@ from bs4 import BeautifulSoup
 from fetch_release_multisource_common import (
     clean_title,
     extract_image_url,
-    extract_price_smart,
+    extract_retail_price,
     infer_brand,
     normalize_text,
     parse_date_flexible,
+    purge_placeholder_images,
     render_html,
     window_filter,
 )
@@ -71,9 +72,9 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
         if not d:
             continue
 
-        # Use the link's immediate parent for price — avoids cross-card $130 pollution
+        # Labeled-only price from the immediate parent — avoids placeholder $130 pollution
         price_blob = a.parent.get_text(" ", strip=True) if a.parent else blob
-        retail = extract_price_smart(normalize_text(price_blob[:400]))
+        retail = extract_retail_price(normalize_text(price_blob[:400]))
 
         href = a["href"]
         if href.startswith("/"):
@@ -98,6 +99,7 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
 
 
 def dedupe(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    purge_placeholder_images(rows)
     best: dict[tuple[str, str], dict[str, Any]] = {}
     for r in rows:
         key = (r.get("releaseDate", ""), str(r.get("shoeName", "")).lower())

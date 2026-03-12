@@ -225,7 +225,11 @@ def extract_price_smart(text: str) -> int:
 # ---- image extraction ----
 
 _IMG_SRC_ATTRS = ("data-src", "src", "data-lazy-src", "data-original", "data-srcset", "srcset")
-_IMG_SKIP = ("1x1", "pixel", "placeholder", "blank", "spacer", "loading", "transparent", "logo", "icon")
+_IMG_SKIP = (
+    "1x1", "pixel", "placeholder", "blank", "spacer", "loading", "transparent", "logo", "icon",
+    "silhouette", "coming-soon", "comingsoon", "tbd", "no-image", "noimage", "unavailable",
+    "default-shoe", "generic", "missing",
+)
 
 
 def extract_image_url(container: Any, base_url: str = "") -> str | None:
@@ -266,6 +270,22 @@ def extract_image_url(container: Any, base_url: str = "") -> str | None:
         elem = elem.parent  # type: ignore[assignment]
 
     return None
+
+
+def purge_placeholder_images(rows: list[Any], max_repeat: int = 3) -> None:
+    """
+    Nullify imageUrl for any URL that appears on more than `max_repeat` rows —
+    those are site-wide placeholders (e.g. Foot Locker's pink silhouette), not
+    product-specific images.  Mutates rows in place.
+    """
+    from collections import Counter
+    counts: Counter[str] = Counter(
+        r["imageUrl"] for r in rows if r.get("imageUrl")
+    )
+    bad = {url for url, n in counts.items() if n > max_repeat}
+    for r in rows:
+        if r.get("imageUrl") in bad:
+            r["imageUrl"] = None
 
 
 def clean_title(text: str) -> str:

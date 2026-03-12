@@ -18,6 +18,7 @@ from fetch_release_multisource_common import (
     infer_brand,
     normalize_text,
     parse_date_flexible,
+    purge_placeholder_images,
     render_html,
     window_filter,
 )
@@ -84,6 +85,7 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
 
 
 def dedupe(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    purge_placeholder_images(rows)
     best: dict[tuple[str, str], dict[str, Any]] = {}
     for r in rows:
         key = (r.get("releaseDate", ""), str(r.get("shoeName", "")).lower())

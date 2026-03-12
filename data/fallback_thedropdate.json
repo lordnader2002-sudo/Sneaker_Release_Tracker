@@ -37,6 +37,18 @@
   },
   {
     "releaseDate": "2026-03-12",
+    "shoeName": "Converse SHAI 001 'Blush' From \u00a3 115",
+    "brand": "Converse",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/converse-shai-001-blush-a19838c/706862"
+  },
+  {
+    "releaseDate": "2026-03-12",
     "shoeName": "CAYL x New Balance M10L 'Black Ink' From \u00a3 140",
     "brand": "New Balance",
     "retailPrice": 0,
@@ -82,6 +94,30 @@
     "sourceSecondary": "https://thedropdate.com/releases",
     "sourceUrl": "https://thedropdate.com/releases",
     "releaseUrl": "https://thedropdate.com/sneakers/new-balance-993-made-in-usa-passion-fruit-u9934ja/705132"
+  },
+  {
+    "releaseDate": "2026-03-12",
+    "shoeName": "Nike Air Force 1 '07 LV8 'Off White' From \u00a3 110",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/nike-air-force-1-07-lv8-off-white-ii9807-100/706653"
+  },
+  {
+    "releaseDate": "2026-03-12",
+    "shoeName": "Nike Air Force 1 '07 LV8 'Twine'",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "thedropdate",
+    "sourceSecondary": "https://thedropdate.com/releases",
+    "sourceUrl": "https://thedropdate.com/releases",
+    "releaseUrl": "https://thedropdate.com/sneakers/nike-air-force-1-07-lv8-twine-ii9807-700/706652"
   },
   {
     "releaseDate": "2026-03-12",

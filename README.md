@@ -1,115 +1,163 @@
-# Sneaker Release Trackers (Auto-Updated)
+# Sneaker Release Tracker
 
-This repo automatically generates **two Excel trackers** for sneaker releases:
+Auto-updated twice daily. Scrapes 6+ sources, deduplicates, scores, and publishes a live web dashboard plus downloadable Excel workbooks.
 
-- **Weekly Tracker** (next ~14 days)
-- **Monthly Tracker** (next ~30–35 days)
-
-✅ **Updated automatically twice per day**  
-**12:00 PM** and **12:00 AM** Eastern (every day)
+**Updated:** 12:00 PM and 12:00 AM Eastern, every day.
 
 ---
 
-## Download the trackers
+## Live Dashboard
 
-### Option 1 (recommended): One-click download page
-If this repo has GitHub Pages enabled, use the website link in the repo (usually in the “About” section).  
-From there you can download:
+The web dashboard is available at the GitHub Pages link in the repo's "About" section. It includes:
 
-- `Weekly Tracker (Excel)`
-- `Monthly Tracker (Excel)`
-
-### Option 2: Download from the repo files
-Go to the `output/` folder in this repo and download:
-
-- `weekly_tracker.xlsx`
-- `monthly_tracker.xlsx`
-
-### Option 3 (backup): Download from Actions artifacts
-1. Click the **Actions** tab
-2. Open the most recent workflow run
-3. Download the **artifact** called `sneaker-trackers`
+- Live search by name, brand, or tags
+- Filter by Hype level, Confidence level, Priority, and tags
+- Card and table view
+- Sortable columns (date, hype, price)
+- Recent changes panel
 
 ---
 
-## What’s inside the Excel tracker?
+## Download the Trackers
 
-Each row is a sneaker release. The workbook includes helpful tabs:
+**Option 1 — Repo files** (simplest): go to the `output/` folder and download `weekly_tracker.xlsx` or `monthly_tracker.xlsx`.
 
-- **Tracker** – main view (easy filtering/sorting)
-- **Monthly** – longer lookahead
-- **Changes** – what changed since the last run
-- **High Hype** – only the most important releases
-- **Summary** – quick totals/breakdowns
-- **Raw Data** – full merged dataset
+**Option 2 — Actions artifact**: click **Actions** → latest run → download `sneaker-trackers`.
 
 ---
 
-## How “Hype” is determined
+## Scoring Explained
 
-**Hype** is a simple score that estimates demand/importance.
+### Hype
 
-It uses signals like:
-- popular brands/models (Nike, Jordan, Dunk, etc.)
-- collaboration keywords (Travis Scott, Off-White, etc.)
-- limited/exclusive wording
-- resale spread (when available)
+Hype estimates how much demand a release is expected to generate. It starts as a point total and converts to a label.
 
-Hype labels:
-- **LOW**
-- **MED**
-- **HIGH**
+**Brand tier**
 
----
+| Brand | Points |
+|---|---|
+| Air Jordan, Nike, Yeezy, New Balance, Adidas | +12 |
+| Vans, Converse, Puma, Reebok, Saucony, Hoka, Salomon, ASICS | +7 |
+| Everything else | +3 |
 
-## How “Confidence” is determined
+**Name/model signals**
 
-**Confidence** estimates how reliable the row’s data is.
+| Signal | Points |
+|---|---|
+| Collab keyword in name (Travis Scott, Off-White, Sacai, NOCTA, Palace, Kith, A Ma Maniere, 50+ others) | +20 |
+| Limited/exclusive keyword (raffle, lottery, friends & family, sample…) | +10 |
+| Hot model (Jordan 1/3/4/5/6/11/12, Dunk, Kobe 6/8, Air Max 95/97, Samba, NB 550/990/2002…) | +12 |
+| Retro / OG / heritage keyword | +4 |
+| Unusual retail price (≥ $250 or ≤ $110) | +3 |
 
-It looks at:
-- how many sources agreed on the release (**Source Count**)
-- whether retail price was found
-- whether a release URL exists
-- whether an image URL exists
+**Resale market signal** (when eBay data is available)
 
-Confidence labels:
-- **LOW**
-- **MED**
-- **HIGH**
+| Resale vs. Retail | Points |
+|---|---|
+| 2.5× or more | +35 |
+| 2.0–2.5× | +28 |
+| 1.5–2.0× | +18 |
+| 1.2–1.5× | +8 |
+| Spread ≥ $200 | +15 |
+| Spread ≥ $150 | +10 |
+| Spread ≥ $75 | +6 |
 
----
-
-## What “Source Count” means
-
-**Source Count** = how many different sources matched that release.
-
-Higher = more verified.
+**Thresholds:** ≥ 42 points = **HIGH** · ≥ 20 points = **MED** · below 20 = **LOW**
 
 ---
 
-## Notes on accuracy
+### Confidence
 
-This tracker uses free public sources. Sometimes release dates shift or listings change.
+Confidence measures how reliable and well-sourced the data is — not how hyped the shoe is.
 
-Best practice:
-- Check the **Changes** tab first
-- Treat **HIGH confidence** rows as “most reliable”
-- Treat **LOW confidence** rows as “needs quick review”
+| Factor | Points |
+|---|---|
+| Has a primary source name | +25 |
+| Has a secondary source | +15 |
+| Retail price found | +15 |
+| Image found | +10 |
+| Release URL found | +10 |
+| Confirmed by 3+ independent scrapers | +28 |
+| Confirmed by 2 scrapers | +18 |
 
----
+**Thresholds:** ≥ 60 points = **HIGH** · ≥ 32 points = **MED** · below 32 = **LOW**
 
-## For maintainers (optional)
-
-The automation runs through GitHub Actions and produces:
-- `output/weekly_tracker.xlsx`
-- `output/monthly_tracker.xlsx`
-
-If it ever fails:
-- open **Actions → latest run → logs**
-- identify which step failed (fetch → merge → build)
+A shoe can be HIGH confidence with a LOW hype score (solid data on a regular release) or LOW confidence with a HIGH hype score (exciting release, only one source has it yet).
 
 ---
 
-## Contact / Requests
+### Priority / Watch
 
-If you want new sources, new columns, or a different layout, open an issue in this repo.
+Priority is a simple 2×2 matrix of Hype × Confidence:
+
+| Hype | Confidence | Priority |
+|---|---|---|
+| HIGH | HIGH | **Must Watch** |
+| HIGH | MED | **Watch** |
+| MED | HIGH | **Watch** |
+| Anything else | Anything else | Low Priority |
+
+"Must Watch" means the release is both highly anticipated AND well-verified across multiple sources. "Watch" means one of those conditions is met but not both. "Low Priority" covers everything else — worth scanning but doesn't need immediate attention.
+
+---
+
+### Market Value
+
+`estimatedMarketValue` is populated by searching eBay completed (sold) listings for each shoe. It uses the median sale price of DS (deadstock/new) listings. If fewer than 3 sold results are found for the exact shoe, it searches by model only (e.g., "Nike Dunk Low") as a fallback. If still too few results, the field is left blank.
+
+This gives a real-market proxy for resale potential even before a shoe has officially dropped, by looking at what similar colorways or past versions of the same model are actually trading for.
+
+---
+
+## What the Tracker Columns Mean
+
+| Column | Description |
+|---|---|
+| Date | Release date |
+| Retail | Retail price (from labeled sources or product pages) |
+| Market Value | eBay median sold price for similar DS pairs |
+| Hype | LOW / MED / HIGH — demand estimate |
+| Hype Score | Raw numeric score behind the Hype label |
+| Confidence | LOW / MED / HIGH — data reliability |
+| Conf. Score | Raw numeric score behind the Confidence label |
+| Priority | Must Watch / Watch / Low Priority |
+| Brand | Inferred from shoe name if not provided by source |
+| Style | Shoe name as scraped |
+| Tags | Auto-applied: collab, hot-model, retro, running, basketball, exclusive, kids, etc. |
+| Source Primary | Which scraper first found this release |
+| Source Count | How many independent scrapers agreed on this release |
+| Release URL | Link to a source page for the shoe |
+
+---
+
+## Data Sources
+
+| Source | Type |
+|---|---|
+| GOAT (primary) | Playwright + API interception |
+| Nike.com | JSON extraction from page scripts |
+| Foot Locker | Playwright scraper |
+| Hibbett | Playwright scraper |
+| KicksOnFire | Playwright scraper |
+| Sole Collector | Playwright scraper |
+| SneakerNews | Playwright scraper |
+| eBay (enrichment) | Sold-listing price scraper |
+
+Releases seen on multiple sources get a higher Confidence score. Prices are only extracted when explicitly labeled on a page (to avoid placeholder values); the eBay enrichment step fills in market values separately.
+
+---
+
+## Notes on Accuracy
+
+- Release dates occasionally shift; check the **Changes** tab for recent updates.
+- Treat HIGH confidence rows as most reliable. LOW confidence rows are worth a quick manual check before acting on them.
+- Retail prices may be missing for upcoming releases where retailers haven't published prices yet — this is expected.
+- Market values reflect recent eBay activity for similar pairs, not a guaranteed future resale price.
+
+---
+
+## Troubleshooting
+
+If the workflow fails: **Actions → latest run → logs** and look at which step failed (fetch → merge → build workbooks → enrich → deploy).
+
+To manually trigger a refresh: **Actions → Update Sneaker Trackers → Run workflow**.

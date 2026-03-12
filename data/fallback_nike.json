@@ -163,5 +163,16 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "/launch/t/converse-x-anonymous-club-chuck-a19255c-020"
+  },
+  {
+    "releaseDate": "2026-03-18",
+    "shoeName": "Mar 18 Air Jordan 1 Low OG Sail and Coconut Milk",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "/launch/t/air-jordan-1-low-og-sail-and-coconut-milk"
   }
 ]

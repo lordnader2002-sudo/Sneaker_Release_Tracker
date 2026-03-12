@@ -152,22 +152,23 @@ def infer_brand(name: str) -> str:
 # ---- price + title cleaning ----
 
 _COUNTDOWN_RE = re.compile(r"\b\d{1,3}D:\d{1,2}H:\d{1,2}M:\d{1,2}S\b", re.I)
-_PRICE_RE = re.compile(r"(?:USD\s*)?\$\s*([0-9]{2,4})(?:\.[0-9]{2})?", re.I)
+
+# Matches both $ and £ prices (GBP scrapers like TheDropDate show £ amounts)
+_PRICE_RE = re.compile(r"(?:USD\s*|GBP\s*)?[$£]\s*([0-9]{2,4})(?:\.[0-9]{2})?", re.I)
 
 _LABELED_PRICE_RE = re.compile(
-    r"\b(?:retail\s*price|msrp|price)\b\s*[:\-]?\s*(?:USD\s*)?\$\s*([0-9]{2,4})(?:\.[0-9]{2})?",
+    r"\b(?:retail\s*price|msrp|price)\b\s*[:\-]?\s*(?:USD\s*|GBP\s*)?[$£]\s*([0-9]{2,4})(?:\.[0-9]{2})?",
     re.I,
 )
 
 # Valid retail sneaker price range (avoids stray page numbers, counts, zip codes)
 _PRICE_MIN = 40
-_PRICE_MAX = 650
+_PRICE_MAX = 700
 
 
 def extract_retail_price(text: str) -> int:
     """
     Returns retail price ONLY if clearly labeled (Retail Price / MSRP / Price).
-    Prevents garbage like "$180" showing everywhere.
     """
     if not text:
         return 0
@@ -184,10 +185,14 @@ def extract_retail_price(text: str) -> int:
 
 def extract_price_smart(text: str) -> int:
     """
-    Smarter price extractor for scraper contexts.
-    1. Tries labeled patterns first (Retail Price: $130, MSRP $130).
-    2. Falls back to any bare $XXX value in [_PRICE_MIN, _PRICE_MAX].
-       When multiple bare prices exist, picks the most-common value.
+    Extract retail price from a TIGHT per-card context (≤400 chars).
+
+    Rules:
+    1. Labeled pattern wins immediately (Retail Price: $130 / MSRP £180).
+    2. Otherwise returns the FIRST bare price in [_PRICE_MIN, _PRICE_MAX].
+       Using "first" (not most-common) is intentional: when context is
+       properly scoped to one product card, the first price IS that product's
+       price.  Never pass multi-card blobs here — scope the context first.
     Returns 0 if nothing plausible found.
     """
     if not text:
@@ -205,24 +210,16 @@ def extract_price_smart(text: str) -> int:
         except ValueError:
             pass
 
-    # Collect all bare $XXX in range
-    candidates: list[int] = []
+    # First bare price in valid range
     for m in _PRICE_RE.finditer(cleaned):
         try:
             val = int(m.group(1))
             if _PRICE_MIN <= val <= _PRICE_MAX:
-                candidates.append(val)
+                return val
         except ValueError:
             pass
 
-    if not candidates:
-        return 0
-    if len(candidates) == 1:
-        return candidates[0]
-
-    # Most common value wins (handles "$130 … $130 … was $150" → 130)
-    from collections import Counter
-    return Counter(candidates).most_common(1)[0][0]
+    return 0
 
 
 # ---- image extraction ----
@@ -286,6 +283,8 @@ def clean_title(text: str) -> str:
 
     t = _COUNTDOWN_RE.sub(" ", t)
     t = re.sub(r"\bCOMING\s+SOON\b", " ", t, flags=re.I)
+    # Strip both $USD and £GBP price tokens from titles (e.g. "From £ 185", "$130")
+    t = re.sub(r"\bfrom\s+[$£]\s*\d{2,4}(?:\.\d{2})?\b", " ", t, flags=re.I)
     t = _PRICE_RE.sub(" ", t)
 
     # strip leading date text

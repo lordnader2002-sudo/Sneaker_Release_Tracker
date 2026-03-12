@@ -1,4 +1,7 @@
-# file: fetch_release_hibbett.py
+# file: fetch_release_solecollector.py
+#
+# Scrapes the Sole Collector sneaker release calendar.
+# US-based source: USD prices, major brands, good image coverage.
 
 from __future__ import annotations
 
@@ -22,20 +25,22 @@ from fetch_release_multisource_common import (
     window_filter,
 )
 
-SOURCE_URL = "https://www.hibbett.com/launch-calendar/"
-SOURCE_NAME = "hibbett"
+SOURCE_URL  = "https://solecollector.com/release-dates/sneakers"
+SOURCE_NAME = "solecollector"
 
 DATE_RE = re.compile(
-    r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|June|July|August|September|October|November|December)\b\.?\s+(\d{1,2})(?:,\s*(\d{4}))?\b",
+    r"\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|"
+    r"Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
+    r"\.?\s+(\d{1,2})(?:,?\s*(\d{4}))?\b",
     re.I,
 )
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Fetch release calendar from Hibbett (Playwright).")
-    p.add_argument("--days", type=int, default=35)
-    p.add_argument("--timeout-ms", type=int, default=60000)
-    p.add_argument("-o", "--output", type=Path, default=Path("data/fallback_hibbett.json"))
+    p = argparse.ArgumentParser(description="Fetch Sole Collector release calendar.")
+    p.add_argument("--days",       type=int,  default=35)
+    p.add_argument("--timeout-ms", type=int,  default=60000)
+    p.add_argument("-o", "--output", type=Path, default=Path("data/fallback_solecollector.json"))
     return p.parse_args()
 
 
@@ -48,13 +53,14 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
         if len(title) < 8:
             continue
 
+        # Walk up to find a card container with a date
         container = a.parent
         blob = ""
-        for _ in range(4):
+        for _ in range(5):
             if container is None:
                 break
             blob = normalize_text(container.get_text(" ", strip=True))
-            if blob:
+            if DATE_RE.search(blob):
                 break
             container = container.parent
 
@@ -63,34 +69,38 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
             continue
 
         month = m.group(1)
-        day = m.group(2)
-        year = m.group(3)
-        date_text = f"{month} {day} {year}" if year else f"{month} {day}"
+        day   = m.group(2)
+        year  = m.group(3)
+        date_str = f"{month} {day} {year}" if year else f"{month} {day}"
 
-        d = parse_date_flexible(date_text, default_year=default_year)
+        d = parse_date_flexible(date_str, default_year=default_year)
         if not d:
             continue
 
-        # Use the link's immediate parent for price — avoids cross-card $130 pollution
+        # Tight price context: immediate parent of the link only
         price_blob = a.parent.get_text(" ", strip=True) if a.parent else blob
         retail = extract_price_smart(normalize_text(price_blob[:400]))
 
         href = a["href"]
         if href.startswith("/"):
-            href = "https://www.hibbett.com" + href
+            href = "https://solecollector.com" + href
+        if not href.startswith("http"):
+            continue
+
+        image_url = extract_image_url(container, base_url="https://solecollector.com")
 
         rows.append(
             {
-                "releaseDate": d.isoformat(),
-                "shoeName": title,
-                "brand": infer_brand(title),
-                "retailPrice": retail,
+                "releaseDate":          d.isoformat(),
+                "shoeName":             title,
+                "brand":                infer_brand(title),
+                "retailPrice":          retail,
                 "estimatedMarketValue": None,
-                "imageUrl": extract_image_url(container, base_url="https://www.hibbett.com"),
-                "sourcePrimary": SOURCE_NAME,
-                "sourceSecondary": SOURCE_URL,
-                "sourceUrl": SOURCE_URL,
-                "releaseUrl": href,
+                "imageUrl":             image_url,
+                "sourcePrimary":        SOURCE_NAME,
+                "sourceSecondary":      SOURCE_URL,
+                "sourceUrl":            SOURCE_URL,
+                "releaseUrl":           href,
             }
         )
 
@@ -103,9 +113,19 @@ def dedupe(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         key = (r.get("releaseDate", ""), str(r.get("shoeName", "")).lower())
         if not key[0] or not key[1]:
             continue
-        if key not in best or (r.get("retailPrice") or 0) > (best[key].get("retailPrice") or 0):
+        existing = best.get(key)
+        if existing is None:
             best[key] = r
-    return sorted(best.values(), key=lambda x: (x["releaseDate"], x.get("brand", ""), x["shoeName"].lower()))
+            continue
+        def score(x: dict[str, Any]) -> int:
+            return int(bool(x.get("imageUrl"))) + int((x.get("retailPrice") or 0) > 0)
+        if score(r) > score(existing):
+            best[key] = r
+
+    return sorted(
+        best.values(),
+        key=lambda x: (x["releaseDate"], x.get("brand", ""), x["shoeName"].lower()),
+    )
 
 
 def main() -> None:

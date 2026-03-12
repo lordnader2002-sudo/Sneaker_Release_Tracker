@@ -71,9 +71,9 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
         if not d:
             continue
 
-        # tight context; labeled-only price extractor
-        ctx = normalize_text(blob[:1200])
-        retail = extract_price_smart(ctx)
+        # Use the link's immediate parent for price — avoids cross-card $130 pollution
+        price_blob = a.parent.get_text(" ", strip=True) if a.parent else blob
+        retail = extract_price_smart(normalize_text(price_blob[:400]))
 
         href = a["href"]
         if href.startswith("/"):

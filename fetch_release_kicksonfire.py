@@ -56,7 +56,7 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
             continue
 
         # tight context to avoid unrelated prices
-        ctx = normalize_text((a.parent.get_text(" ", strip=True) if a.parent else raw)[:800])
+        ctx = normalize_text((a.parent.get_text(" ", strip=True) if a.parent else raw)[:400])
         retail = extract_price_smart(ctx)
 
         title = clean_title(raw_title)

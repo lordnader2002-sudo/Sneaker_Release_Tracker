@@ -1,65 +1,5 @@
 [
   {
-    "releaseDate": "2026-03-12",
-    "shoeName": "Converse SHAI 001",
-    "brand": "Converse",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/02/25/converse-shai-001-pink-a19838c"
-  },
-  {
-    "releaseDate": "2026-03-12",
-    "shoeName": "New Balance 1890",
-    "brand": "New Balance",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/02/17/new-balance-1890-faded-black-utility-green-u189071h/"
-  },
-  {
-    "releaseDate": "2026-03-12",
-    "shoeName": "New Balance 993 Made In USA",
-    "brand": "New Balance",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/02/24/new-balance-993-made-in-usa-passion-fruit-u9934ja"
-  },
-  {
-    "releaseDate": "2026-03-12",
-    "shoeName": "Nike LeBron NXXT Gen by JuJu",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/02/28/nike-lebron-nxxt-gen-by-juju-light-crimson-laser-orange-bright-crimson-iq8495-600"
-  },
-  {
-    "releaseDate": "2026-03-12",
-    "shoeName": "Nike Sabrina 3 \"Oregon Ducks\"",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/02/24/nike-sabrina-3-oregon-ducks-ir2478-700"
-  },
-  {
     "releaseDate": "2026-03-13",
     "shoeName": "Chet Holmgren x Nike KD 18 \"Camo\"",
     "brand": "Nike",
@@ -82,5 +22,65 @@
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
     "releaseUrl": "https://sneakernews.com/2026/03/06/nike-kd-18-thunder-and-reign-chet-holmgren-io7519-500"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "Nike Air Force 1 \"Easter\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2025/12/18/nike-air-force-1-low-easter-2026"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "Nike Air Max Uptempo 95",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/07aa99eae68053b5b85ce7223604ed73_1772743649.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2025/12/17/nike-air-max-uptempo-95-bulls-ck0892-600/"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "Nike Dunk Low \"Easter\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/29f99808bf352b911ae4d15dfce8e900_1766026749.jpg",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2025/12/17/nike-dunk-low-easter-iq9404-349"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "Nike Zoom Kobe 3 Protro \"Mamba Magic\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/af5919651617241c74b00f1921b76067_1772813964.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/25/nike-kobe-3-low-protro-mamba-magic-if2497-500/"
+  },
+  {
+    "releaseDate": "2026-03-13",
+    "shoeName": "Skims x Nike Air Rift",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/707fe13a0a87b1077af5542fb0bf0c39_1773066350.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/09/nike-skims-rift-mesh-light-bone-io7694-002"
   }
 ]

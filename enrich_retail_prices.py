@@ -46,9 +46,26 @@ JSONLD_PRICE_RE = re.compile(r'"price"\s*:\s*"([0-9]{2,4})(?:\.[0-9]{2})?"', re.
 
 # ── Sneaker Database API (RapidAPI) ────────────────────────────────────────────
 
-_SDB_API_KEY = os.environ.get("SNEAKER_DB_API_KEY", "")
-_SDB_HOST    = "the-sneaker-database.p.rapidapi.com"
+_SDB_API_KEY  = os.environ.get("SNEAKER_DB_API_KEY", "")
+_SDB_HOST     = "the-sneaker-database.p.rapidapi.com"
 _SDB_TTL_DAYS = 30  # SDB prices are stable; cache longer than HTML scrapes
+
+# Patterns used to clean shoe names before querying the API
+_COLORWAY_PAT = re.compile(r"\s*[•·]\s*.+$")  # strip " • COLORWAY/COLORWAY"
+_ENTRY_PAT    = re.compile(r"^(?:ENTRIES\s+OPEN\s+)?App\s+entry\s+", re.I)
+_DATE_PFX_PAT = re.compile(r"^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}\s+", re.I)
+_GENDER_PAT   = re.compile(r"\b(MENS|WOMENS|BOYS|GIRLS|GRADE\s+SCHOOL|GS|PRE.SCHOOL|TODDLER|INFANT|UNISEX|BIG\s+KIDS?|LITTLE\s+KIDS?)\b", re.I)
+_PRICE_IN_NAME_PAT = re.compile(r"\bFrom\s+[$£]\s*\d+\b", re.I)
+
+
+def _clean_name_for_sdb(name: str) -> str:
+    """Strip colorway, gender markers, and noise from shoe names before API query."""
+    name = _COLORWAY_PAT.sub("", name)       # "Air Max 95 • BLACK/WHITE" → "Air Max 95"
+    name = _ENTRY_PAT.sub("", name)           # "App entry Jordan..." → "Jordan..."
+    name = _DATE_PFX_PAT.sub("", name)        # "Mar 14 Jordan..." → "Jordan..."
+    name = _PRICE_IN_NAME_PAT.sub("", name)   # "Gel-Kayano From £154" → "Gel-Kayano"
+    name = _GENDER_PAT.sub("", name)          # remove gender/grade markers
+    return " ".join(name.split()).strip()
 
 
 async def _sdb_lookup(
@@ -300,7 +317,7 @@ async def _run(rows: list[dict[str, Any]], args: argparse.Namespace, conn: sqlit
             for row in rows:
                 if int(row.get("retailPrice") or 0) > 0:
                     continue
-                shoe_name = str(row.get("shoeName") or "").strip()
+                shoe_name = _clean_name_for_sdb(str(row.get("shoeName") or ""))
                 if not shoe_name:
                     continue
 

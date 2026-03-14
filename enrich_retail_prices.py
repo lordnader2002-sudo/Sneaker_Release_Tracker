@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
+import os
 import re
 import sqlite3
 from datetime import datetime, timedelta
@@ -42,6 +43,77 @@ LABELED_PRICE_RE = re.compile(
 )
 PLAIN_PRICE_RE = re.compile(r"(?:USD\s*)?\$\s*([0-9]{2,4})(?:\.[0-9]{2})?", re.I)
 JSONLD_PRICE_RE = re.compile(r'"price"\s*:\s*"([0-9]{2,4})(?:\.[0-9]{2})?"', re.I)
+
+# ── Sneaker Database API (RapidAPI) ────────────────────────────────────────────
+
+_SDB_API_KEY = os.environ.get("SNEAKER_DB_API_KEY", "")
+_SDB_HOST    = "the-sneaker-database.p.rapidapi.com"
+_SDB_TTL_DAYS = 30  # SDB prices are stable; cache longer than HTML scrapes
+
+
+async def _sdb_lookup(
+    client: httpx.AsyncClient,
+    shoe_name: str,
+    release_date: str,
+    min_price: int,
+    max_price: int,
+) -> int | None:
+    """Query The Sneaker Database (RapidAPI) for a retail price by name."""
+    try:
+        r = await client.get(
+            f"https://{_SDB_HOST}/sneakers",
+            params={"limit": "10", "name": shoe_name},
+            headers={
+                "X-RapidAPI-Key": _SDB_API_KEY,
+                "X-RapidAPI-Host": _SDB_HOST,
+            },
+            timeout=10.0,
+        )
+        if r.status_code != 200:
+            return None
+        results = r.json().get("results") or []
+
+        # Prefer the result whose release date is closest to ours
+        target_date = None
+        try:
+            if release_date:
+                target_date = datetime.fromisoformat(release_date).date()
+        except ValueError:
+            pass
+
+        best_price: int | None = None
+        best_delta: int | None = None
+        for item in results:
+            raw_price = item.get("retailPrice")
+            if not raw_price:
+                continue
+            try:
+                price = int(raw_price)
+            except (ValueError, TypeError):
+                continue
+            if not (min_price <= price <= max_price):
+                continue
+
+            if target_date:
+                try:
+                    item_date = datetime.fromisoformat(
+                        str(item.get("releaseDate") or "")
+                    ).date()
+                    delta = abs((item_date - target_date).days)
+                    if best_delta is None or delta < best_delta:
+                        best_delta = delta
+                        best_price = price
+                    continue
+                except ValueError:
+                    pass
+
+            if best_price is None:
+                best_price = price
+
+        return best_price
+    except Exception:
+        return None
+
 
 # ── SQLite price cache ─────────────────────────────────────────────────────────
 
@@ -221,6 +293,44 @@ async def _run(rows: list[dict[str, Any]], args: argparse.Namespace, conn: sqlit
     attempted = 0
     cache_hits = 0
 
+    # ── Phase 1: Sneaker Database API (fast, no page scraping) ────────────────
+    sdb_hits = 0
+    if _SDB_API_KEY:
+        async with httpx.AsyncClient(follow_redirects=True, http2=True) as sdb_client:
+            for row in rows:
+                if int(row.get("retailPrice") or 0) > 0:
+                    continue
+                shoe_name = str(row.get("shoeName") or "").strip()
+                if not shoe_name:
+                    continue
+
+                # Use a namespaced cache key so SDB and URL entries don't collide
+                cache_key = f"sdb:{shoe_name.lower()[:100]}"
+                cached = _cache_get(conn, cache_key)
+                if cached is not None:
+                    # cached 0 = already queried, no result — skip
+                    if cached > 0 and args.min_price <= cached <= args.max_price:
+                        row["retailPrice"] = cached
+                        sdb_hits += 1
+                    continue
+
+                price = await _sdb_lookup(
+                    sdb_client, shoe_name,
+                    str(row.get("releaseDate") or ""),
+                    args.min_price, args.max_price,
+                )
+                if price is not None:
+                    row["retailPrice"] = price
+                    _cache_put(conn, cache_key, price)
+                    sdb_hits += 1
+                else:
+                    _cache_put(conn, cache_key, 0)  # sentinel: checked, no match
+                await asyncio.sleep(0.1)  # gentle rate-limit on API key
+        print(f"SneakerDB API enriched: {sdb_hits}")
+    else:
+        print("SNEAKER_DB_API_KEY not set — skipping SneakerDB API lookup")
+
+    # ── Phase 2: HTML enrichment for rows still missing a price ───────────────
     # Build work list: rows that need enrichment, up to --max
     work: list[tuple[int, str]] = []
     for idx, row in enumerate(rows):
@@ -264,7 +374,7 @@ async def _run(rows: list[dict[str, Any]], args: argparse.Namespace, conn: sqlit
                 _cache_put(conn, url, price)
                 updated += 1
 
-    return attempted, updated + cache_hits
+    return attempted, updated + cache_hits + sdb_hits
 
 
 # ── Entry point ────────────────────────────────────────────────────────────────

@@ -96,6 +96,8 @@ jobs:
           
       - name: Enrich retail prices (best effort)
         shell: bash
+        env:
+          SNEAKER_DB_API_KEY: ${{ secrets.SNEAKER_DB_API_KEY }}
         run: |
           python enrich_retail_prices.py data/final_releases.json --max 120 --timeout 25 --sleep 0.2 | tee data/retail_enrich_log.txt || true
 

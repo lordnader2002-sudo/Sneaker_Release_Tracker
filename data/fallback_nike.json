@@ -1,82 +1,5 @@
 [
   {
-    "releaseDate": "2026-03-13",
-    "shoeName": "Mar 13 Indoor/Court Low-Top Soccer Shoes Jordan Tiempo Streetgato SE",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/jordan-tiempo-streetgato-phantom-and-infrared"
-  },
-  {
-    "releaseDate": "2026-03-13",
-    "shoeName": "Mar 13 Jordan Tiempo Maestro Elite SE Infrared",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/jordan-tiempo-maestro-elite-se-infrared-1"
-  },
-  {
-    "releaseDate": "2026-03-13",
-    "shoeName": "Mar 13 Kobe 3 Low Protro Pink Quartz",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/kobe-3-low-protro-pink-quartz"
-  },
-  {
-    "releaseDate": "2026-03-14",
-    "shoeName": "Air Jordan 13 Retro White and University Red",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
-  },
-  {
-    "releaseDate": "2026-03-14",
-    "shoeName": "Air Jordan 14 Retro Black and University Blue",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-14-retro-black-and-university-blue"
-  },
-  {
-    "releaseDate": "2026-03-14",
-    "shoeName": "Air Jordan 3 x Teyana Taylor Concrete Rose",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-3-teyana-taylor-concrete-rose"
-  },
-  {
-    "releaseDate": "2026-03-14",
-    "shoeName": "Jordan x Teyana Taylor Apparel Collection",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
-  },
-  {
     "releaseDate": "2026-03-14",
     "shoeName": "Mar 14 Air Jordan 3 x Teyana Taylor Concrete Rose",
     "brand": "Air Jordan",
@@ -143,7 +66,51 @@
     "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
   },
   {
-    "releaseDate": "2026-03-14",
+    "releaseDate": "2026-03-15",
+    "shoeName": "Air Jordan 13 Retro White and University Red",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
+  },
+  {
+    "releaseDate": "2026-03-15",
+    "shoeName": "Air Jordan 14 Retro Black and University Blue",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/air-jordan-14-retro-black-and-university-blue"
+  },
+  {
+    "releaseDate": "2026-03-15",
+    "shoeName": "Air Jordan 3 x Teyana Taylor Concrete Rose",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/air-jordan-3-teyana-taylor-concrete-rose"
+  },
+  {
+    "releaseDate": "2026-03-15",
+    "shoeName": "Jordan x Teyana Taylor Apparel Collection",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch",
+    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
+  },
+  {
+    "releaseDate": "2026-03-15",
     "shoeName": "Air Max 95 Big Bubble Volt and University Red",
     "brand": "Nike",
     "retailPrice": 0,
@@ -152,17 +119,6 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch",
     "sourceUrl": "/launch/t/air-max-95-big-bubble-volt-and-university-red"
-  },
-  {
-    "releaseDate": "2026-03-14",
-    "shoeName": "Kobe 3 Low Protro Pink Quartz",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/kobe-3-low-protro-pink-quartz"
   },
   {
     "releaseDate": "2026-03-17",

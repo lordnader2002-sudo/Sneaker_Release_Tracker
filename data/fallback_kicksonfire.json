@@ -1,17 +1,5 @@
 [
   {
-    "releaseDate": "2026-03-14",
-    "shoeName": "Air Jordan 13 Chicago",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": "https://5app.kicksonfire.com/kofapp/upload/events_master_images/thumb_iphone_air-jordan-13-chicago.png",
-    "sourcePrimary": "kicksonfire",
-    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
-    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
-    "releaseUrl": "https://www.kicksonfire.com/air-jordan-13-chicago"
-  },
-  {
     "releaseDate": "2026-03-17",
     "shoeName": "Adidas Hyperboost Edge Cloud White / Pure Ruby",
     "brand": "Adidas",
@@ -286,5 +274,17 @@
     "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
     "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
     "releaseUrl": "https://www.kicksonfire.com/nike-kobe-air-force-1-low-lower-merion-aces"
+  },
+  {
+    "releaseDate": "2026-03-23",
+    "shoeName": "Nike Kobe Air Force 1 Low White / Team Red",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://5app.kicksonfire.com/kofapp/upload/events_master_images/thumb_iphone_nike-kobe-air-force-1-low-white-team-red.png",
+    "sourcePrimary": "kicksonfire",
+    "sourceSecondary": "https://www.kicksonfire.com/sneaker-release-dates",
+    "sourceUrl": "https://www.kicksonfire.com/sneaker-release-dates",
+    "releaseUrl": "https://www.kicksonfire.com/nike-kobe-air-force-1-low-white-team-red"
   }
 ]

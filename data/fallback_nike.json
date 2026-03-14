@@ -8,7 +8,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/air-jordan-3-teyana-taylor-concrete-rose"
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-3-teyana-taylor-concrete-rose"
   },
   {
     "releaseDate": "2026-03-14",
@@ -19,7 +19,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
+    "sourceUrl": "https://www.nike.com/launch/t/jordan-teyana-taylor-apparel-collection-static"
   },
   {
     "releaseDate": "2026-03-14",
@@ -30,7 +30,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-13-retro-white-and-university-red"
   },
   {
     "releaseDate": "2026-03-14",
@@ -41,7 +41,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
+    "sourceUrl": "https://www.nike.com/launch/t/jordan-teyana-taylor-apparel-collection-static"
   },
   {
     "releaseDate": "2026-03-14",
@@ -52,7 +52,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-13-retro-white-and-university-red"
   },
   {
     "releaseDate": "2026-03-14",
@@ -63,7 +63,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
+    "sourceUrl": "https://www.nike.com/launch/t/jordan-teyana-taylor-apparel-collection-static"
   },
   {
     "releaseDate": "2026-03-15",
@@ -74,7 +74,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-13-retro-white-and-university-red"
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-13-retro-white-and-university-red"
   },
   {
     "releaseDate": "2026-03-15",
@@ -85,7 +85,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-14-retro-black-and-university-blue"
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-14-retro-black-and-university-blue"
   },
   {
     "releaseDate": "2026-03-15",
@@ -96,7 +96,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-jordan-3-teyana-taylor-concrete-rose"
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-3-teyana-taylor-concrete-rose"
   },
   {
     "releaseDate": "2026-03-15",
@@ -107,7 +107,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/jordan-teyana-taylor-apparel-collection-static"
+    "sourceUrl": "https://www.nike.com/launch/t/jordan-teyana-taylor-apparel-collection-static"
   },
   {
     "releaseDate": "2026-03-15",
@@ -118,7 +118,7 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch",
-    "sourceUrl": "/launch/t/air-max-95-big-bubble-volt-and-university-red"
+    "sourceUrl": "https://www.nike.com/launch/t/air-max-95-big-bubble-volt-and-university-red"
   },
   {
     "releaseDate": "2026-03-17",
@@ -129,6 +129,6 @@
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "/launch/t/converse-x-anonymous-club-chuck-a19255c-020"
+    "sourceUrl": "https://www.nike.com/launch/t/converse-x-anonymous-club-chuck-a19255c-020"
   }
 ]

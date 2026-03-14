@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 
 from fetch_release_multisource_common import (
     extract_image_url,
-    extract_price_smart,
+    extract_retail_price,
     infer_brand,
     normalize_text,
     parse_date_flexible,
@@ -74,7 +74,7 @@ def extract_rows(html: str) -> list[dict[str, Any]]:
         # Labeled-only price from a tight block — cap at 400 chars to avoid cross-card bleed
         parent = h2.parent or tag
         block_text = normalize_text((parent.get_text(" ", strip=True) if parent else text)[:400])
-        retail = extract_price_smart(block_text)
+        retail = extract_retail_price(block_text)
 
         # Find the product image from the same block
         image_url = extract_image_url(parent, base_url="https://sneakernews.com")

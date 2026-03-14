@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 from fetch_release_multisource_common import (
     clean_title,
     extract_image_url,
-    extract_price_smart,
+    extract_retail_price,
     infer_brand,
     normalize_text,
     parse_date_flexible,
@@ -57,7 +57,7 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
             continue
 
         ctx = normalize_text((a.parent.get_text(" ", strip=True) if a.parent else raw)[:400])
-        retail = extract_price_smart(ctx)
+        retail = extract_retail_price(ctx)
 
         title = clean_title(raw_title)
 

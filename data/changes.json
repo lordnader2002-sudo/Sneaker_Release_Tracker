@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "changeType": "NEW",
+    "date": "2026-03-18",
+    "brand": "Air Jordan",
+    "style": "Mar 18 Air Jordan 1 Low OG Sail and Coconut Milk",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-14T10:23:02Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-21",
+    "brand": "Air Jordan",
+    "style": "Mar 21 Baby/Toddler Shoes Jordan 14 Retro",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-14T10:23:02Z"
+  }
+]

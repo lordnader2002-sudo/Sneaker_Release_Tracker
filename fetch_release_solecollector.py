@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 from fetch_release_multisource_common import (
     clean_title,
     extract_image_url,
-    extract_retail_price,
+    find_card_price,
     infer_brand,
     normalize_text,
     parse_date_flexible,
@@ -78,9 +78,7 @@ def extract_rows(soup: BeautifulSoup) -> list[dict[str, Any]]:
         if not d:
             continue
 
-        # Labeled-only price from the immediate parent — avoids placeholder price pollution
-        price_blob = a.parent.get_text(" ", strip=True) if a.parent else blob
-        retail = extract_retail_price(normalize_text(price_blob[:400]))
+        retail = find_card_price(container)
 
         href = a["href"]
         if href.startswith("/"):

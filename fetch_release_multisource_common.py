@@ -268,6 +268,49 @@ def extract_price_smart(text: str) -> int:
     return 0
 
 
+_PRICE_CLASS_RE = re.compile(r"price|cost|amount", re.I)
+_EXACT_PRICE_RE = re.compile(r"^\s*[$£]\s*([0-9]{2,4})(?:\.[0-9]{2})?\s*$")
+
+
+def find_card_price(container: Any, min_price: int = _PRICE_MIN, max_price: int = _PRICE_MAX) -> int:
+    """
+    Find a retail price from a release card DOM container.
+
+    Tries three strategies in order, stopping at the first success:
+      1. Element whose CSS class contains 'price', 'cost', or 'amount'
+      2. Text node whose ENTIRE content is a single price (e.g., "$150.00")
+      3. Labeled text fallback (Retail Price / MSRP / Price: $X)
+    """
+    if container is None or not hasattr(container, "find_all"):
+        return 0
+
+    # Strategy 1: dedicated price element by CSS class
+    for elem in container.find_all(class_=_PRICE_CLASS_RE):
+        text = " ".join(elem.get_text(" ", strip=True).split())
+        m = _PRICE_RE.search(text)
+        if m:
+            try:
+                val = int(float(m.group(1)))
+                if min_price <= val <= max_price:
+                    return val
+            except (ValueError, TypeError):
+                pass
+
+    # Strategy 2: text node that IS exactly a price ("$150.00" with nothing else)
+    for node in container.strings:
+        m = _EXACT_PRICE_RE.match(node)
+        if m:
+            try:
+                val = int(float(m.group(1)))
+                if min_price <= val <= max_price:
+                    return val
+            except (ValueError, TypeError):
+                pass
+
+    # Strategy 3: labeled text fallback
+    return extract_retail_price(" ".join(container.get_text(" ", strip=True).split())[:400])
+
+
 # ── Image extraction ───────────────────────────────────────────────────────────
 
 _IMG_SRC_ATTRS = ("data-src", "src", "data-lazy-src", "data-original", "data-srcset", "srcset")

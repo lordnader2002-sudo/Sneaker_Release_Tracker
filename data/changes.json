@@ -1,32 +1,82 @@
 [
   {
-    "changeType": "NEW",
-    "date": "2026-03-18",
-    "brand": "Air Jordan",
-    "style": "ENTRIES OPEN App entry Jordan Retro 14 BOYS GRADE SCHOOL \u2022 BLACK/WHITE/UNIVERSITY BLUE",
+    "changeType": "REMOVED",
+    "date": "2026-03-15",
+    "brand": "Adidas",
+    "style": "adidas DON Issue 7 \"Best Of Adi\"",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-15T17:02:39Z"
+    "detectedAt": "2026-03-16T08:00:07Z"
   },
   {
-    "changeType": "NEW",
-    "date": "2026-03-18",
+    "changeType": "REMOVED",
+    "date": "2026-03-15",
     "brand": "Air Jordan",
-    "style": "Jordan Retro 14 BOYS PRE-SCHOOL \u2022 BLACK/WHITE/UNIVERSITY BLUE",
+    "style": "Air Jordan 13 Retro White and University Red",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-15T17:02:39Z"
+    "detectedAt": "2026-03-16T08:00:07Z"
   },
   {
-    "changeType": "NEW",
-    "date": "2026-03-26",
+    "changeType": "REMOVED",
+    "date": "2026-03-15",
+    "brand": "Air Jordan",
+    "style": "Air Jordan 14 Retro Black and University Blue",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-16T08:00:07Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-15",
     "brand": "Nike",
     "style": "Air Max 95 Big Bubble Volt and University Red",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-15T17:02:39Z"
+    "detectedAt": "2026-03-16T08:00:07Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-03-15",
+    "brand": "Air Jordan",
+    "style": "Jordan x Teyana Taylor Apparel Collection",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-16T08:00:07Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-19",
+    "brand": "Nike",
+    "style": "Nike Air Max 90 QS",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-16T08:00:07Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-19",
+    "brand": "Nike",
+    "style": "Nike GT Future",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-16T08:00:07Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-03-19",
+    "brand": "Nike",
+    "style": "Nike Ja 3 \"At Dawn\"",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-16T08:00:07Z"
   }
 ]

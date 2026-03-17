@@ -1,72 +1,12 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-03-16",
-    "brand": "Adidas",
-    "style": "adidas Fear Of God Athletics III",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-17T07:39:28Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-03-16",
+    "changeType": "NEW",
+    "date": "2026-03-18",
     "brand": "Nike",
-    "style": "Jacquemus x Nike Moon Shoe",
+    "style": "ENTRIES OPEN App entry Nike Kobe V Protro MENS \u2022 METALLIC SILVER/TEAM RED/WHITE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-17T07:39:28Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-18",
-    "brand": "Puma",
-    "style": "PUMA MB 05 Melo World MENS \u2022 TEAL/RED",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-17T07:39:28Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-18",
-    "brand": "Saucony",
-    "style": "UGG Fluff Yeah Slides GIRLS GRADE SCHOOL \u2022 BLACK/DARK SHADOW",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-17T07:39:28Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-18",
-    "brand": "Unknown",
-    "style": "UGG Fluff Yeah Slides GIRLS GRADE SCHOOL \u2022 DEEP CORAL/SACHET PINK",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-17T07:39:28Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-18",
-    "brand": "Unknown",
-    "style": "UGG Fluff Yeah Slides GIRLS GRADE SCHOOL \u2022 NATURAL/SEA SALT",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-17T07:39:28Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-03-18",
-    "brand": "Unknown",
-    "style": "UGG Fluff Yeah Slides WOMENS \u2022 BLACK/GREY",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-17T07:39:28Z"
+    "detectedAt": "2026-03-17T19:39:04Z"
   }
 ]

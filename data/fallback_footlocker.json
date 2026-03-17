@@ -109,6 +109,18 @@
   },
   {
     "releaseDate": "2026-03-18",
+    "shoeName": "ENTRIES OPEN App entry Nike Kobe V Protro MENS \u2022 METALLIC SILVER/TEAM RED/WHITE",
+    "brand": "Nike",
+    "retailPrice": 210,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/M0557001.html"
+  },
+  {
+    "releaseDate": "2026-03-18",
     "shoeName": "Nike Air Foamposite Pro MENS \u2022 UNIVERSITY BLUE/MIDNIGHT NAVY",
     "brand": "Nike",
     "retailPrice": 210,
@@ -250,18 +262,6 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar/nike/F2870601.html"
-  },
-  {
-    "releaseDate": "2026-03-18",
-    "shoeName": "Nike Kobe V Protro MENS \u2022 METALLIC SILVER/TEAM RED/WHITE",
-    "brand": "Nike",
-    "retailPrice": 210,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "footlocker",
-    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
-    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
-    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/M0557001.html"
   },
   {
     "releaseDate": "2026-03-18",

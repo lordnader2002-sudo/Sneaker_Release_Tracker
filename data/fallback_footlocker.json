@@ -25,7 +25,7 @@
   },
   {
     "releaseDate": "2026-03-24",
-    "shoeName": "Jordan Air Jordan 3 Retro OG MENS \u2022 SAIL/JADE AURA/YELLOW",
+    "shoeName": "ENTRIES OPEN App Entry Jordan Air Jordan 3 Retro OG MENS \u2022 SAIL/JADE AURA/YELLOW",
     "brand": "Air Jordan",
     "retailPrice": 165,
     "estimatedMarketValue": null,
@@ -37,7 +37,7 @@
   },
   {
     "releaseDate": "2026-03-24",
-    "shoeName": "Jordan Retro 3 BOYS GRADE SCHOOL \u2022 WHITE/PINK/GREEN",
+    "shoeName": "ENTRIES OPEN App Entry Jordan Grade School Retro 3 BOYS GRADE SCHOOL \u2022 WHITE/PINK/GREEN",
     "brand": "Air Jordan",
     "retailPrice": 165,
     "estimatedMarketValue": null,
@@ -73,6 +73,18 @@
   },
   {
     "releaseDate": "2026-03-24",
+    "shoeName": "ENTRIES OPEN App Entry Nike Air Foamposite Pro MENS \u2022 UNIVERSITY BLUE/MIDNIGHT NAVY",
+    "brand": "Nike",
+    "retailPrice": 165,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/0794400.html"
+  },
+  {
+    "releaseDate": "2026-03-24",
     "shoeName": "ENTRIES OPEN App Entry Nike Air Max 95 WOMENS \u2022 BLACK/PINK/WHITE",
     "brand": "Nike",
     "retailPrice": 165,
@@ -85,7 +97,7 @@
   },
   {
     "releaseDate": "2026-03-24",
-    "shoeName": "Nike Air Foamposite Pro MENS \u2022 UNIVERSITY BLUE/MIDNIGHT NAVY",
+    "shoeName": "ENTRIES OPEN App Entry Nike Grade School Little Posite Pro BOYS GRADE SCHOOL \u2022 UNIVERSITY BLUE/WHITE/MIDNIGHT NAVY",
     "brand": "Nike",
     "retailPrice": 165,
     "estimatedMarketValue": null,
@@ -93,7 +105,7 @@
     "sourcePrimary": "footlocker",
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
-    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/0794400.html"
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/Q7230400.html"
   },
   {
     "releaseDate": "2026-03-24",
@@ -106,18 +118,6 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar/nike/V3596003.html"
-  },
-  {
-    "releaseDate": "2026-03-24",
-    "shoeName": "Nike Little Posite Pro BOYS GRADE SCHOOL \u2022 UNIVERSITY BLUE/WHITE/MIDNIGHT NAVY",
-    "brand": "Nike",
-    "retailPrice": 165,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "footlocker",
-    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
-    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
-    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/Q7230400.html"
   },
   {
     "releaseDate": "2026-03-24",

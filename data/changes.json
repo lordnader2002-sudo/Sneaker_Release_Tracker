@@ -1,42 +1,12 @@
 [
   {
     "changeType": "NEW",
-    "date": "2026-04-01",
+    "date": "2026-03-26",
     "brand": "Nike",
-    "style": "Nike JA 3 MENS \u2022 ANTHRACITE/BRIGHT CRIMSON/YELLOW OCHER",
+    "style": "App Entry Nike Air Max 95 WOMENS \u2022 BLACK/PINK/WHITE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-25T18:38:47Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-04-01",
-    "brand": "Nike",
-    "style": "Nike JA 3 MENS \u2022 GREEN SPARK/BLACK/UNIVERSITY RED",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-25T18:38:47Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-04-01",
-    "brand": "Nike",
-    "style": "Nike Mind 002 MENS \u2022 BLUE/PLATINUM/BLUE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-25T18:38:47Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-04-01",
-    "brand": "Nike",
-    "style": "Nike Zoom Huarache 2K4 OT MENS \u2022 BLACK/BLACK",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-03-25T18:38:47Z"
+    "detectedAt": "2026-03-26T07:46:21Z"
   }
 ]

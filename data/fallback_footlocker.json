@@ -73,6 +73,18 @@
   },
   {
     "releaseDate": "2026-03-26",
+    "shoeName": "App Entry Nike Air Max 95 WOMENS \u2022 BLACK/PINK/WHITE",
+    "brand": "Nike",
+    "retailPrice": 190,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/52599600.html"
+  },
+  {
+    "releaseDate": "2026-03-26",
     "shoeName": "ENTRIES OPEN App Entry Nike Air Foamposite Pro MENS \u2022 UNIVERSITY BLUE/MIDNIGHT NAVY",
     "brand": "Nike",
     "retailPrice": 190,
@@ -82,18 +94,6 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar/nike/0794400.html"
-  },
-  {
-    "releaseDate": "2026-03-26",
-    "shoeName": "ENTRIES OPEN App Entry Nike Air Max 95 WOMENS \u2022 BLACK/PINK/WHITE",
-    "brand": "Nike",
-    "retailPrice": 190,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "footlocker",
-    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
-    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
-    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/52599600.html"
   },
   {
     "releaseDate": "2026-03-26",

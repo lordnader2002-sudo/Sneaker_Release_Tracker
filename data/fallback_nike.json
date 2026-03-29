@@ -1,27 +1,5 @@
 [
   {
-    "releaseDate": "2026-03-28",
-    "shoeName": "Baby/Toddler Shoes Jordan 3 Retro \"Sail and Jade Aura\"",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-3-sail-and-jade-aura"
-  },
-  {
-    "releaseDate": "2026-03-28",
-    "shoeName": "Jordan CJ1 T-Rexx Green Spark",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/jordan-cj1-t-rexx-green-spark"
-  },
-  {
     "releaseDate": "2026-03-31",
     "shoeName": "NOTE Manchester x Nike SB Dunk Low Flax and Summit White",
     "brand": "Nike",
@@ -34,7 +12,7 @@
   },
   {
     "releaseDate": "2026-04-01",
-    "shoeName": "Sabrina 3 \"What The?\" Igloo and Blue Crystal",
+    "shoeName": "Basketball Shoes Sabrina 3 \"What The?\"",
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
@@ -53,5 +31,16 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/lebron-xxiii-elite-good-intentions-hyper-pink-and-black"
+  },
+  {
+    "releaseDate": "2026-04-11",
+    "shoeName": "Baby/Toddler Shoes Jordan 1 Retro High OG",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-1-retro-high-og-flight-club-black-and-sail"
   }
 ]

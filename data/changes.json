@@ -1,13 +1,63 @@
 [
   {
+    "changeType": "NEW",
+    "date": "2026-04-01",
+    "brand": "Adidas",
+    "style": "adidas Anthony Edwards 2 BOYS GRADE SCHOOL \u2022 YELLOW/PURPLE/BLUE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-31T07:59:25Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-01",
+    "brand": "Air Jordan",
+    "style": "Jordan 1 Retro High OG FC BOYS PRE-SCHOOL \u2022 BLACK/SAIL/RED",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-31T07:59:25Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-01",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 1 High OG BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-31T07:59:25Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-01",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 4 GIRLS PRE-SCHOOL \u2022 PINKSICLE/COCONUT MILK/BLACK",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-31T07:59:25Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-01",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 4 GIRLS TODDLER \u2022 PINKSICLE/COCONUT MILK/ANTHRACITE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-03-31T07:59:25Z"
+  },
+  {
     "changeType": "RETAIL_CHANGED",
     "date": "2026-04-01",
     "brand": "Unknown",
     "style": "Contact Us",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -15,9 +65,9 @@
     "brand": "Converse",
     "style": "ENTRIES OPEN App Entry Converse Grade School SHAI 001 Camo BOYS GRADE SCHOOL \u2022 GREEN/BROWN",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -25,9 +75,9 @@
     "brand": "Air Jordan",
     "style": "Jordan AJ 1 Retro High OG FC MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -35,9 +85,9 @@
     "brand": "Air Jordan",
     "style": "Jordan Luka 5 MENS \u2022 BLACK/WHITE/GREY",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -45,9 +95,9 @@
     "brand": "Air Jordan",
     "style": "Jordan Pre-School Retro 3 GIRLS PRE-SCHOOL \u2022 PINK/ORANGE/BLUE",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -55,9 +105,9 @@
     "brand": "Air Jordan",
     "style": "Jordan Retro 4 WOMENS \u2022 ICED CARMINE/MILK",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -65,9 +115,9 @@
     "brand": "Air Jordan",
     "style": "Jordan Toddler Retro 3 GIRLS TODDLER \u2022 PINK/ORANGE/BLUE",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -75,9 +125,9 @@
     "brand": "Unknown",
     "style": "Launched",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -85,9 +135,9 @@
     "brand": "Nike",
     "style": "Nike Ja 3 JP BOYS GRADE SCHOOL \u2022 ANTHRACITE/BRIGHT CRIMSON/YELLOW OCHRE",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -95,9 +145,9 @@
     "brand": "Nike",
     "style": "Nike Ja 3 JP BOYS GRADE SCHOOL \u2022 GREEN SPARK/BLACK/UNIVERSITY RED",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -105,9 +155,9 @@
     "brand": "Nike",
     "style": "Nike Ja 3 JP BOYS PRE-SCHOOL \u2022 ARNTHRACITE/BRIGHT CRIMSON",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -115,9 +165,9 @@
     "brand": "Nike",
     "style": "Nike Mind 001 Mule MENS \u2022 LIGHT SMOKE GREY/CHROME/PHOTON DUST",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -125,9 +175,9 @@
     "brand": "Nike",
     "style": "Nike Mind 002 MENS \u2022 BLUE/PLATINUM/BLUE",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -135,9 +185,9 @@
     "brand": "Nike",
     "style": "Nike Sabrina 3 GIRLS GRADE SCHOOL \u2022 IGLOO/HOT LAVA/BLUE CRYSTAL",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -145,9 +195,9 @@
     "brand": "Nike",
     "style": "Nike Zoom Huarache 2K4 OT MENS \u2022 BLACK/BLACK",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -155,9 +205,9 @@
     "brand": "Unknown",
     "style": "Order Status",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -165,9 +215,9 @@
     "brand": "Unknown",
     "style": "Returns-Exchanges",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -175,9 +225,9 @@
     "brand": "Unknown",
     "style": "Shipping Info",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -185,9 +235,9 @@
     "brand": "Unknown",
     "style": "Skip To Main",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -195,9 +245,9 @@
     "brand": "Unknown",
     "style": "Store Pickup",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -205,9 +255,9 @@
     "brand": "Unknown",
     "style": "Upcoming",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -215,9 +265,9 @@
     "brand": "Vans",
     "style": "Vans LX Authentic 44 Archive WOMENS \u2022 BLACK/BLUE",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   },
   {
     "changeType": "RETAIL_CHANGED",
@@ -225,8 +275,8 @@
     "brand": "Vans",
     "style": "Vans LX Authentic Pony WOMENS \u2022 MARSH/LEOPARD",
     "fieldChanged": "retailPrice",
-    "oldValue": 155,
-    "newValue": 80,
-    "detectedAt": "2026-03-30T19:38:18Z"
+    "oldValue": 80,
+    "newValue": 95,
+    "detectedAt": "2026-03-31T07:59:25Z"
   }
 ]

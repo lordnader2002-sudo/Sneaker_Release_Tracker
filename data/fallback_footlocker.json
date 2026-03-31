@@ -85,6 +85,18 @@
   },
   {
     "releaseDate": "2026-04-01",
+    "shoeName": "Jordan Retro 3 WOMENS \u2022 WHITE/ORANGE",
+    "brand": "Air Jordan",
+    "retailPrice": 95,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/K9246101.html"
+  },
+  {
+    "releaseDate": "2026-04-01",
     "shoeName": "Jordan Retro 4 GIRLS PRE-SCHOOL \u2022 PINKSICLE/COCONUT MILK/BLACK",
     "brand": "Air Jordan",
     "retailPrice": 95,
@@ -382,17 +394,5 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar/vans/VNDB8CYK.html"
-  },
-  {
-    "releaseDate": "2026-04-01",
-    "shoeName": "Vans LX Authentic Pony WOMENS \u2022 MARSH/LEOPARD",
-    "brand": "Vans",
-    "retailPrice": 95,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "footlocker",
-    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
-    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
-    "releaseUrl": "https://www.footlocker.com/release-calendar/vans/VNEK4UOV.html"
   }
 ]

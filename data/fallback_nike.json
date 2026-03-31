@@ -31,16 +31,5 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/lebron-xxiii-elite-good-intentions-hyper-pink-and-black"
-  },
-  {
-    "releaseDate": "2026-04-11",
-    "shoeName": "Baby/Toddler Shoes Jordan 1 Retro High OG",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-1-retro-high-og-flight-club-black-and-sail"
   }
 ]

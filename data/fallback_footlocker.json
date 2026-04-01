@@ -394,5 +394,41 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar/vans/VNDB8CYK.html"
+  },
+  {
+    "releaseDate": "2026-05-05",
+    "shoeName": "Nike Air Foamposite Pro MENS \u2022 BLACK/VOLTAGE YELLOW",
+    "brand": "Nike",
+    "retailPrice": 115,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://images.footlocker.com/is/image/EBFL2/41896030?wid=474&hei=410&fmt=png-alpha",
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/F0794002.html"
+  },
+  {
+    "releaseDate": "2026-05-05",
+    "shoeName": "Nike Air Griffey Max 1 MENS \u2022 WHITE/BLACK/GREEN",
+    "brand": "Nike",
+    "retailPrice": 115,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://images.footlocker.com/is/image/EBFL2/41896030?wid=474&hei=410&fmt=png-alpha",
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/8558100.html"
+  },
+  {
+    "releaseDate": "2026-05-05",
+    "shoeName": "Nike Kobe Air Force 1 Low MENS \u2022 WHITE/FIR ALABASTER",
+    "brand": "Nike",
+    "retailPrice": 115,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://images.footlocker.com/is/image/EBFL2/41896030?wid=474&hei=410&fmt=png-alpha",
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/41896030.html"
   }
 ]

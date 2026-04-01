@@ -1,12 +1,42 @@
 [
   {
-    "changeType": "NEW",
-    "date": "2026-04-01",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 3 WOMENS \u2022 WHITE/ORANGE",
+    "changeType": "REMOVED",
+    "date": "2026-03-31",
+    "brand": "Nike",
+    "style": "NOTE Manchester x Nike SB Dunk Low Flax and Summit White",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-03-31T19:36:21Z"
+    "detectedAt": "2026-04-01T08:21:48Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-05",
+    "brand": "Nike",
+    "style": "Nike Air Foamposite Pro MENS \u2022 BLACK/VOLTAGE YELLOW",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-01T08:21:48Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-05",
+    "brand": "Nike",
+    "style": "Nike Air Griffey Max 1 MENS \u2022 WHITE/BLACK/GREEN",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-01T08:21:48Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-05",
+    "brand": "Nike",
+    "style": "Nike Kobe Air Force 1 Low MENS \u2022 WHITE/FIR ALABASTER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-01T08:21:48Z"
   }
 ]

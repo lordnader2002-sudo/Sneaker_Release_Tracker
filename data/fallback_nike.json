@@ -1,16 +1,5 @@
 [
   {
-    "releaseDate": "2026-04-03",
-    "shoeName": "Basketball Shoes LeBron XXIII Elite \"Good Intentions\"",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/lebron-xxiii-elite-good-intentions-hyper-pink-and-black"
-  },
-  {
     "releaseDate": "2026-04-07",
     "shoeName": "Converse x Eric Emanuel Chuck 70",
     "brand": "Converse",

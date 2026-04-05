@@ -1,252 +1,32 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Adidas",
-    "style": "adidas Anthony Edwards 2 BOYS GRADE SCHOOL \u2022 YELLOW/PURPLE/BLUE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Unknown",
-    "style": "Contact Us",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
+    "changeType": "NEW",
+    "date": "2026-04-10",
     "brand": "Air Jordan",
-    "style": "Jordan 1 Retro High OG FC BOYS PRE-SCHOOL \u2022 BLACK/SAIL/RED",
+    "style": "ENTRIES OPEN App Entry Jordan Grade School Retro 1 High OG Fight Club BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
+    "detectedAt": "2026-04-05T16:29:37Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
+    "changeType": "NEW",
+    "date": "2026-04-10",
     "brand": "Air Jordan",
-    "style": "Jordan Grade School Retro 1 High OG Fight Club BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
+    "style": "ENTRIES OPEN App Entry Jordan Retro 1 High OG Fight Club MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
+    "detectedAt": "2026-04-05T16:29:37Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 1 High OG Fight Club MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 11 Low BOYS GRADE SCHOOL \u2022 WHITE/BLUE/BLACK",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 3 WOMENS \u2022 WHITE/ORANGE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 4 GIRLS PRE-SCHOOL \u2022 PINKSICLE/COCONUT MILK/BLACK",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 4 GIRLS TODDLER \u2022 PINKSICLE/COCONUT MILK/ANTHRACITE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 4 WOMENS \u2022 PEAL PINK/ICED CARMINE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Unknown",
-    "style": "Launched",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
+    "changeType": "NEW",
+    "date": "2026-04-14",
     "brand": "Nike",
-    "style": "Nike Ja 3 JP BOYS GRADE SCHOOL \u2022 ANTHRACITE/BRIGHT CRIMSON/YELLOW OCHRE",
+    "style": "Air Max 90 Base Grey and Sport Royal",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Nike",
-    "style": "Nike Ja 3 JP BOYS GRADE SCHOOL \u2022 GREEN SPARK/BLACK/UNIVERSITY RED",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Nike",
-    "style": "Nike Ja 3 JP BOYS PRE-SCHOOL \u2022 ARNTHRACITE/BRIGHT CRIMSON",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Nike",
-    "style": "Nike Lebron XXIII FTR BOYS GRADE SCHOOL \u2022 WHITE/BLACK/WHITE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Nike",
-    "style": "Nike Lebron XXIII MK BOYS GRADE SCHOOL \u2022 WHITE/MULTI/LIGHT CRIMSON",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Nike",
-    "style": "Nike Mind 001 Mule MENS \u2022 LIGHT SMOKE GREY/CHROME/PHOTON DUST",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Nike",
-    "style": "Nike Mind 002 MENS \u2022 BLUE/PLATINUM/BLUE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Nike",
-    "style": "Nike Zoom Huarache 2K4 OT MENS \u2022 BLACK/BLACK",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Unknown",
-    "style": "Order Status",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Unknown",
-    "style": "Returns-Exchanges",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Unknown",
-    "style": "Shipping Info",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Unknown",
-    "style": "Skip To Main",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Unknown",
-    "style": "Store Pickup",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-04",
-    "brand": "Unknown",
-    "style": "Upcoming",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-05T07:41:43Z"
+    "detectedAt": "2026-04-05T16:29:37Z"
   }
 ]

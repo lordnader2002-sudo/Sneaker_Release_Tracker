@@ -1,6 +1,30 @@
 [
   {
     "releaseDate": "2026-04-10",
+    "shoeName": "ENTRIES OPEN App Entry Jordan Grade School Retro 1 High OG Fight Club BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
+    "brand": "Air Jordan",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/62992701.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
+    "shoeName": "ENTRIES OPEN App Entry Jordan Retro 1 High OG Fight Club MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
+    "brand": "Air Jordan",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/9811001.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
     "shoeName": "Jordan 1 Retro High OG FC BOYS PRE-SCHOOL \u2022 BLACK/SAIL/RED",
     "brand": "Air Jordan",
     "retailPrice": 135,
@@ -22,30 +46,6 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/I9925001.html"
-  },
-  {
-    "releaseDate": "2026-04-10",
-    "shoeName": "Jordan Grade School Retro 1 High OG Fight Club BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
-    "brand": "Air Jordan",
-    "retailPrice": 135,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "footlocker",
-    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
-    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
-    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/62992701.html"
-  },
-  {
-    "releaseDate": "2026-04-10",
-    "shoeName": "Jordan Retro 1 High OG Fight Club MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
-    "brand": "Air Jordan",
-    "retailPrice": 135,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "footlocker",
-    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
-    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
-    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/9811001.html"
   },
   {
     "releaseDate": "2026-04-10",

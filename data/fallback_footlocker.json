@@ -1,7 +1,31 @@
 [
   {
     "releaseDate": "2026-04-10",
-    "shoeName": "ENTRIES OPEN App Entry Jordan Grade School Retro 1 High OG Fight Club BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
+    "shoeName": "adidas Anthony Edwards 2 BOYS GRADE SCHOOL \u2022 BLACK/SILVER/GREEN",
+    "brand": "Adidas",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/adidas/62002049.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
+    "shoeName": "adidas Anthony Edwards 2 MENS \u2022 CORE BLACK/LIME BURST/CORE BLACK",
+    "brand": "Adidas",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/adidas/JR1572.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
+    "shoeName": "ENTRIES OPEN App Entry Jordan Retro 1 High Grade School BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
     "brand": "Air Jordan",
     "retailPrice": 135,
     "estimatedMarketValue": null,
@@ -13,7 +37,7 @@
   },
   {
     "releaseDate": "2026-04-10",
-    "shoeName": "ENTRIES OPEN App Entry Jordan Retro 1 High OG Fight Club MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
+    "shoeName": "ENTRIES OPEN App Entry Jordan Retro 1 High MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
     "brand": "Air Jordan",
     "retailPrice": 135,
     "estimatedMarketValue": null,
@@ -25,7 +49,7 @@
   },
   {
     "releaseDate": "2026-04-10",
-    "shoeName": "Jordan 1 Retro High OG FC BOYS PRE-SCHOOL \u2022 BLACK/SAIL/RED",
+    "shoeName": "Jordan Retro 1 High Pre School BOYS PRE-SCHOOL \u2022 BLACK/SAIL/RED",
     "brand": "Air Jordan",
     "retailPrice": 135,
     "estimatedMarketValue": null,
@@ -37,7 +61,7 @@
   },
   {
     "releaseDate": "2026-04-10",
-    "shoeName": "Jordan 1 Retro High OG FC BOYS TODDLER \u2022 BLACK/SAIL/RED",
+    "shoeName": "Jordan Retro 1 High Toddler BOYS TODDLER \u2022 BLACK/SAIL/RED",
     "brand": "Air Jordan",
     "retailPrice": 135,
     "estimatedMarketValue": null,
@@ -145,6 +169,18 @@
   },
   {
     "releaseDate": "2026-04-10",
+    "shoeName": "Jordan Retro 5 OG MENS \u2022 WHITE/BLACK/SILVER",
+    "brand": "Air Jordan",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/Q7978103.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
     "shoeName": "Jordan Retro 6 MENS \u2022 BLACK/MULTI",
     "brand": "Air Jordan",
     "retailPrice": 135,
@@ -205,6 +241,54 @@
   },
   {
     "releaseDate": "2026-04-10",
+    "shoeName": "Nike JA 3 MENS \u2022 GREEN SPARK/BLACK/UNIVERSITY RED",
+    "brand": "Nike",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/U7240300.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
+    "shoeName": "Nike Kobe IX Elite Low Steam - In Store Only MENS \u2022 LIGHT SILVER/STEAM/SUMMIT WHITE",
+    "brand": "Nike",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/H1401003.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
+    "shoeName": "Nike Kobe XI Elite Protro Mamba Out - In Store Only MENS \u2022 BLACK/BLACK",
+    "brand": "Nike",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/M4260001.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
+    "shoeName": "Nike Kobe XI Protro Mamba Out - In Store Only MENS \u2022 MULTI/MULTI",
+    "brand": "Nike",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/U4902900.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
     "shoeName": "Nike Lebron XXIII FTR BOYS GRADE SCHOOL \u2022 WHITE/BLACK/WHITE",
     "brand": "Nike",
     "retailPrice": 135,
@@ -238,6 +322,18 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar/nike/Q4307003.html"
+  },
+  {
+    "releaseDate": "2026-04-10",
+    "shoeName": "Nike Mind 002 MENS \u2022 BLACK/SILVER/ORANGE",
+    "brand": "Nike",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/nike/42430801.html"
   },
   {
     "releaseDate": "2026-04-10",
@@ -358,6 +454,18 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar"
+  },
+  {
+    "releaseDate": "2026-04-10",
+    "shoeName": "Vans Pearlized LX Old Skool 36 MENS \u2022 VINTAGE COCOA",
+    "brand": "Vans",
+    "retailPrice": 135,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/vans/VN08VFST.html"
   },
   {
     "releaseDate": "2026-05-08",

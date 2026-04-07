@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "changeType": "NEW",
+    "date": "2026-04-10",
+    "brand": "Nike",
+    "style": "ENTRIES OPEN App Entry Nike Kobe IX Elite Low Steam - In Store Only MENS \u2022 LIGHT SILVER/STEAM/SUMMIT WHITE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-07T16:48:47Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-10",
+    "brand": "Nike",
+    "style": "ENTRIES OPEN App Entry Nike Kobe XI Elite Protro Mamba Out - In Store Only MENS \u2022 BLACK/BLACK",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-07T16:48:47Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-10",
+    "brand": "Nike",
+    "style": "ENTRIES OPEN App Entry Nike Kobe XI Protro Mamba Out - In Store Only MENS \u2022 MULTI/MULTI",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-07T16:48:47Z"
+  }
+]

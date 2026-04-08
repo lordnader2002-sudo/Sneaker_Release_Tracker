@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-07",
+    "brand": "Converse",
+    "style": "Converse x Eric Emanuel Chuck 70",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-08T05:45:58Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-07",
+    "brand": "Converse",
+    "style": "Converse x Eric Emanuel Weapon",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-08T05:45:58Z"
+  }
+]

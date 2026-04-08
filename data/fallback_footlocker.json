@@ -468,10 +468,46 @@
     "releaseUrl": "https://www.footlocker.com/release-calendar/vans/VN08VFST.html"
   },
   {
-    "releaseDate": "2026-05-08",
+    "releaseDate": "2026-05-01",
+    "shoeName": "Jordan Retro 4 BOYS GRADE SCHOOL \u2022 BLACK/RED/ORANGE",
+    "brand": "Air Jordan",
+    "retailPrice": 165,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/62127127.html"
+  },
+  {
+    "releaseDate": "2026-05-01",
+    "shoeName": "Jordan Retro 4 BOYS PRE-SCHOOL \u2022 BLACK/RED/ORANGE",
+    "brand": "Air Jordan",
+    "retailPrice": 165,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/64126900.html"
+  },
+  {
+    "releaseDate": "2026-05-01",
+    "shoeName": "Jordan Retro 4 BOYS TODDLER \u2022 BLACK/RED/ORANGE",
+    "brand": "Air Jordan",
+    "retailPrice": 165,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/jordan/61127000.html"
+  },
+  {
+    "releaseDate": "2026-05-01",
     "shoeName": "Nike Air Foamposite Pro MENS \u2022 BLACK/VOLTAGE YELLOW",
     "brand": "Nike",
-    "retailPrice": 240,
+    "retailPrice": 165,
     "estimatedMarketValue": null,
     "imageUrl": null,
     "sourcePrimary": "footlocker",
@@ -480,10 +516,10 @@
     "releaseUrl": "https://www.footlocker.com/release-calendar/nike/F0794002.html"
   },
   {
-    "releaseDate": "2026-05-08",
+    "releaseDate": "2026-05-01",
     "shoeName": "Nike Air Griffey Max 1 BOYS GRADE SCHOOL \u2022 WHITE/BLACK/FRESHWATER",
     "brand": "Nike",
-    "retailPrice": 240,
+    "retailPrice": 165,
     "estimatedMarketValue": null,
     "imageUrl": null,
     "sourcePrimary": "footlocker",
@@ -492,10 +528,10 @@
     "releaseUrl": "https://www.footlocker.com/release-calendar/nike/D8561100.html"
   },
   {
-    "releaseDate": "2026-05-08",
+    "releaseDate": "2026-05-01",
     "shoeName": "Nike Air Griffey Max 1 MENS \u2022 WHITE/BLACK/GREEN",
     "brand": "Nike",
-    "retailPrice": 240,
+    "retailPrice": 165,
     "estimatedMarketValue": null,
     "imageUrl": null,
     "sourcePrimary": "footlocker",
@@ -504,10 +540,10 @@
     "releaseUrl": "https://www.footlocker.com/release-calendar/nike/8558100.html"
   },
   {
-    "releaseDate": "2026-05-08",
+    "releaseDate": "2026-05-01",
     "shoeName": "Nike Walnut NRG GIRLS GRADE SCHOOL \u2022 SAIL/MIDNIGHT NAVY/ATOM RED",
     "brand": "Nike",
-    "retailPrice": 240,
+    "retailPrice": 165,
     "estimatedMarketValue": null,
     "imageUrl": null,
     "sourcePrimary": "footlocker",

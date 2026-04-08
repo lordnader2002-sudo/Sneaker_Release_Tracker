@@ -1,22 +1,72 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-07",
-    "brand": "Converse",
-    "style": "Converse x Eric Emanuel Chuck 70",
+    "changeType": "NEW",
+    "date": "2026-04-14",
+    "brand": "Nike",
+    "style": "Nike SB Dunk Low \"Songkran\" Canvas and Parachute Beige",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-08T05:45:58Z"
+    "detectedAt": "2026-04-08T16:54:39Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-07",
-    "brand": "Converse",
-    "style": "Converse x Eric Emanuel Weapon",
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 4 BOYS GRADE SCHOOL \u2022 BLACK/RED/ORANGE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-08T05:45:58Z"
+    "detectedAt": "2026-04-08T16:54:39Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 4 BOYS PRE-SCHOOL \u2022 BLACK/RED/ORANGE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-08T16:54:39Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Air Foamposite Pro MENS \u2022 BLACK/VOLTAGE YELLOW",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-08T16:54:39Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Air Griffey Max 1 BOYS GRADE SCHOOL \u2022 WHITE/BLACK/FRESHWATER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-08T16:54:39Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Air Griffey Max 1 MENS \u2022 WHITE/BLACK/GREEN",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-08T16:54:39Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Walnut NRG GIRLS GRADE SCHOOL \u2022 SAIL/MIDNIGHT NAVY/ATOM RED",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-08T16:54:39Z"
   }
 ]

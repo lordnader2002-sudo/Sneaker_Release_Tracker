@@ -55,14 +55,25 @@
     "sourceUrl": "https://www.nike.com/launch/t/nike-sb-dunk-low-songkran-canvas-and-parachute-beige"
   },
   {
-    "releaseDate": "2026-04-18",
-    "shoeName": "Baby/Toddler Shoes Jordan 11 Retro Low \"University Blue\"",
-    "brand": "Air Jordan",
+    "releaseDate": "2026-04-15",
+    "shoeName": "Kobe 5 Protro x Caitlin Clark \"Rookie of the Year\" Metallic Silver and University Red",
+    "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
     "imageUrl": null,
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-11-low-university-blue"
+    "sourceUrl": "https://www.nike.com/launch/t/kobe-5-protro-caitlin-clark-rookie-of-the-year-metallic-silver-and-university-red"
+  },
+  {
+    "releaseDate": "2026-04-16",
+    "shoeName": "Air Max 95 Big Bubble x Palace Metallic Silver",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-max-95-big-bubble-palace-metallic-silver"
   }
 ]

@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "changeType": "NEW",
+    "date": "2026-04-10",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 5 Grade School BOYS GRADE SCHOOL \u2022 WHITE/BLACK/SILVER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-10T05:56:46Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-10",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 5 Pre School BOYS PRE-SCHOOL \u2022 WHITE/BLACK/SILVER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-10T05:56:46Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-10",
+    "brand": "Nike",
+    "style": "Nike Air Force 1 Ja Denim MENS \u2022 LIGHT ARMORY BLUE/WHITE/METALLIC SILVER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-10T05:56:46Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-10",
+    "brand": "Vans",
+    "style": "Vans Pearlized LX Old Skool 36 WOMENS \u2022 VINTAGE COCOA/WHITE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-10T05:56:46Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-15",
+    "brand": "Nike",
+    "style": "Kobe 5 Protro x Caitlin Clark \"Rookie of the Year\" Metallic Silver and University Red",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-10T05:56:46Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-16",
+    "brand": "Nike",
+    "style": "Air Max 95 Big Bubble x Palace Metallic Silver",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-10T05:56:46Z"
+  }
+]

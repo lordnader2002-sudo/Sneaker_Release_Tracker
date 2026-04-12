@@ -1,362 +1,272 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Adidas",
-    "style": "adidas Anthony Edwards 2 Grade School BOYS GRADE SCHOOL \u2022 BLACK/SILVER/GREEN",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Adidas",
-    "style": "adidas Anthony Edwards 2 MENS \u2022 CORE BLACK/LIME BURST/CORE BLACK",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Air Jordan",
-    "style": "App Entry Jordan Retro 1 High Grade School BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Air Jordan",
-    "style": "App Entry Jordan Retro 1 High MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Air Jordan",
-    "style": "Baby/Toddler Shoes Jordan 1 Retro High OG",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Unknown",
     "style": "Contact Us",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
-    "style": "ENTRIES OPEN App Entry Jordan Retro 1 High Grade School BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
+    "style": "ENTRIES OPEN App Entry Jordan Retro 11 Low BOYS GRADE SCHOOL \u2022 WHITE/BLUE/BLACK",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Air Jordan",
-    "style": "ENTRIES OPEN App Entry Jordan Retro 1 High MENS \u2022 BLACK/UNIVERSITY RED/SAIL",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Nike",
-    "style": "ENTRIES OPEN App Entry Nike Kobe IX Elite Low Steam - In Store Only MENS \u2022 LIGHT SILVER/STEAM/SUMMIT WHITE",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Nike",
     "style": "ENTRIES OPEN App Entry Nike Kobe IX Elite Low Steam MENS \u2022 LIGHT SILVER/STEAM/SUMMIT WHITE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Nike",
     "style": "ENTRIES OPEN App Entry Nike Kobe XI Elite Protro Mamba Out - In Store Only MENS \u2022 BLACK/BLACK",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Nike",
     "style": "ENTRIES OPEN App Entry Nike Kobe XI Protro Mamba Out - In Store Only MENS \u2022 MULTI/MULTI",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
-    "style": "Jordan Retro 1 High Pre School BOYS PRE-SCHOOL \u2022 BLACK/SAIL/RED",
+    "style": "Jordan Retro 11 Low BOYS PRE-SCHOOL \u2022 WHITE/BLUE/BLACK",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 1 High Toddler BOYS TODDLER \u2022 BLACK/SAIL/RED",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 11 Low BOYS GRADE SCHOOL \u2022 WHITE/BLUE/BLACK",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
     "style": "Jordan Retro 3 WOMENS \u2022 WHITE/ORANGE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
     "style": "Jordan Retro 4 GIRLS PRE-SCHOOL \u2022 PINKSICLE/COCONUT MILK/BLACK",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
     "style": "Jordan Retro 4 GIRLS TODDLER \u2022 PINKSICLE/COCONUT MILK/ANTHRACITE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
     "style": "Jordan Retro 4 WOMENS \u2022 PEAL PINK/ICED CARMINE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
     "style": "Jordan Retro 5 Grade School BOYS GRADE SCHOOL \u2022 WHITE/BLACK/SILVER",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
     "style": "Jordan Retro 5 Pre School BOYS PRE-SCHOOL \u2022 WHITE/BLACK/SILVER",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Air Jordan",
     "style": "Jordan Retro 6 MENS \u2022 BLACK/MULTI",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Unknown",
     "style": "Launched",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Nike",
     "style": "Nike Lebron XXIII MK BOYS GRADE SCHOOL \u2022 WHITE/MULTI/LIGHT CRIMSON",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Nike",
     "style": "Nike Mind 001 Mule MENS \u2022 LIGHT SMOKE GREY/CHROME/PHOTON DUST",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Nike",
     "style": "Nike Mind 002 MENS \u2022 BLACK/SILVER/ORANGE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Nike",
     "style": "Nike Mind 002 MENS \u2022 BLUE/PLATINUM/BLUE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Nike",
     "style": "Nike Zoom Huarache 2K4 OT MENS \u2022 BLACK/BLACK",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Unknown",
     "style": "Order Status",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Unknown",
     "style": "Returns-Exchanges",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Unknown",
     "style": "Shipping Info",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Unknown",
     "style": "Skip To Main",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Unknown",
     "style": "Store Pickup",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Unknown",
     "style": "Upcoming",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Vans",
     "style": "Vans Pearlized LX Old Skool 36 MENS \u2022 VINTAGE COCOA",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   },
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-11",
+    "changeType": "NEW",
+    "date": "2026-04-13",
     "brand": "Vans",
     "style": "Vans Pearlized LX Old Skool 36 WOMENS \u2022 VINTAGE COCOA/WHITE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-12T05:53:17Z"
+    "detectedAt": "2026-04-12T16:30:36Z"
   }
 ]

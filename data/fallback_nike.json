@@ -1,27 +1,5 @@
 [
   {
-    "releaseDate": "2026-04-13",
-    "shoeName": "Kobe 11 Elite Protro Black and Metallic Gold",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/kobe-11-elite-protro-black-and-metallic-gold"
-  },
-  {
-    "releaseDate": "2026-04-13",
-    "shoeName": "Kobe 11 Protro Black and Metallic Gold",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/kobe-11-protro-black-and-metallic-gold"
-  },
-  {
     "releaseDate": "2026-04-14",
     "shoeName": "Air Max 90 Base Grey and Sport Royal",
     "brand": "Nike",
@@ -53,6 +31,17 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/kobe-5-protro-caitlin-clark-rookie-of-the-year-metallic-silver-and-university-red"
+  },
+  {
+    "releaseDate": "2026-04-15",
+    "shoeName": "Nike V5 RNR \"Jackie Robinson Day\" Black and Medium Ash",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/nike-v5-rnr-jackie-robinson-day-black-and-medium-ash"
   },
   {
     "releaseDate": "2026-04-16",
@@ -97,5 +86,16 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/womens-air-jordan-4-pearl-pink-and-iced-carmine"
+  },
+  {
+    "releaseDate": "2026-04-24",
+    "shoeName": "Air Jordan 4028 Black and Metallic Gold",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-4028-black-and-metallic-gold"
   }
 ]

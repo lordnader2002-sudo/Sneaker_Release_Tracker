@@ -97,5 +97,16 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/air-jordan-4028-black-and-metallic-gold"
+  },
+  {
+    "releaseDate": "2026-04-25",
+    "shoeName": "Baby/Toddler Shoes Jordan 5 Retro",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-5-retro-og-white-and-metallic-silver-na"
   }
 ]

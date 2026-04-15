@@ -86,5 +86,16 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/air-jordan-5-retro-og-white-and-metallic-silver-na"
+  },
+  {
+    "releaseDate": "2026-04-28",
+    "shoeName": "Air Max 90 Coconut Milk and Deep Royal Blue",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-max-90-coconut-milk-and-deep-royal-blue"
   }
 ]

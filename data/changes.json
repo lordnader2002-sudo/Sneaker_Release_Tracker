@@ -1,32 +1,12 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-14",
-    "brand": "Nike",
-    "style": "Air Max 90 Base Grey and Sport Royal",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-15T05:59:19Z"
-  },
-  {
-    "changeType": "REMOVED",
-    "date": "2026-04-14",
-    "brand": "Nike",
-    "style": "Nike SB Dunk Low \"Songkran\" Canvas and Parachute Beige",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-15T05:59:19Z"
-  },
-  {
     "changeType": "NEW",
-    "date": "2026-04-18",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 4 Iced Carmine WOMENS \u2022 PEAL PINK/ICED CARMINE",
+    "date": "2026-04-28",
+    "brand": "Nike",
+    "style": "Air Max 90 Coconut Milk and Deep Royal Blue",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-15T05:59:19Z"
+    "detectedAt": "2026-04-15T16:55:39Z"
   }
 ]

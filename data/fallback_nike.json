@@ -1,27 +1,5 @@
 [
   {
-    "releaseDate": "2026-04-15",
-    "shoeName": "Kobe 5 Protro x Caitlin Clark \"Rookie of the Year\" Metallic Silver and University Red",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/kobe-5-protro-caitlin-clark-rookie-of-the-year-metallic-silver-and-university-red"
-  },
-  {
-    "releaseDate": "2026-04-15",
-    "shoeName": "Nike V5 RNR \"Jackie Robinson Day\" Black and Medium Ash",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/nike-v5-rnr-jackie-robinson-day-black-and-medium-ash"
-  },
-  {
     "releaseDate": "2026-04-16",
     "shoeName": "Air Max 95 Big Bubble x Palace Metallic Silver",
     "brand": "Nike",

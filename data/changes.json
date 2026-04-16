@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-15",
+    "brand": "Nike",
+    "style": "Kobe 5 Protro x Caitlin Clark \"Rookie of the Year\" Metallic Silver and University Red",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-16T06:00:18Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-15",
+    "brand": "Nike",
+    "style": "Nike V5 RNR \"Jackie Robinson Day\" Black and Medium Ash",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-16T06:00:18Z"
+  }
+]

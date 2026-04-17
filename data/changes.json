@@ -1,32 +1,12 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-16",
-    "brand": "Nike",
-    "style": "Air Max 95 Big Bubble x Palace Metallic Silver",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-17T06:02:15Z"
-  },
-  {
     "changeType": "NEW",
-    "date": "2026-04-23",
+    "date": "2026-04-18",
     "brand": "Air Jordan",
-    "style": "Baby/Toddler Shoes Jordan 4 Retro \"Pearl Pink and Iced Carmine\"",
+    "style": "ENTRIES OPEN App Entry Jordan Retro 4 Iced Carmine WOMENS \u2022 PEAL PINK/ICED CARMINE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-17T06:02:15Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-04-25",
-    "brand": "Air Jordan",
-    "style": "Baby/Toddler Shoes Jordan 5 Retro OG \"White Metallic\"",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-17T06:02:15Z"
+    "detectedAt": "2026-04-17T16:48:01Z"
   }
 ]

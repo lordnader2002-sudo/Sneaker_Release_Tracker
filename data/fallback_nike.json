@@ -1,16 +1,5 @@
 [
   {
-    "releaseDate": "2026-04-16",
-    "shoeName": "Air Max 95 Big Bubble x Palace Metallic Silver",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/air-max-95-big-bubble-palace-metallic-silver"
-  },
-  {
     "releaseDate": "2026-04-18",
     "shoeName": "Baby/Toddler Shoes Jordan 11 Retro Low \"University Blue\"",
     "brand": "Air Jordan",
@@ -34,7 +23,7 @@
   },
   {
     "releaseDate": "2026-04-23",
-    "shoeName": "Baby/Toddler Shoes Jordan 4 Retro",
+    "shoeName": "Baby/Toddler Shoes Jordan 4 Retro \"Pearl Pink and Iced Carmine\"",
     "brand": "Air Jordan",
     "retailPrice": 0,
     "estimatedMarketValue": null,
@@ -56,7 +45,7 @@
   },
   {
     "releaseDate": "2026-04-25",
-    "shoeName": "Baby/Toddler Shoes Jordan 5 Retro",
+    "shoeName": "Baby/Toddler Shoes Jordan 5 Retro OG \"White Metallic\"",
     "brand": "Air Jordan",
     "retailPrice": 0,
     "estimatedMarketValue": null,

@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "releaseDate": "2026-04-19",
+    "shoeName": "Nike Air Force 1 Low \"Roses\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/05/nike-air-force-1-low-roses-if0498-100"
+  },
+  {
+    "releaseDate": "2026-04-21",
+    "shoeName": "Nike Air Force 1 SB",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/01/23/nike-sb-air-force-1-light-orewood-brown-hm8517-100"
+  },
+  {
+    "releaseDate": "2026-04-21",
+    "shoeName": "Vans Old Skool \"Pearlized\"",
+    "brand": "Vans",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/06/vans-old-skool-pearlized-vintage-cocoa-brown-vn000e8vfst"
+  },
+  {
+    "releaseDate": "2026-04-23",
+    "shoeName": "Homecoming x Nike Air Max Plus",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/16/homecoming-nike-air-max-plus-im4960-001-im4960-800"
+  },
+  {
+    "releaseDate": "2026-04-23",
+    "shoeName": "Nike Air Force 1 Low \"Kobe Bryant\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/16/kobe-bryant-nike-air-force-1-low-steam-green-white-ib0018-005/"
+  },
+  {
+    "releaseDate": "2026-04-23",
+    "shoeName": "Nike LeBron 23 \"Motor King\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://sneakernews.com/wp-content/uploads/2024/03/sneaker_default.jpg?w=470",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/01/nike-lebron-23-motor-king-ib9562-102"
+  },
+  {
+    "releaseDate": "2026-04-24",
+    "shoeName": "Nike Air Force 1 Low \"Siempre Hermanos\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/10/kobe-bryant-nike-siempre-hermanos/"
+  }
+]

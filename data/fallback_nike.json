@@ -22,6 +22,17 @@
     "sourceUrl": "https://www.nike.com/launch/t/air-jordan-4028-black-and-metallic-gold"
   },
   {
+    "releaseDate": "2026-04-24",
+    "shoeName": "Basketball Shoes Kobe VIII Protro",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/kobe-8-protro-siempre-mio-twine-and-baroque-brown"
+  },
+  {
     "releaseDate": "2026-04-25",
     "shoeName": "Baby/Toddler Shoes Jordan 5 Retro OG \"White Metallic\"",
     "brand": "Air Jordan",

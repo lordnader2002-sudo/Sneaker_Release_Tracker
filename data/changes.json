@@ -1,52 +1,42 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-19",
-    "brand": "Nike",
-    "style": "Nike Air Force 1 Low \"Roses\"",
+    "changeType": "NEW",
+    "date": "2026-04-20",
+    "brand": "Adidas",
+    "style": "adidas F50 Tunit",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-20T06:13:36Z"
+    "detectedAt": "2026-04-20T16:58:11Z"
   },
   {
     "changeType": "NEW",
-    "date": "2026-04-24",
-    "brand": "Nike",
-    "style": "Basketball Shoes Kobe VIII Protro",
+    "date": "2026-04-20",
+    "brand": "Adidas",
+    "style": "Jeremy Scott x adidas Forum",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-20T06:13:36Z"
+    "detectedAt": "2026-04-20T16:58:11Z"
   },
   {
     "changeType": "NEW",
-    "date": "2026-04-24",
-    "brand": "Nike",
-    "style": "Nike Air Force 1 Low \"WNBA 30th Anniversary\"",
+    "date": "2026-04-21",
+    "brand": "New Balance",
+    "style": "Liberaiders x New Balance 2010",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-20T06:13:36Z"
+    "detectedAt": "2026-04-20T16:58:11Z"
   },
   {
     "changeType": "NEW",
-    "date": "2026-04-24",
+    "date": "2026-04-23",
     "brand": "Nike",
-    "style": "Nike Dunk Low \"WNBA 30th Anniversary\"",
+    "style": "Nike ACG LDV",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-20T06:13:36Z"
-  },
-  {
-    "changeType": "NEW",
-    "date": "2026-04-24",
-    "brand": "Nike",
-    "style": "Nike Kobe 8 EXT \"Siempre Hermanos\"",
-    "fieldChanged": "",
-    "oldValue": "",
-    "newValue": "",
-    "detectedAt": "2026-04-20T06:13:36Z"
+    "detectedAt": "2026-04-20T16:58:11Z"
   }
 ]

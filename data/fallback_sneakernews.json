@@ -1,5 +1,41 @@
 [
   {
+    "releaseDate": "2026-04-20",
+    "shoeName": "adidas F50 Tunit",
+    "brand": "Adidas",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/24d0d654c495cfeee3b2d014b242b836_1776135825.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/14/adidas-f50-mega-tunit-pink-kj1554"
+  },
+  {
+    "releaseDate": "2026-04-20",
+    "shoeName": "Jeremy Scott x adidas Forum",
+    "brand": "Adidas",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/8383c2bbe9e956b49fdf1f5cd94392c3_1776658867.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2025/11/11/jeremy-scott-adidas-money-wings-forum-cleat/"
+  },
+  {
+    "releaseDate": "2026-04-21",
+    "shoeName": "Liberaiders x New Balance 2010",
+    "brand": "New Balance",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/20/liberaiders-new-balance-abzorb-2010-u20108zc"
+  },
+  {
     "releaseDate": "2026-04-21",
     "shoeName": "Nike Air Force 1 SB",
     "brand": "Nike",
@@ -37,11 +73,23 @@
   },
   {
     "releaseDate": "2026-04-23",
+    "shoeName": "Nike ACG LDV",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/5803dd7007dfb9e1037466c8b5e8a210_1772056698.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/25/nike-acg-ldv-release-date/"
+  },
+  {
+    "releaseDate": "2026-04-23",
     "shoeName": "Nike Air Force 1 Low \"Kobe Bryant\"",
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
-    "imageUrl": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/9c003bdbfc350af3b843885dc439665a_1775659582.webp",
     "sourcePrimary": "sneakernews",
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
@@ -53,58 +101,10 @@
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
-    "imageUrl": "https://sneakernews.com/wp-content/uploads/2024/03/sneaker_default.jpg?w=470",
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/a42cbab3457bc76f12be93aaac2f08bd_1776450066.webp",
     "sourcePrimary": "sneakernews",
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
     "releaseUrl": "https://sneakernews.com/2026/04/01/nike-lebron-23-motor-king-ib9562-102"
-  },
-  {
-    "releaseDate": "2026-04-24",
-    "shoeName": "Nike Air Force 1 Low \"Siempre Hermanos\"",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/04/10/kobe-bryant-nike-siempre-hermanos/"
-  },
-  {
-    "releaseDate": "2026-04-24",
-    "shoeName": "Nike Air Force 1 Low \"WNBA 30th Anniversary\"",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/04/02/nike-air-force-1-low-wnba-30th-anniversary-ir1968-133"
-  },
-  {
-    "releaseDate": "2026-04-24",
-    "shoeName": "Nike Dunk Low \"WNBA 30th Anniversary\"",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/04/03/nike-dunk-low-wnba-30th-anniversary-ir1970-604"
-  },
-  {
-    "releaseDate": "2026-04-24",
-    "shoeName": "Nike Kobe 8 EXT \"Siempre Hermanos\"",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/04/10/kobe-bryant-nike-siempre-hermanos/"
   }
 ]

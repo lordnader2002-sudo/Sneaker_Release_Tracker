@@ -45,6 +45,17 @@
   },
   {
     "releaseDate": "2026-04-28",
+    "shoeName": "Converse x Dodgers x UNDEFEATED Chuck 70",
+    "brand": "Converse",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/converse-x-dodgers-x-undefeated-chuck-70"
+  },
+  {
+    "releaseDate": "2026-04-28",
     "shoeName": "Air Max 90 Coconut Milk and Deep Royal Blue",
     "brand": "Nike",
     "retailPrice": 0,

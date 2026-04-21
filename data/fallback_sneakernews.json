@@ -13,6 +13,18 @@
   },
   {
     "releaseDate": "2026-04-21",
+    "shoeName": "Nike Air Force 1",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/21/nike-air-force-1-low-white-game-royal-fj4146-126"
+  },
+  {
+    "releaseDate": "2026-04-21",
     "shoeName": "Nike Air Force 1 SB",
     "brand": "Nike",
     "retailPrice": 0,
@@ -22,6 +34,30 @@
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
     "releaseUrl": "https://sneakernews.com/2026/01/23/nike-sb-air-force-1-light-orewood-brown-hm8517-100"
+  },
+  {
+    "releaseDate": "2026-04-21",
+    "shoeName": "Nike Air Max Plus VII",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/13/nike-air-max-plus-vii-white-blue-crystal-metallic-silver-hq2197-101"
+  },
+  {
+    "releaseDate": "2026-04-21",
+    "shoeName": "Nike Zoom Vomero 5",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/28/nike-zoom-vomero-5-phantom-cream-ii-sail-light-bone-fb9149-006/"
   },
   {
     "releaseDate": "2026-04-21",
@@ -46,29 +82,5 @@
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
     "releaseUrl": "https://sneakernews.com/2026/02/16/homecoming-nike-air-max-plus-im4960-001-im4960-800"
-  },
-  {
-    "releaseDate": "2026-04-23",
-    "shoeName": "Nike ACG LDV",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/02/25/nike-acg-ldv-release-date/"
-  },
-  {
-    "releaseDate": "2026-04-23",
-    "shoeName": "Nike Air Force 1 Low \"Kobe Bryant\"",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/03/16/kobe-bryant-nike-air-force-1-low-steam-green-white-ib0018-005/"
   }
 ]

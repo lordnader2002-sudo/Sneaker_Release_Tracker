@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-20",
+    "brand": "Adidas",
+    "style": "adidas F50 Tunit",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-21T06:01:10Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-20",
+    "brand": "Adidas",
+    "style": "Jeremy Scott x adidas Forum",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-21T06:01:10Z"
+  }
+]

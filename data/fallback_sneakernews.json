@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "releaseDate": "2026-04-21",
+    "shoeName": "Liberaiders x New Balance 2010",
+    "brand": "New Balance",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/20/liberaiders-new-balance-abzorb-2010-u20108zc"
+  },
+  {
+    "releaseDate": "2026-04-21",
+    "shoeName": "Nike Air Force 1 SB",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/01/23/nike-sb-air-force-1-light-orewood-brown-hm8517-100"
+  },
+  {
+    "releaseDate": "2026-04-21",
+    "shoeName": "Vans Old Skool \"Pearlized\"",
+    "brand": "Vans",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/06/vans-old-skool-pearlized-vintage-cocoa-brown-vn000e8vfst"
+  },
+  {
+    "releaseDate": "2026-04-23",
+    "shoeName": "Homecoming x Nike Air Max Plus",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/16/homecoming-nike-air-max-plus-im4960-001-im4960-800"
+  },
+  {
+    "releaseDate": "2026-04-23",
+    "shoeName": "Nike ACG LDV",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/02/25/nike-acg-ldv-release-date/"
+  },
+  {
+    "releaseDate": "2026-04-23",
+    "shoeName": "Nike Air Force 1 Low \"Kobe Bryant\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/16/kobe-bryant-nike-air-force-1-low-steam-green-white-ib0018-005/"
+  }
+]

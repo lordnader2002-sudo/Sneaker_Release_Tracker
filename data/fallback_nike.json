@@ -53,5 +53,16 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/air-max-90-coconut-milk-and-deep-royal-blue"
+  },
+  {
+    "releaseDate": "2026-05-02",
+    "shoeName": "Baby/Toddler Shoes Jordan 1 Retro Low OG",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-1-retro-low-og-banned-black-and-varsity-red"
   }
 ]

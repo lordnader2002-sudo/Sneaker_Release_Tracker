@@ -1,11 +1,23 @@
 [
   {
+    "releaseDate": "2026-04-22",
+    "shoeName": "Dover Street Market (DSM) x New Balance FuelCell SC Elite v5",
+    "brand": "New Balance",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/22/dover-street-market-new-balance-sc-elite-v5-mrcel4e8/"
+  },
+  {
     "releaseDate": "2026-04-23",
     "shoeName": "Homecoming x Nike Air Max Plus",
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
-    "imageUrl": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/cc80d1c78a336f46060abd51e32a0a8c_1771261934.webp",
     "sourcePrimary": "sneakernews",
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
@@ -17,7 +29,7 @@
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
-    "imageUrl": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/e16e7dfbbfb771d48d81dcbce55eeaa8_1772056033.webp",
     "sourcePrimary": "sneakernews",
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",

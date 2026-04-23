@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-22",
+    "brand": "New Balance",
+    "style": "Dover Street Market (DSM) x New Balance FuelCell SC Elite v5",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T06:08:49Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-23",
+    "brand": "Air Jordan",
+    "style": "App Entry Jordan Retro 4 Iced Carmine WOMENS \u2022 PEAL PINK/ICED CARMINE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T06:08:49Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-23",
+    "brand": "New Balance",
+    "style": "Joe Freshgoods x New Balance 1890",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T06:08:49Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Nike",
+    "style": "Nike Air Max Uptempo",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T06:08:49Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-30",
+    "brand": "Air Jordan",
+    "style": "Basketball Shoes Air Jordan 6 \"Cap and Gown\"",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T06:08:49Z"
+  },
+  {
+    "changeType": "CONFIDENCE_CHANGED",
+    "date": "2026-05-01",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 1 Low Grade School BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
+    "fieldChanged": "confidence",
+    "oldValue": "HIGH",
+    "newValue": "MED",
+    "detectedAt": "2026-04-23T06:08:49Z"
+  },
+  {
+    "changeType": "CONFIDENCE_CHANGED",
+    "date": "2026-05-01",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 3 Grade School BOYS GRADE SCHOOL \u2022 WHITE/BLACK/TAN",
+    "fieldChanged": "confidence",
+    "oldValue": "MED",
+    "newValue": "HIGH",
+    "detectedAt": "2026-04-23T06:08:49Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-02",
+    "brand": "Air Jordan",
+    "style": "Baby/Toddler Shoes Jordan 1 Retro Low OG \"Banned\"",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T06:08:49Z"
+  }
+]

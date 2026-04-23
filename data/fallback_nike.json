@@ -55,8 +55,30 @@
     "sourceUrl": "https://www.nike.com/launch/t/air-max-90-coconut-milk-and-deep-royal-blue"
   },
   {
+    "releaseDate": "2026-04-30",
+    "shoeName": "Baby/Toddler Shoes Jordan 6 Retro",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-6-cap-and-gown-black"
+  },
+  {
+    "releaseDate": "2026-04-30",
+    "shoeName": "Basketball Shoes Air Jordan 6 \"Cap and Gown\"",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-jordan-6-cap-and-gown-black"
+  },
+  {
     "releaseDate": "2026-05-02",
-    "shoeName": "Baby/Toddler Shoes Jordan 1 Retro Low OG",
+    "shoeName": "Baby/Toddler Shoes Jordan 1 Retro Low OG \"Banned\"",
     "brand": "Air Jordan",
     "retailPrice": 0,
     "estimatedMarketValue": null,

@@ -17,7 +17,7 @@
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
-    "imageUrl": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/cc80d1c78a336f46060abd51e32a0a8c_1771261934.webp",
     "sourcePrimary": "sneakernews",
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
@@ -34,6 +34,18 @@
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
     "releaseUrl": "https://sneakernews.com/2026/02/25/nike-acg-ldv-release-date/"
+  },
+  {
+    "releaseDate": "2026-04-23",
+    "shoeName": "Nike Air Force 1 Low",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/13/nike-air-force-1-low-black-patent-iv2857-010"
   },
   {
     "releaseDate": "2026-04-23",
@@ -65,34 +77,10 @@
     "brand": "Nike",
     "retailPrice": 0,
     "estimatedMarketValue": null,
-    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/4dd472967d3bfe8a2d69bfd87efcddae_1775833538.webp",
+    "imageUrl": null,
     "sourcePrimary": "sneakernews",
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
     "releaseUrl": "https://sneakernews.com/2026/04/10/kobe-bryant-nike-siempre-hermanos/"
-  },
-  {
-    "releaseDate": "2026-04-24",
-    "shoeName": "Nike Air Force 1 Low \"WNBA 30th Anniversary\"",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/dc48dda01d1a3e3560435102dd705a00_1775147337.webp",
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/04/02/nike-air-force-1-low-wnba-30th-anniversary-ir1968-133"
-  },
-  {
-    "releaseDate": "2026-04-24",
-    "shoeName": "Nike Air Max Uptempo",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/2064507899a1c1367397e1dc3b50f603_1773421761.webp",
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/03/13/nike-air-max-uptempo-lakers-derek-fisher-311090-103"
   }
 ]

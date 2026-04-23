@@ -86,5 +86,16 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/air-jordan-1-retro-low-og-banned-black-and-varsity-red"
+  },
+  {
+    "releaseDate": "2026-05-07",
+    "shoeName": "Air Max 95 Big Bubble Lake Blue and French Blue",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-max-95-big-bubble-lake-blue-and-french-blue"
   }
 ]

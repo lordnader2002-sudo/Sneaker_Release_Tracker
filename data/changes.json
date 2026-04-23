@@ -1,82 +1,182 @@
 [
   {
-    "changeType": "REMOVED",
-    "date": "2026-04-22",
-    "brand": "New Balance",
-    "style": "Dover Street Market (DSM) x New Balance FuelCell SC Elite v5",
+    "changeType": "NEW",
+    "date": "2026-04-23",
+    "brand": "Nike",
+    "style": "Nike Air Force 1 Low",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-23T06:08:49Z"
+    "detectedAt": "2026-04-23T17:17:13Z"
   },
   {
     "changeType": "NEW",
-    "date": "2026-04-23",
+    "date": "2026-04-24",
+    "brand": "Unknown",
+    "style": "Contact Us",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
     "brand": "Air Jordan",
-    "style": "App Entry Jordan Retro 4 Iced Carmine WOMENS \u2022 PEAL PINK/ICED CARMINE",
+    "style": "ENTRIES OPEN App Entry Jordan Retro 5 Grade School BOYS GRADE SCHOOL \u2022 WHITE/BLACK/SILVER",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-23T06:08:49Z"
+    "detectedAt": "2026-04-23T17:17:13Z"
   },
   {
     "changeType": "NEW",
-    "date": "2026-04-23",
-    "brand": "New Balance",
-    "style": "Joe Freshgoods x New Balance 1890",
+    "date": "2026-04-24",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 3 WOMENS \u2022 WHITE/ORANGE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-23T06:08:49Z"
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 5 Pre School BOYS PRE-SCHOOL \u2022 WHITE/BLACK/SILVER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 5 Toddler BOYS TODDLER \u2022 WHITE/BLACK/SILVER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Air Jordan",
+    "style": "Jordan Retro 6 MENS \u2022 BLACK/MULTI",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Unknown",
+    "style": "Launched",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
   },
   {
     "changeType": "NEW",
     "date": "2026-04-24",
     "brand": "Nike",
-    "style": "Nike Air Max Uptempo",
+    "style": "Nike Lebron XXIII MK BOYS GRADE SCHOOL \u2022 WHITE/MULTI/LIGHT CRIMSON",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-23T06:08:49Z"
+    "detectedAt": "2026-04-23T17:17:13Z"
   },
   {
     "changeType": "NEW",
-    "date": "2026-04-30",
-    "brand": "Air Jordan",
-    "style": "Basketball Shoes Air Jordan 6 \"Cap and Gown\"",
+    "date": "2026-04-24",
+    "brand": "Nike",
+    "style": "Nike Mind 002 MENS \u2022 BLUE/PLATINUM/BLUE",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-23T06:08:49Z"
-  },
-  {
-    "changeType": "CONFIDENCE_CHANGED",
-    "date": "2026-05-01",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 1 Low Grade School BOYS GRADE SCHOOL \u2022 BLACK/RED/WHITE",
-    "fieldChanged": "confidence",
-    "oldValue": "HIGH",
-    "newValue": "MED",
-    "detectedAt": "2026-04-23T06:08:49Z"
-  },
-  {
-    "changeType": "CONFIDENCE_CHANGED",
-    "date": "2026-05-01",
-    "brand": "Air Jordan",
-    "style": "Jordan Retro 3 Grade School BOYS GRADE SCHOOL \u2022 WHITE/BLACK/TAN",
-    "fieldChanged": "confidence",
-    "oldValue": "MED",
-    "newValue": "HIGH",
-    "detectedAt": "2026-04-23T06:08:49Z"
+    "detectedAt": "2026-04-23T17:17:13Z"
   },
   {
     "changeType": "NEW",
-    "date": "2026-05-02",
-    "brand": "Air Jordan",
-    "style": "Baby/Toddler Shoes Jordan 1 Retro Low OG \"Banned\"",
+    "date": "2026-04-24",
+    "brand": "Nike",
+    "style": "Nike Zoom Huarache 2K4 OT MENS \u2022 BLACK/BLACK",
     "fieldChanged": "",
     "oldValue": "",
     "newValue": "",
-    "detectedAt": "2026-04-23T06:08:49Z"
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Unknown",
+    "style": "Order Status",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Unknown",
+    "style": "Returns-Exchanges",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Unknown",
+    "style": "Shipping Info",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Unknown",
+    "style": "Skip To Main",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Unknown",
+    "style": "Store Pickup",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-04-24",
+    "brand": "Unknown",
+    "style": "Upcoming",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-07",
+    "brand": "Nike",
+    "style": "Air Max 95 Big Bubble Lake Blue and French Blue",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-23T17:17:13Z"
   }
 ]

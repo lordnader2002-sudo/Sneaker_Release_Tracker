@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "releaseDate": "2026-04-27",
+    "shoeName": "adidas Adizero Adios Pro Evo 3",
+    "brand": "Adidas",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/3cf89ea48c684b04fe503d951f1b5b73_1777059026.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/24/adidas-adizero-adios-pro-evo-3/"
+  },
+  {
+    "releaseDate": "2026-04-27",
+    "shoeName": "Sneaker Politics x adidas LA Trainer",
+    "brand": "Adidas",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/20/sneaker-politics-adidas-la-trainer-kj0450"
+  },
+  {
+    "releaseDate": "2026-04-28",
+    "shoeName": "UNDEFEATED x Converse Chuck 70 \"LA Dodgers\"",
+    "brand": "Converse",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/21/undefeated-converse-chuck-70-dodgers-a19846c"
+  },
+  {
+    "releaseDate": "2026-04-28",
+    "shoeName": "Nike Air Max 90",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/03/nike-air-max-90-coconut-milk-legion-pine-deep-royal-blue-ir1950-100"
+  },
+  {
+    "releaseDate": "2026-04-29",
+    "shoeName": "Hello Kitty x Crocs Classic Clog",
+    "brand": "Crocs",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/23/hello-kitty-and-friends-crocs-clog/"
+  },
+  {
+    "releaseDate": "2026-04-29",
+    "shoeName": "Hello Kitty x Crocs Platform Clog",
+    "brand": "Crocs",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/23/hello-kitty-and-friends-crocs-clog/"
+  },
+  {
+    "releaseDate": "2026-04-29",
+    "shoeName": "New Balance TF100",
+    "brand": "New Balance",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/17/new-balance-tf100"
+  },
+  {
+    "releaseDate": "2026-04-30",
+    "shoeName": "Nike GT Future \"CHBL\"",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/d008d0f98c4967417c57e9513f9052b1_1776871321.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/22/nike-gt-future-chbl-ih1109-400-ih1109-600"
+  },
+  {
+    "releaseDate": "2026-04-30",
+    "shoeName": "Nike Liquid Max",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/292f26751ab4d40086e52644498ba1b0_1776350600.webp",
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/04/16/nike-air-liquid-max-triple-black-iq7634-003"
+  }
+]

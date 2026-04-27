@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "changeType": "NEW",
+    "date": "2026-04-30",
+    "brand": "Nike",
+    "style": "Nike Mind 001",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-27T06:26:21Z"
+  }
+]

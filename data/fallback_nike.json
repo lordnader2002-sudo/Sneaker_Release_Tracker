@@ -11,17 +11,6 @@
     "sourceUrl": "https://www.nike.com/launch/t/converse-x-dodgers-x-undefeated-chuck-70"
   },
   {
-    "releaseDate": "2026-04-28",
-    "shoeName": "Air Max 90 Coconut Milk and Deep Royal Blue",
-    "brand": "Nike",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/air-max-90-coconut-milk-and-deep-royal-blue"
-  },
-  {
     "releaseDate": "2026-04-30",
     "shoeName": "Baby/Toddler Shoes Jordan 6 Retro \"Cap and Gown\"",
     "brand": "Air Jordan",
@@ -42,6 +31,17 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/air-jordan-6-cap-and-gown-black"
+  },
+  {
+    "releaseDate": "2026-04-30",
+    "shoeName": "Air Max 90 Coconut Milk and Deep Royal Blue",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/air-max-90-coconut-milk-and-deep-royal-blue"
   },
   {
     "releaseDate": "2026-05-02",
@@ -86,5 +86,16 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/air-foamposite-pro-black"
+  },
+  {
+    "releaseDate": "2026-05-09",
+    "shoeName": "Baby/Toddler Shoes Jordan 11 Retro Low",
+    "brand": "Air Jordan",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/womens-air-jordan-11-low-mothers-day-white-and-metallic-gold"
   }
 ]

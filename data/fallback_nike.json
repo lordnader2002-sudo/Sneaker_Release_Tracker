@@ -1,16 +1,5 @@
 [
   {
-    "releaseDate": "2026-04-28",
-    "shoeName": "Converse x Dodgers x UNDEFEATED Chuck 70",
-    "brand": "Converse",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/converse-x-dodgers-x-undefeated-chuck-70"
-  },
-  {
     "releaseDate": "2026-04-30",
     "shoeName": "Baby/Toddler Shoes Jordan 6 Retro \"Cap and Gown\"",
     "brand": "Air Jordan",
@@ -55,6 +44,28 @@
     "sourceUrl": "https://www.nike.com/launch/t/air-jordan-1-retro-low-og-banned-black-and-varsity-red"
   },
   {
+    "releaseDate": "2026-05-05",
+    "shoeName": "Firm-Ground Low-Top Soccer Cleats Nike Mercurial Vapor 16 Elite x Patta",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/mercurial-zoom-vapor-16-elite-fg-se-patta-metallic-silver-and-coconut-milk"
+  },
+  {
+    "releaseDate": "2026-05-05",
+    "shoeName": "Mercurial Zoom Vapor 16 Elite FG SE x Patta Noise Aqua and Metallic Silver",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/mercurial-zoom-vapor-16-elite-fg-se-patta-noise-aqua-and-metallic-silver"
+  },
+  {
     "releaseDate": "2026-05-07",
     "shoeName": "Air Max 95 Big Bubble Lake Blue and French Blue",
     "brand": "Nike",
@@ -86,16 +97,5 @@
     "sourcePrimary": "playwright-linkscan",
     "sourceSecondary": "https://www.nike.com/launch/upcoming",
     "sourceUrl": "https://www.nike.com/launch/t/air-foamposite-pro-black"
-  },
-  {
-    "releaseDate": "2026-05-09",
-    "shoeName": "Baby/Toddler Shoes Jordan 11 Retro Low",
-    "brand": "Air Jordan",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "playwright-linkscan",
-    "sourceSecondary": "https://www.nike.com/launch/upcoming",
-    "sourceUrl": "https://www.nike.com/launch/t/womens-air-jordan-11-low-mothers-day-white-and-metallic-gold"
   }
 ]

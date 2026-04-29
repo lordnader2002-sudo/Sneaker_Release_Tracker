@@ -1,1 +1,232 @@
-[]
+[
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-28",
+    "brand": "Nike",
+    "style": "Air Max 90 Coconut Milk and Deep Royal Blue",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-28",
+    "brand": "Converse",
+    "style": "Converse x Dodgers x UNDEFEATED Chuck 70",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-28",
+    "brand": "Nike",
+    "style": "Nike Air Max 90",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Unknown",
+    "style": "Contact Us",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Crocs",
+    "style": "Crocs LEGO Clogs BOYS GRADE SCHOOL \u2022 BLACK/BLACK",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Air Jordan",
+    "style": "ENTRIES OPEN App Entry Jordan Retro 6 MENS \u2022 BLACK/MULTI",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Unknown",
+    "style": "Launched",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Nike",
+    "style": "Nike Mind 002 MENS \u2022 BLUE/PLATINUM/BLUE",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Unknown",
+    "style": "Order Status",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Unknown",
+    "style": "Returns-Exchanges",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Unknown",
+    "style": "Shipping Info",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Unknown",
+    "style": "Skip To Main",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Unknown",
+    "style": "Store Pickup",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "RETAIL_CHANGED",
+    "date": "2026-04-30",
+    "brand": "Unknown",
+    "style": "Upcoming",
+    "fieldChanged": "retailPrice",
+    "oldValue": 205,
+    "newValue": 145,
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike AF 1 Low Pre School BOYS PRE-SCHOOL \u2022 WHITE/FLASH CRIMSON/HYDROGEN BLUE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Air Force 1 '07 MENS \u2022 WHITE/FLASH CRIMSON/BLACK",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Air Force 1 '07 WOMENS \u2022 WHITE/PINK/SILVER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Air Max Moto 2K WOMENS \u2022 PINK/SILVER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Dunk Low Grade School BOYS GRADE SCHOOL \u2022 WHITE/HYDROGEN BLUE/FLASH CRIMSON",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Dunk Low Patent Leather MENS \u2022 WHITE/FLASH CRIMSON/HYDROGEN BLUE",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Nike",
+    "style": "Nike Shox NZ MENS \u2022 GRAY/RED/SILVER",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-05",
+    "brand": "Nike",
+    "style": "Firm-Ground Low-Top Soccer Cleats Nike Mercurial Vapor 16 Elite x Patta",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  },
+  {
+    "changeType": "NEW",
+    "date": "2026-05-05",
+    "brand": "Nike",
+    "style": "Mercurial Zoom Vapor 16 Elite FG SE x Patta Noise Aqua and Metallic Silver",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-29T06:21:59Z"
+  }
+]

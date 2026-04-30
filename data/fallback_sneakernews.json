@@ -1,41 +1,5 @@
 [
   {
-    "releaseDate": "2026-04-29",
-    "shoeName": "Hello Kitty x Crocs Classic Clog",
-    "brand": "Crocs",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/04/23/hello-kitty-and-friends-crocs-clog/"
-  },
-  {
-    "releaseDate": "2026-04-29",
-    "shoeName": "Hello Kitty x Crocs Platform Clog",
-    "brand": "Crocs",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/04/23/hello-kitty-and-friends-crocs-clog/"
-  },
-  {
-    "releaseDate": "2026-04-29",
-    "shoeName": "New Balance TF100",
-    "brand": "New Balance",
-    "retailPrice": 0,
-    "estimatedMarketValue": null,
-    "imageUrl": null,
-    "sourcePrimary": "sneakernews",
-    "sourceSecondary": "https://sneakernews.com/release-dates/",
-    "sourceUrl": "https://sneakernews.com/release-dates/",
-    "releaseUrl": "https://sneakernews.com/2026/04/17/new-balance-tf100"
-  },
-  {
     "releaseDate": "2026-04-30",
     "shoeName": "Nike GT Future \"CHBL\"",
     "brand": "Nike",
@@ -70,5 +34,17 @@
     "sourceSecondary": "https://sneakernews.com/release-dates/",
     "sourceUrl": "https://sneakernews.com/release-dates/",
     "releaseUrl": "https://sneakernews.com/2026/03/05/nike-mind-001-blackened-blue-hq4307-400"
+  },
+  {
+    "releaseDate": "2026-04-30",
+    "shoeName": "Nike Mind 002",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "sneakernews",
+    "sourceSecondary": "https://sneakernews.com/release-dates/",
+    "sourceUrl": "https://sneakernews.com/release-dates/",
+    "releaseUrl": "https://sneakernews.com/2026/03/12/nike-mind-002-football-grey-hydrogen-blue-hyper-crimson-hq4310-002"
   }
 ]

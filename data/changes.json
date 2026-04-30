@@ -1,122 +1,62 @@
 [
   {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Unknown",
-    "style": "Contact Us",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
-  },
-  {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
+    "changeType": "REMOVED",
+    "date": "2026-04-29",
     "brand": "Crocs",
-    "style": "Crocs LEGO Clogs BOYS GRADE SCHOOL \u2022 BLACK/BLACK",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
+    "style": "Hello Kitty x Crocs Classic Clog",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-30T06:25:53Z"
   },
   {
-    "changeType": "RETAIL_CHANGED",
+    "changeType": "REMOVED",
+    "date": "2026-04-29",
+    "brand": "Crocs",
+    "style": "Hello Kitty x Crocs Platform Clog",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-30T06:25:53Z"
+  },
+  {
+    "changeType": "REMOVED",
+    "date": "2026-04-29",
+    "brand": "New Balance",
+    "style": "New Balance TF100",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-30T06:25:53Z"
+  },
+  {
+    "changeType": "NEW",
     "date": "2026-04-30",
     "brand": "Air Jordan",
-    "style": "ENTRIES OPEN App Entry Jordan Retro 6 MENS \u2022 BLACK/MULTI",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
+    "style": "App Entry Jordan Retro 6 MENS \u2022 BLACK/MULTI",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-30T06:25:53Z"
   },
   {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Unknown",
-    "style": "Launched",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
+    "changeType": "NEW",
+    "date": "2026-05-01",
+    "brand": "Adidas",
+    "style": "adidas Climacool MENS \u2022 BLANCH CARGO/CORE BLACK/BLANCH CARGO",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-30T06:25:53Z"
   },
   {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
+    "changeType": "NEW",
+    "date": "2026-05-01",
     "brand": "Nike",
-    "style": "Nike Mind 002 MENS \u2022 BLUE/PLATINUM/BLUE",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
-  },
-  {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Nike",
-    "style": "Nike Zoom Huarache 2K4 OT MENS \u2022 BLACK/BLACK",
-    "fieldChanged": "retailPrice",
-    "oldValue": 205,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
-  },
-  {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Unknown",
-    "style": "Order Status",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
-  },
-  {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Unknown",
-    "style": "Returns-Exchanges",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
-  },
-  {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Unknown",
-    "style": "Shipping Info",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
-  },
-  {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Unknown",
-    "style": "Skip To Main",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
-  },
-  {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Unknown",
-    "style": "Store Pickup",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
-  },
-  {
-    "changeType": "RETAIL_CHANGED",
-    "date": "2026-04-30",
-    "brand": "Unknown",
-    "style": "Upcoming",
-    "fieldChanged": "retailPrice",
-    "oldValue": 145,
-    "newValue": 200,
-    "detectedAt": "2026-04-29T17:21:10Z"
+    "style": "Basketball Shoes Kobe 3 Low Protro",
+    "fieldChanged": "",
+    "oldValue": "",
+    "newValue": "",
+    "detectedAt": "2026-04-30T06:25:53Z"
   }
 ]

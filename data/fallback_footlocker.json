@@ -1,7 +1,7 @@
 [
   {
     "releaseDate": "2026-04-30",
-    "shoeName": "ENTRIES OPEN App Entry Jordan Retro 6 MENS \u2022 BLACK/MULTI",
+    "shoeName": "App Entry Jordan Retro 6 MENS \u2022 BLACK/MULTI",
     "brand": "Air Jordan",
     "retailPrice": 200,
     "estimatedMarketValue": null,
@@ -142,6 +142,18 @@
     "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
     "sourceUrl": "https://www.footlocker.com/release-calendar.html",
     "releaseUrl": "https://www.footlocker.com/release-calendar"
+  },
+  {
+    "releaseDate": "2026-05-01",
+    "shoeName": "adidas Climacool MENS \u2022 BLANCH CARGO/CORE BLACK/BLANCH CARGO",
+    "brand": "Adidas",
+    "retailPrice": 165,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "footlocker",
+    "sourceSecondary": "https://www.footlocker.com/release-calendar.html",
+    "sourceUrl": "https://www.footlocker.com/release-calendar.html",
+    "releaseUrl": "https://www.footlocker.com/release-calendar/adidas/KJ8977.html"
   },
   {
     "releaseDate": "2026-05-01",

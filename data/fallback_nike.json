@@ -33,6 +33,17 @@
     "sourceUrl": "https://www.nike.com/launch/t/air-max-90-coconut-milk-and-deep-royal-blue"
   },
   {
+    "releaseDate": "2026-05-01",
+    "shoeName": "Basketball Shoes Kobe 3 Low Protro",
+    "brand": "Nike",
+    "retailPrice": 0,
+    "estimatedMarketValue": null,
+    "imageUrl": null,
+    "sourcePrimary": "playwright-linkscan",
+    "sourceSecondary": "https://www.nike.com/launch/upcoming",
+    "sourceUrl": "https://www.nike.com/launch/t/kobe-3-low-protro-mambacita-white-and-metallic-gold"
+  },
+  {
     "releaseDate": "2026-05-02",
     "shoeName": "Baby/Toddler Shoes Jordan 1 Retro Low OG \"Banned\"",
     "brand": "Air Jordan",
